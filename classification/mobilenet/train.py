@@ -50,11 +50,11 @@ validate_loader = torch.utils.data.DataLoader(validate_dataset,
 
 net = MobileNetV2(num_classes=5)
 # load pretrain weights
-model_weight_path = "./mobilenet_v2.pth"
-pre_weights = torch.load(model_weight_path)
+#model_weight_path = "./mobilenet_v2.pth"
+#pre_weights = torch.load(model_weight_path)
 # delete classifier weights
-pre_dict = {k: v for k, v in pre_weights.items() if "classifier" not in k}
-missing_keys, unexpected_keys = net.load_state_dict(pre_dict, strict=False)
+#pre_dict = {k: v for k, v in pre_weights.items() if "classifier" not in k}
+#missing_keys, unexpected_keys = net.load_state_dict(pre_dict, strict=False)
 
 # freeze features weights
 for param in net.features.parameters():

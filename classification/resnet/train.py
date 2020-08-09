@@ -51,8 +51,8 @@ validate_loader = torch.utils.data.DataLoader(validate_dataset,
 
 net = resnet34()
 # load pretrain weights
-model_weight_path = "./resnet34-pre.pth"
-missing_keys, unexpected_keys = net.load_state_dict(torch.load(model_weight_path), strict=False)
+#model_weight_path = "./resnet34-pre.pth"
+#missing_keys, unexpected_keys = net.load_state_dict(torch.load(model_weight_path), strict=False)
 # for param in net.parameters():
 #     param.requires_grad = False
 # change fc layer structure
