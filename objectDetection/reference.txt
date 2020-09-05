@@ -7,3 +7,14 @@ https://github.com/wonbeomjang/pytorch-computer-vision-basic
 https://blog.csdn.net/weixin_41063476/article/details/87713860
 
 
+mklink /d  c:\ydwisroad\imageprocessingpytorch\data  E:\roadproject\experiment\data
+
+
+Models
+https://www.it610.com/article/1281066727819460608.htm
+
+
+Start labelme
+command line: labelme
+
+
