@@ -1,0 +1,1 @@
+python3 train.py --dataset voc --data-dir="../../data/voc2017"
