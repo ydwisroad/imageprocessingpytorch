@@ -98,7 +98,7 @@ def generate_results(model, data_loader, device, args):
         target = {k: v.to(device) for k, v in target.items()}
 
         S = time.time()
-        torch.cuda.synchronize()
+        # torch.cuda.synchronize()
         output = model(image)
         m_m.update(time.time() - S)
         
