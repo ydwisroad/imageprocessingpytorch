@@ -63,3 +63,16 @@ conda-env list
 8、删除环境中的某个包。
 
    使用命令conda remove --name your_env_name  package_name 即可。
+
+
+
+Label me
+
+https://blog.csdn.net/weixin_40428368/article/details/80979016
+
+
+GPU Usage
+nvidia-smi -l 1 
+
+
+
