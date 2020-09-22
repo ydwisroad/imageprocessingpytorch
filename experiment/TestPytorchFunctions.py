@@ -42,6 +42,9 @@ output, indices = pool(input)
 outunpool = unpool(output, indices)
 print(outunpool)
 
+print("done")
+
+
 
 
 
