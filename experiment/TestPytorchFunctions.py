@@ -29,6 +29,11 @@ m = nn.UpsamplingNearest2d(scale_factor=2)
 output = m(input)
 print(output)
 
+input = torch.arange(1, 5, dtype=torch.float32).view(1, 1, 2, 2)
+m = nn.Upsample(scale_factor=2, mode='bilinear', align_corners=True)  # align_corners=False
+outUpSample = m(input)
+print(outUpSample)
+
 #MaxUnpool2d
 #kernel_size， stride
 pool = nn.MaxPool2d(2, stride=2, return_indices=True)
@@ -36,6 +41,8 @@ unpool = nn.MaxUnpool2d(2, stride=2)
 output, indices = pool(input)
 outunpool = unpool(output, indices)
 print(outunpool)
+
+
 
 
 
