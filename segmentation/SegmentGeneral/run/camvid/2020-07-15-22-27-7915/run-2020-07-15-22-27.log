@@ -1,0 +1,4 @@
+2020-07-15 22:27:54 | Conf | use logdir run/camvid/2020-07-15-22-27-7915
+2020-07-15 22:27:54 | Conf | use dataset camvid
+2020-07-15 22:27:54 | Conf | use augmentation None
+2020-07-15 22:27:54 | Conf | use image size (352, 480)

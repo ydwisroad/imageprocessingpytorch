@@ -1,0 +1,25 @@
+{
+    "model_name": "segnet",
+    "n_classes": 12,
+
+    "dataset": "camvid",
+    "image_h": 360,
+    "image_w": 480,
+    "augmentation": "None",
+    "use_pt_norm": "True",
+
+
+    "loss": "crossentropyloss2D",
+
+    "epoch": 120,
+
+    "lr": 1e-4,
+    "lr_decay_steps": 40,
+    "lr_decay_gamma": 0.1,
+    "weight_decay": 1e-3,
+
+    "batch_size": 4,
+    "num_workers": 4,
+
+    "gpu_ids": "0"
+}
