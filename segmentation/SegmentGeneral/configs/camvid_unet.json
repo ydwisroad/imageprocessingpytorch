@@ -3,6 +3,7 @@
     "n_classes": 12,
 
     "dataset": "camvid",
+    "datasetpath": "database",
     "image_h": 360,
     "image_w": 480,
     "augmentation": "None",

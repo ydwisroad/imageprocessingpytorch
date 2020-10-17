@@ -1,14 +1,13 @@
 {
-    "model_name": "linknet",
-    "n_classes": 12,
+    "model_name": "enet",
+    "n_classes": 2,
 
-    "dataset": "camvid",
-    "datasetpath": "database",
-    "image_h": 352,
+    "dataset": "Crack_Segmentation_Dataset",
+    "datasetpath": "data",
+    "image_h": 360,
     "image_w": 480,
-    "augmentation": "None",
+    "augmentation": "True",
     "use_pt_norm": "True",
-
 
     "loss": "crossentropyloss2D",
 
