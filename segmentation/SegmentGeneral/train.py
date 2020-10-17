@@ -24,7 +24,9 @@ def run(cfg, logger):
     logger.info(f'Conf | use image size {cfg["image_size"]}')
 
     # 获取训练集和验证集
-    trainset, valset, testset = get_dataset(cfg)
+    #trainset, valset, testset = get_dataset(cfg)
+    trainset, valset = get_dataset(cfg)
+
     # batch size大小
     logger.info(f'Conf | use batch_size {cfg["batch_size"]}')
 
@@ -49,7 +51,8 @@ def run(cfg, logger):
 
     # 损失函数 & 类别权重平衡
     logger.info(f'Conf | use loss function {cfg["loss"]}')
-    criterion = get_loss(cfg, weight=trainset.class_weight).to(cfg['device'])
+    #criterion = get_loss(cfg, weight=trainset.class_weight).to(cfg['device'])
+    criterion = get_loss(cfg, weight=None).to(cfg['device'])
 
     # 训练 & 验证
     logger.info(f'Conf | use epoch {cfg["epoch"]}')
