@@ -66,7 +66,9 @@ class SegmentDataset(Dataset):
         label = self.labels[index]
         # 从文件名中读取数据（图片和标签都是png格式的图像数据）
         img = Image.open(img)
-        label = Image.open(label).convert('RGB')
+        #print("label:" + label)
+        labelImg = Image.open(label)
+        label = labelImg.convert('RGB')
 
         img, label = self.center_crop(img, label, self.crop_size)
 
