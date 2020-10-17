@@ -11,8 +11,8 @@ def get_loss(cfg, weight=None):
         :return:
     '''
 
-    assert cfg['loss'] in ['crossentropyloss2D']
-    assert len(weight) == cfg['n_classes']
+    #assert cfg['loss'] in ['crossentropyloss2D']
+    #assert len(weight) == cfg['n_classes']
 
     return {
         'crossentropyloss2D': nn.CrossEntropyLoss(weight=weight),

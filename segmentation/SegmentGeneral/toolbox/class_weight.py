@@ -3,11 +3,9 @@ from PIL import Image
 import numpy as np
 import torch
 
-
 def linknet_class_weight(num_classes):
     p_class = num_classes / num_classes.sum()
     return 1 / (np.log(1.02 + p_class))
-
 
 def compute_weight(root, n_classes):
     num_classes = np.zeros(n_classes)
