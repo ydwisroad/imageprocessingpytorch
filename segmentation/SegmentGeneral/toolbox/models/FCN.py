@@ -28,7 +28,7 @@ pretrained_net = models.vgg16_bn(pretrained=False)
 
 
 class FCN(nn.Module):
-    def __init__(self, num_classes):
+    def __init__(self, n_classes):
         super().__init__()
 
         self.stage1 = pretrained_net.features[:7]
@@ -37,15 +37,15 @@ class FCN(nn.Module):
         self.stage4 = pretrained_net.features[24:34]
         self.stage5 = pretrained_net.features[34:]
 
-        self.scores1 = nn.Conv2d(512, num_classes, 1)
-        self.scores2 = nn.Conv2d(512, num_classes, 1)
-        self.scores3 = nn.Conv2d(128, num_classes, 1)
+        self.scores1 = nn.Conv2d(512, n_classes, 1)
+        self.scores2 = nn.Conv2d(512, n_classes, 1)
+        self.scores3 = nn.Conv2d(128, n_classes, 1)
 
         self.conv_trans1 = nn.Conv2d(512, 256, 1)
-        self.conv_trans2 = nn.Conv2d(256, num_classes, 1)
+        self.conv_trans2 = nn.Conv2d(256, n_classes, 1)
 
-        self.upsample_8x = nn.ConvTranspose2d(num_classes, num_classes, 16, 8, 4, bias=False)
-        self.upsample_8x.weight.data = bilinear_kernel(num_classes, num_classes, 16)
+        self.upsample_8x = nn.ConvTranspose2d(n_classes, n_classes, 16, 8, 4, bias=False)
+        self.upsample_8x.weight.data = bilinear_kernel(n_classes, n_classes, 16)
 
         self.upsample_2x_1 = nn.ConvTranspose2d(512, 512, 4, 2, 1, bias=False)
         self.upsample_2x_1.weight.data = bilinear_kernel(512, 512, 4)

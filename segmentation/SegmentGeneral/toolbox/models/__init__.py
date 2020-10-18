@@ -4,8 +4,7 @@ from toolbox.models.linknet import linknet
 from toolbox.models.enet import ENet
 from toolbox.models.FCN import FCN
 from toolbox.models.FusionNet import Fusionnet
-from toolbox.models.DeepLabv3_plus import DeepLabv3_plus
-
+from toolbox.models.Deeplab_v3plus import DeepLabv3_plus
 
 def get_model(cfg):
 

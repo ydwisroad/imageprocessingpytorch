@@ -52,7 +52,7 @@ class Conv_residual_conv(nn.Module):
 
 class Fusionnet(nn.Module):
 
-    def __init__(self, input_nc, output_nc, ngf, out_clamp=None):
+    def __init__(self, n_classes=12, input_nc = 1, output_nc = 3, ngf = 352, out_clamp=None):
         super(Fusionnet, self).__init__()
 
         self.out_clamp = out_clamp
@@ -124,8 +124,8 @@ if __name__ == "__main__":
 
     rgb = t.randn(1, 3, 352, 480)
 
-    net = Fusionnet(3, 12, 64)
+    #net = Fusionnet(3, 12, 64)
 
-    out = net(rgb)
+    #out = net(rgb)
 
-    print(out.shape)
+    #print(out.shape)
