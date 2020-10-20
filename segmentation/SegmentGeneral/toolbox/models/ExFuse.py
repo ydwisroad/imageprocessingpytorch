@@ -48,9 +48,9 @@ class ECRE(nn.Module):
 
 
 class GCNFuse(nn.Module):
-    def __init__(self, num_classes=21):
+    def __init__(self, n_classes=21):
         super(GCNFuse, self).__init__()
-        self.num_classes = num_classes
+        self.n_classes = n_classes
         self.resnet_features = models.resnet101(pretrained=False)
         self.layer0 = nn.Sequential(self.resnet_features.conv1, self.resnet_features.bn1, self.resnet_features.relu)
         self.layer1 = nn.Sequential(self.resnet_features.maxpool, self.resnet_features.layer1)
@@ -58,17 +58,17 @@ class GCNFuse(nn.Module):
         self.layer3 = self.resnet_features.layer3
         self.layer4 = self.resnet_features.layer4
 
-        self.gcm4 = _GlobalConvModule(2048, num_classes)
-        self.gcm3 = _GlobalConvModule(1024, num_classes)
-        self.gcm2 = _GlobalConvModule(512, num_classes)
-        self.gcm1 = _GlobalConvModule(256, num_classes)
+        self.gcm4 = _GlobalConvModule(2048, n_classes)
+        self.gcm3 = _GlobalConvModule(1024, n_classes)
+        self.gcm2 = _GlobalConvModule(512, n_classes)
+        self.gcm1 = _GlobalConvModule(256, n_classes)
 
-        self.deconv3 = nn.ConvTranspose2d(num_classes, num_classes, kernel_size=4, stride=2, padding=1, bias=False)
-        self.deconv2 = nn.ConvTranspose2d(num_classes, num_classes, kernel_size=4, stride=2, padding=1, bias=False)
-        self.deconv1 = nn.ConvTranspose2d(num_classes, num_classes, kernel_size=4, stride=2, padding=1, bias=False)
-        self.deconv0 = nn.ConvTranspose2d(num_classes, num_classes, kernel_size=4, stride=2, padding=1, bias=False)
+        self.deconv3 = nn.ConvTranspose2d(n_classes, n_classes, kernel_size=4, stride=2, padding=1, bias=False)
+        self.deconv2 = nn.ConvTranspose2d(n_classes, n_classes, kernel_size=4, stride=2, padding=1, bias=False)
+        self.deconv1 = nn.ConvTranspose2d(n_classes, n_classes, kernel_size=4, stride=2, padding=1, bias=False)
+        self.deconv0 = nn.ConvTranspose2d(n_classes, n_classes, kernel_size=4, stride=2, padding=1, bias=False)
 
-        self.ecre = ECRE(num_classes)
+        self.ecre = ECRE(n_classes)
 
         self.seb3 = SEB(2048, 1024)
         self.seb2 = SEB(3072, 512)
