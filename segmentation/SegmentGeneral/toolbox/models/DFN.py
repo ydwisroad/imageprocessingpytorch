@@ -47,9 +47,9 @@ class RRB(nn.Module):
 
 
 class DFN(nn.Module):
-    def __init__(self, num_class=21):
+    def __init__(self, n_classes=21):
         super(DFN, self).__init__()
-        self.num_class = num_class
+        self.n_classes = n_classes
         self.layer0 = nn.Sequential(resnet101.conv1, resnet101.bn1, resnet101.relu)
         self.layer1 = nn.Sequential(resnet101.maxpool, resnet101.layer1)
         self.layer2 = resnet101.layer2
@@ -57,36 +57,36 @@ class DFN(nn.Module):
         self.layer4 = resnet101.layer4
 
         # this is for smooth network
-        self.out_conv = nn.Conv2d(2048, self.num_class, kernel_size=1, stride=1)
+        self.out_conv = nn.Conv2d(2048, self.n_classes, kernel_size=1, stride=1)
         self.global_pool = nn.AdaptiveAvgPool2d(1)
-        self.cab1 = CAB(self.num_class*2, self.num_class)
-        self.cab2 = CAB(self.num_class*2, self.num_class)
-        self.cab3 = CAB(self.num_class*2, self.num_class)
-        self.cab4 = CAB(self.num_class*2, self.num_class)
+        self.cab1 = CAB(self.n_classes*2, self.n_classes)
+        self.cab2 = CAB(self.n_classes*2, self.n_classes)
+        self.cab3 = CAB(self.n_classes*2, self.n_classes)
+        self.cab4 = CAB(self.n_classes*2, self.n_classes)
 
-        self.rrb_d_1 = RRB(256, self.num_class)
-        self.rrb_d_2 = RRB(512, self.num_class)
-        self.rrb_d_3 = RRB(1024, self.num_class)
-        self.rrb_d_4 = RRB(2048, self.num_class)
+        self.rrb_d_1 = RRB(256, self.n_classes)
+        self.rrb_d_2 = RRB(512, self.n_classes)
+        self.rrb_d_3 = RRB(1024, self.n_classes)
+        self.rrb_d_4 = RRB(2048, self.n_classes)
 
         self.upsample = nn.Upsample(scale_factor=2,mode="bilinear")
         self.upsample_4 = nn.Upsample(scale_factor=4, mode="bilinear")
         self.upsample_8 = nn.Upsample(scale_factor=8, mode="bilinear")
 
-        self.rrb_u_4 = RRB(self.num_class,self.num_class)
-        self.rrb_u_3 = RRB(self.num_class,self.num_class)
-        self.rrb_u_2 = RRB(self.num_class,self.num_class)
-        self.rrb_u_1 = RRB(self.num_class,self.num_class)
+        self.rrb_u_4 = RRB(self.n_classes,self.n_classes)
+        self.rrb_u_3 = RRB(self.n_classes,self.n_classes)
+        self.rrb_u_2 = RRB(self.n_classes,self.n_classes)
+        self.rrb_u_1 = RRB(self.n_classes,self.n_classes)
 
         # this is for boarder net work
-        self.rrb_db_1 = RRB(256, self.num_class)
-        self.rrb_db_2 = RRB(512, self.num_class)
-        self.rrb_db_3 = RRB(1024, self.num_class)
-        self.rrb_db_4 = RRB(2048, self.num_class)
+        self.rrb_db_1 = RRB(256, self.n_classes)
+        self.rrb_db_2 = RRB(512, self.n_classes)
+        self.rrb_db_3 = RRB(1024, self.n_classes)
+        self.rrb_db_4 = RRB(2048, self.n_classes)
 
-        self.rrb_trans_1 = RRB(self.num_class,self.num_class)
-        self.rrb_trans_2 = RRB(self.num_class,self.num_class)
-        self.rrb_trans_3 = RRB(self.num_class,self.num_class)
+        self.rrb_trans_1 = RRB(self.n_classes,self.n_classes)
+        self.rrb_trans_2 = RRB(self.n_classes,self.n_classes)
+        self.rrb_trans_3 = RRB(self.n_classes,self.n_classes)
 
     def forward(self, x):
         f0 = self.layer0(x)  # 256, 256, 64

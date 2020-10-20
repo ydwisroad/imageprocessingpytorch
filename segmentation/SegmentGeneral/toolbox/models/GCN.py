@@ -64,9 +64,9 @@ class GCN_BR_BR_Deconv(nn.Module):
 
 
 class GCN(nn.Module):
-    def __init__(self, num_classes, k=15):
+    def __init__(self, n_classes, k=15):
         super(GCN, self).__init__()
-        self.num_class = num_classes
+        self.num_class = n_classes
         self.k = k
 
         self.layer0 = nn.Sequential(resnet152_pretrained.conv1, resnet152_pretrained.bn1, resnet152_pretrained.relu)
@@ -79,21 +79,21 @@ class GCN(nn.Module):
         self.deconv = nn.ConvTranspose2d(self.num_class, self.num_class, 4, 2, 1, bias=False)
 
     def forward(self, input):
-        x0 = self.layer0(input); print('x0:', x0.size())    # x0: torch.Size([1, 64, 176, 240])
-        x1 = self.layer1(x0); print('x1:', x1.size())       # x1: torch.Size([1, 256, 88, 120])
-        x2 = self.layer2(x1); print('x2:', x2.size())       # x2: torch.Size([1, 512, 44, 60])
-        x3 = self.layer3(x2); print('x3:', x3.size())       # x3: torch.Size([1, 1024, 22, 30])
-        x4 = self.layer4(x3); print('x4:', x4.size())       # x4: torch.Size([1, 2048, 11, 15])
+        x0 = self.layer0(input); #print('x0:', x0.size())    # x0: torch.Size([1, 64, 176, 240])
+        x1 = self.layer1(x0); #print('x1:', x1.size())       # x1: torch.Size([1, 256, 88, 120])
+        x2 = self.layer2(x1); #print('x2:', x2.size())       # x2: torch.Size([1, 512, 44, 60])
+        x3 = self.layer3(x2); #print('x3:', x3.size())       # x3: torch.Size([1, 1024, 22, 30])
+        x4 = self.layer4(x3); #print('x4:', x4.size())       # x4: torch.Size([1, 2048, 11, 15])
 
         branch4 = GCN_BR_BR_Deconv(x4.shape[1], self.num_class, self.k)
         branch3 = GCN_BR_BR_Deconv(x3.shape[1], self.num_class, self.k)
         branch2 = GCN_BR_BR_Deconv(x2.shape[1], self.num_class, self.k)
         branch1 = GCN_BR_BR_Deconv(x1.shape[1], self.num_class, self.k)
 
-        branch4 = branch4(x4); print('branch4:', branch4.size())    # torch.Size([1, 12, 22, 30])
-        branch3 = branch3(x3, branch4); print('branch3:', branch3.size())   # torch.Size([1, 12, 44, 60])
-        branch2 = branch2(x2, branch3); print('branch2:', branch2.size())   # torch.Size([1, 12, 88, 120])
-        branch1 = branch1(x1, branch2); print('branch1:', branch1.size())   # torch.Size([1, 12, 176, 240])
+        branch4 = branch4(x4); #print('branch4:', branch4.size())    # torch.Size([1, 12, 22, 30])
+        branch3 = branch3(x3, branch4); #print('branch3:', branch3.size())   # torch.Size([1, 12, 44, 60])
+        branch2 = branch2(x2, branch3); #print('branch2:', branch2.size())   # torch.Size([1, 12, 88, 120])
+        branch1 = branch1(x1, branch2); #print('branch1:', branch1.size())   # torch.Size([1, 12, 176, 240])
 
         x = self.br(branch1)
         x = self.deconv(x)
