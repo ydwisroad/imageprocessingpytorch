@@ -4,8 +4,8 @@
 
     "dataset": "Crack_Segmentation_Dataset",
     "datasetpath": "data",
-    "image_h": 360,
-    "image_w": 480,
+    "image_h": 448,
+    "image_w": 448,
     "augmentation": "True",
     "use_pt_norm": "True",
 
@@ -19,7 +19,7 @@
     "weight_decay": 1e-3,
 
     "batch_size": 4,
-    "num_workers": 4,
+    "num_workers": 1,
 
     "gpu_ids": "0"
 }
