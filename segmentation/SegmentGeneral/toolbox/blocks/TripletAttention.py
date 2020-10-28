@@ -71,6 +71,7 @@ if __name__ == '__main__':
     outBasicConv = basicConv(inputX)
     print("outBasicConv size ", outBasicConv.size())
 
+    print("input X size ", inputX.size())
     tripletAttention = TripletAttention()
     outTripletAttention = tripletAttention(inputX)
     print("out Triplet Attention ", outTripletAttention.size())
