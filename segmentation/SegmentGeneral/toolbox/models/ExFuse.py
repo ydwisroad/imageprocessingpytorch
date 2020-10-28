@@ -79,10 +79,10 @@ class GCNFuse(nn.Module):
 
     def forward(self, x):
         f0 = self.layer0(x)  # 256, 256, 64
-        f1 = self.layer1(f0); print(f1.size())  # 128, 128, 256
-        f2 = self.layer2(f1); print(f2.size())  # 64, 64, 512
-        f3 = self.layer3(f2); print(f3.size())  # 32, 32, 1024
-        f4 = self.layer4(f3); print(f4.size())  # 16, 16, 2048
+        f1 = self.layer1(f0); #print(f1.size())  # 128, 128, 256
+        f2 = self.layer2(f1); #print(f2.size())  # 64, 64, 512
+        f3 = self.layer3(f2); #print(f3.size())  # 32, 32, 1024
+        f4 = self.layer4(f3); #print(f4.size())  # 16, 16, 2048
 
         gcm4 = self.gcm4(f4)   # 16, 16, 21
         out4 = self.ecre(gcm4)  # 32, 32, 21
