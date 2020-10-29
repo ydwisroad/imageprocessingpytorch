@@ -183,10 +183,10 @@ class MyResnet34WithAttention(nn.Module):
         #print("fusion attn4", fusionattn4.size())
 
         # Decoder blocks
-        d4 = e3 + self.decoder4(e4 + fusionattn4) + fusionattn3
-        d3 = e2 + self.decoder3(d4) + fusionattn2
-        d2 = e1 + self.decoder2(d3) + fusionattn1
-        d1 = x + self.decoder1(d2)
+        d4 = e3 + self.decoder4(e4 + fusionattn4)
+        d3 = e2 + self.decoder3(d4 + fusionattn3)
+        d2 = e1 + self.decoder2(d3 + fusionattn2)
+        d1 = x + self.decoder1(d2 + fusionattn1)
 
         y = self.tp_conv1(d1)
         y = self.conv2(y)
@@ -317,17 +317,6 @@ class MyResnet50(nn.Module):
         return y
 
 if __name__ == '__main__':
-    #resnet34base = torchvision.models.resnet34(pretrained=False)
-
-    #print(resnet34base.conv1)
-    #print(resnet34base.bn1)
-    #print(resnet34base.relu)
-    #print(resnet34base.relu)
-
-    #print(resnet34base.layer1)
-    #print(resnet34base.layer2)
-    #print(resnet34base.layer3)
-    #print(resnet34base.layer4)
 
     inputs = torch.randn(1, 3, 448, 448)
     resnet34Model = MyResnet34WithAttention(n_classes=12)

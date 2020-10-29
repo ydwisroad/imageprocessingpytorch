@@ -8,7 +8,6 @@ from PIL import Image
 import torchvision.transforms as transforms
 from toolbox import class_weight
 
-
 class LabelProcessor:   # 对应data process and load.ipynb 1.处理标签文件中colormap的数据
     """对标签图像的编码"""
 
@@ -66,16 +65,21 @@ class SegmentDataset(Dataset):
         label = self.labels[index]
         # 从文件名中读取数据（图片和标签都是png格式的图像数据）
         img = Image.open(img)
+        img = img.convert('RGB')
+        #print("Get item img to RGB size ", img)
+
         #print("label:" + label)
         labelImg = Image.open(label)
         label = labelImg.convert('RGB')
+        #print("Get item label to RGB size ", label)
 
         img, label = self.center_crop(img, label, self.crop_size)
 
         img, label = self.img_transform(img, label)
         # print('处理后的图片和标签大小：',img.shape, label.shape)
-        sample = {'image': img, 'label': label}
 
+        #label = label.unsqueeze(0)
+        sample = {'image': img, 'label': label}
         return sample
 
     def __len__(self):

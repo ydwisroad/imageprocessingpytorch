@@ -71,7 +71,7 @@ class CamVid(Dataset):
         img, label = self.center_crop(img, label, self.crop_size)
 
         img, label = self.img_transform(img, label)
-        # print('处理后的图片和标签大小：',img.shape, label.shape)
+        #print('处理后的图片和标签大小：',img.shape, label.shape)
         sample = {'image': img, 'label': label}
 
         return sample

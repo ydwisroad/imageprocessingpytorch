@@ -12,6 +12,7 @@ from toolbox.models.mylinknet import MyResnet34
 from toolbox.models.mylinknet import MyResnet50
 from toolbox.models.mylinknet import MyResnet34WithAttention
 from toolbox.models.mylinknet import MyResnet34WithTripletAttention
+from toolbox.models.lambdaResnet import LambdaResnet
 
 
 def get_model(cfg):
@@ -30,6 +31,7 @@ def get_model(cfg):
         'myresnet34': MyResnet34,
         'myresnet50': MyResnet50,
         'myresnet34WithAttention': MyResnet34WithAttention,
-        'myresnet34WithTripletAttention': MyResnet34WithTripletAttention
+        'myresnet34WithTripletAttention': MyResnet34WithTripletAttention,
+        'lambdaresnet': LambdaResnet
 
     }[cfg['model_name']](n_classes=cfg['n_classes'])
