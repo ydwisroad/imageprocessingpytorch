@@ -1,5 +1,5 @@
 {
-    "model_name": "gcn",
+    "model_name": "lambdaresnet",
     "n_classes": 2,
 
     "dataset": "crackSegmentationSimple",
@@ -9,7 +9,7 @@
     "augmentation": "True",
     "use_pt_norm": "True",
 
-    "loss": "bceWithLogitsLoss",
+    "loss": "crossentropyloss2D",
 
     "epoch": 60,
 
