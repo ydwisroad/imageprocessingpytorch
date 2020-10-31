@@ -22,7 +22,7 @@ class AlexNet(nn.Module):
         )
         self.classifier = nn.Sequential(
             nn.Dropout(p=0.5),
-            nn.Linear(128 * 6 * 6, 2048),
+            nn.Linear(128 * 169, 2048),
             nn.ReLU(inplace=True),
             nn.Dropout(p=0.5),
             nn.Linear(2048, 2048),
@@ -34,7 +34,9 @@ class AlexNet(nn.Module):
 
     def forward(self, x):
         x = self.features(x)
+        #print("x features " ,x.size())
         x = torch.flatten(x, start_dim=1)
+        #print("x flatten ", x.size())
         x = self.classifier(x)
         return x
 

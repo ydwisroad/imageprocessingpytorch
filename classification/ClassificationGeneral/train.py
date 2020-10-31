@@ -75,16 +75,8 @@ def run(cfg, logger):
     net = get_model(cfg)
     #net = resnet34()
 
-    # load pretrain weights
-    #model_weight_path = "./resnet34-pre.pth"
-    #missing_keys, unexpected_keys = net.load_state_dict(torch.load(model_weight_path), strict=False)
-    # for param in net.parameters():
-    #     param.requires_grad = False
-    # change fc layer structure
-    inchannel = net.fc.in_features
-    #with num_classes
     num_classes = cfg["num_classes"]
-    net.fc = nn.Linear(inchannel, num_classes)
+    #net.fc = nn.Linear(inchannel, num_classes)
     net.to(device)
 
     #loss_function = nn.CrossEntropyLoss()
@@ -113,8 +105,16 @@ def run(cfg, logger):
             #print("in image size ", images.size())
             #print("in labels size ", labels.size())
             optimizer.zero_grad()
-            logits = net(images.to(device))
-            loss = loss_function(logits, labels.to(device))
+            if (cfg['model_name'] == 'googlenet'):
+                logits, aux_logits2, aux_logits1 = net(images.to(device))
+                loss0 = loss_function(logits, labels.to(device))
+                loss1 = loss_function(aux_logits1, labels.to(device))
+                loss2 = loss_function(aux_logits2, labels.to(device))
+                loss = loss0 + loss1 * 0.3 + loss2 * 0.3
+            else:
+                logits = net(images.to(device))
+                loss = loss_function(logits, labels.to(device))
+
             loss.backward()
             optimizer.step()
 

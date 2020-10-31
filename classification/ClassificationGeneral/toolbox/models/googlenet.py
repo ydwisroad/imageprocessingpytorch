@@ -140,7 +140,7 @@ class InceptionAux(nn.Module):
         self.averagePool = nn.AvgPool2d(kernel_size=5, stride=3)
         self.conv = BasicConv2d(in_channels, 128, kernel_size=1)  # output[batch, 128, 4, 4]
 
-        self.fc1 = nn.Linear(2048, 1024)
+        self.fc1 = nn.Linear(8192, 1024)
         self.fc2 = nn.Linear(1024, num_classes)
 
     def forward(self, x):
@@ -152,6 +152,7 @@ class InceptionAux(nn.Module):
         x = torch.flatten(x, 1)
         x = F.dropout(x, 0.5, training=self.training)
         # N x 2048
+        #print("x size ", x.size())
         x = F.relu(self.fc1(x), inplace=True)
         x = F.dropout(x, 0.5, training=self.training)
         # N x 1024

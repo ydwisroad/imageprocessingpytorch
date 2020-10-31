@@ -16,7 +16,7 @@ class VGG(nn.Module):
         self.features = self.make_features(model_name)
         self.classifier = nn.Sequential(
             nn.Dropout(p=0.5),
-            nn.Linear(512*7*7, 2048),
+            nn.Linear(512*196, 2048),
             nn.ReLU(True),
             nn.Dropout(p=0.5),
             nn.Linear(2048, 2048),
@@ -60,13 +60,10 @@ class VGG(nn.Module):
                 in_channels = v
         return nn.Sequential(*layers)
 
+if __name__ == '__main__':
+    print("Start to test VGG Net")
+    vggNet = VGG(num_classes= 10)
 
 
-def vgg(model_name="vgg16", **kwargs):
-    try:
-        cfg = cfgs[model_name]
-    except:
-        print("Warning: model number {} not in cfgs dict!".format(model_name))
-        exit(-1)
-    model = VGG(make_features(cfg), **kwargs)
-    return model
+
+
