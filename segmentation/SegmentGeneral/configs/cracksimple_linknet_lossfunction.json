@@ -1,5 +1,5 @@
 {
-    "model_name": "gcn",
+    "model_name": "linknet",
     "n_classes": 2,
 
     "dataset": "crackSegmentationSimple",

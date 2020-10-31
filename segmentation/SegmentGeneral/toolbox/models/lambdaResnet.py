@@ -3,16 +3,38 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 #https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247511281&idx=3&sn=4b1220602d5f2f7becb9f93d40e0a9c4&chksm=ec1c4108db6bc81ef158aeebca61563daae717b6cfb4c061917e05b839a0eb8e6063c847fbfc&mpshare=1&scene=1&srcid=1020xzs2ywZoPK3cet1FjeuN&sharer_sharetime=1603151155888&sharer_shareid=03101a931987a40bb1c69d01fec93b52&exportkey=AbznBQLHyT6XQk7ufIedGYI%3D&pass_ticket=KxAVxjqQ4Tok2JkD1jwdy7aa52e4fLkJ5TPDMuurQ%2BBoJD3TDbRrfRS18LwGuQch&wx_header=0#rd
+class Decoder(nn.Module):
+
+    def __init__(self, in_planes, out_planes, kernel_size, stride=1, padding=0, output_padding=0, bias=False):
+        # TODO bias=True
+        super(Decoder, self).__init__()
+        self.conv1 = nn.Sequential(nn.Conv2d(in_planes, in_planes//4, 1, 1, 0, bias=bias),
+                                nn.BatchNorm2d(in_planes//4),
+                                nn.ReLU(inplace=True),)
+        self.tp_conv = nn.Sequential(nn.ConvTranspose2d(in_planes//4, in_planes//4, kernel_size, stride, padding, output_padding, bias=bias),
+                                nn.BatchNorm2d(in_planes//4),
+                                nn.ReLU(inplace=True),)
+        self.conv2 = nn.Sequential(nn.Conv2d(in_planes//4, out_planes, 1, 1, 0, bias=bias),
+                                nn.BatchNorm2d(out_planes),
+                                nn.ReLU(inplace=True),)
+
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.tp_conv(x)
+        x = self.conv2(x)
+
+        return x
+
 
 class LambdaConv(nn.Module):
     def __init__(self, in_channels, out_channels, heads=4, k=16, u=1, m=23):
         super(LambdaConv, self).__init__()
         self.kk, self.uu, self.vv, self.mm, self.heads = k, u, out_channels // heads, m, heads
-        print("self.kk " , self.kk)
-        print("self.uu ", self.uu)
-        print("self.vv ", self.vv)
-        print("self.mm ", self.mm)
-        print("self.heads ", self.heads)
+        #print("self.kk " , self.kk)
+        #print("self.uu ", self.uu)
+        #print("self.vv ", self.vv)
+        #print("self.mm ", self.mm)
+        #print("self.heads ", self.heads)
 
         self.local_context = True if m > 0 else False
         self.padding = (m - 1) // 2
@@ -120,11 +142,9 @@ class Bottleneck(nn.Module):
         out = F.relu(out)
         return out
 
-# reference
-# https://github.com/kuangliu/pytorch-cifar/blob/master/models/resnet.py
-class ResNet(nn.Module):
-    def __init__(self, block, num_blocks, num_classes=1000):
-        super(ResNet, self).__init__()
+class LambdaResnet(nn.Module):
+    def __init__(self, n_classes=12, block= LambdaBottleneck, num_blocks = [2,2,2, 2]):
+        super(LambdaResnet, self).__init__()
         self.in_planes = 64
 
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False)
@@ -132,23 +152,25 @@ class ResNet(nn.Module):
         self.relu = nn.ReLU(inplace=True)
         self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
 
-        # ImageNet 350 epochs training setup
-        # self.maxpool = nn.Sequential(
-        #     nn.Conv2d(64, 64, kernel_size=3, stride=2, padding=1, bias=False),
-        #     nn.BatchNorm2d(64),
-        #     nn.ReLU()
-        # )
-
         self.layer1 = self._make_layer(block, 64, num_blocks[0])
         self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2)
         self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
         self.layer4 = self._make_layer(block, 512, num_blocks[3], stride=2)
 
-        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Sequential(
-            nn.Dropout(0.3), # All architecture deeper than ResNet-200 dropout_rate: 0.2
-            nn.Linear(512 * block.expansion, num_classes)
-        )
+        self.decoder1 = Decoder(256, 256, 3, 1, 1, 0)
+        self.decoder2 = Decoder(512, 256, 3, 2, 1, 1)
+        self.decoder3 = Decoder(1024, 512, 3, 2, 1, 1)
+        self.decoder4 = Decoder(2048, 1024, 3, 2, 1, 1)
+
+        # Classifier
+        self.tp_conv1 = nn.Sequential(nn.ConvTranspose2d(256, 64, 3, 2, 1, 1),
+                                      nn.BatchNorm2d(64),
+                                      nn.ReLU(inplace=True),)
+        self.conv2 = nn.Sequential(nn.Conv2d(64, 64, 3, 1, 1),
+                                nn.BatchNorm2d(64),
+                                nn.ReLU(inplace=True),)
+        self.tp_conv2 = nn.ConvTranspose2d(64, n_classes, 2, 2, 0)
+
 
     def _make_layer(self, block, planes, num_blocks, stride=1):
         strides = [stride] + [1]*(num_blocks-1)
@@ -162,33 +184,43 @@ class ResNet(nn.Module):
         out = self.relu(self.bn1(self.conv1(x)))
         out = self.maxpool(out)
 
-        out = self.layer1(out)
-        out = self.layer2(out)
-        out = self.layer3(out)
-        out = self.layer4(out)
+        e1 = self.layer1(out)
+        #print("e1 size ", e1.size())
+        e2 = self.layer2(e1)
+        #print("e2 size ", e2.size())
+        e3 = self.layer3(e2)
+        #print("e3 size ", e3.size())
+        e4 = self.layer4(e3)
+        #print("e4 size ", e4.size())
 
-        out = self.avgpool(out)
-        out = torch.flatten(out, 1)
-        out = self.fc(out)
-        return out
+        # Decoder blocks
+        dec4 = self.decoder4(e4)
+        #print("dec4 size ", dec4.size())
+        d4 = e3 + dec4
+
+        #print("self.decoder3(d4) size ", self.decoder3(d4).size())
+        d3 = e2 + self.decoder3(d4)
+
+        #print("self.decoder2(d3) size ", self.decoder2(d3).size())
+        d2 = e1 + self.decoder2(d3)
+
+        #print("self.decoder1(d2) size ", self.decoder1(d2).size())
+        #print("x ", x.size())
+        d1 = self.decoder1(d2)
+        #print("d1 size ", d1.size())
+
+        y = self.tp_conv1(d1)
+        y = self.conv2(y)
+        y = self.tp_conv2(y)
+        return y
 
 if __name__ == '__main__':
-    print("start to test Lambda Networks")
+    print("start to test Lambda resnet Networks")
     import torch as t
-    inputX = t.randn(4, 8, 20, 20)
+    inputX = t.randn(4, 3, 448, 448)
 
-    bottleneck = Bottleneck(8, 3)
-    outBottle = bottleneck(inputX)
-    print("outBottle size  ", outBottle.size())
-
-    lambdaNetwork = LambdaBottleneck(8, 4)
-    outLambda = lambdaNetwork(inputX)
-    print("outLambda size  ", outLambda.size())
-
-    inputX2 = t.randn(4, 3, 20, 20)
-    newNet = ResNet(LambdaBottleneck, [2,2,2, 2], 2)
-    outputData = newNet(inputX2)
-    print("output Data size ", outputData.size())
-
+    lambdaResnet = LambdaResnet(LambdaBottleneck, [2,2,2, 2], 2)
+    outputData = lambdaResnet(inputX)
+    print("out size " , outputData.size())
 
 

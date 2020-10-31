@@ -8,6 +8,13 @@ from toolbox.models.Deeplab_v3plus import DeepLabv3_plus
 from toolbox.models.GCN import GCN
 from toolbox.models.DFN import DFN
 from toolbox.models.ExFuse import GCNFuse
+from toolbox.models.mylinknet import MyResnet34
+from toolbox.models.mylinknet import MyResnet50
+from toolbox.models.mylinknet import MyResnet34WithAttention
+from toolbox.models.mylinknet import MyResnet34WithTripletAttention
+from toolbox.models.lambdaResnet import LambdaResnet
+from toolbox.models.ResAttentionNet import ResAttentionNet
+
 
 def get_model(cfg):
 
@@ -21,6 +28,12 @@ def get_model(cfg):
         'deeplabv3': DeepLabv3_plus,
         'gcn': GCN,
         'exfuse': GCNFuse,
-        'dfn': DFN
+        'dfn': DFN,
+        'myresnet34': MyResnet34,
+        'myresnet50': MyResnet50,
+        'myresnet34WithAttention': MyResnet34WithAttention,
+        'myresnet34WithTripletAttention': MyResnet34WithTripletAttention,
+        'lambdaresnet': LambdaResnet,
+        'resAttentionNet': ResAttentionNet
 
     }[cfg['model_name']](n_classes=cfg['n_classes'])

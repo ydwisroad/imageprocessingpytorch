@@ -1,5 +1,5 @@
 {
-    "model_name": "gcn",
+    "model_name": "myresnet34WithAttention",
     "n_classes": 2,
 
     "dataset": "crackSegmentationSimple",
