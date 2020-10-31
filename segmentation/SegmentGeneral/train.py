@@ -11,6 +11,7 @@ from toolbox.datasets import get_dataset
 from toolbox.log import get_logger
 from toolbox.models import get_model
 from toolbox.loss import get_loss
+from toolbox.loss import get_one_hot
 from toolbox import evalution_segmentaion
 
 
@@ -49,6 +50,9 @@ def run(cfg, logger):
     logger.info(f'Conf | use step_lr_scheduler every {cfg["lr_decay_steps"]} steps decay {cfg["lr_decay_gamma"]}')
     optimizer = torch.optim.Adam(model.parameters(), lr=cfg['lr'], weight_decay=cfg['weight_decay'])
 
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=2)
+    #scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size={cfg["lr_decay_steps"]}, gamma={cfg["lr_decay_gamma"]})
+
     # 损失函数 & 类别权重平衡
     logger.info(f'Conf | use loss function {cfg["loss"]}')
     #criterion = get_loss(cfg, weight=trainset.class_weight).to(cfg['device'])
@@ -71,9 +75,18 @@ def run(cfg, logger):
             # 载入数据
             img_data = sample['image'].to(cfg['device'])
             img_label = sample['label'].to(cfg['device'])
+
+            img_labelNew = img_label
+            if cfg['loss'] != 'crossentropyloss2D':
+                #print("use more dimensional loss")
+                img_labelNew = get_one_hot(img_label, cfg['n_classes'])
+                img_labelNew = img_labelNew.permute(0, 3 , 1, 2)
+
+            #print("imge label size ", img_labelNew.size())
             # 训练
             out = model(img_data)
-            loss = criterion(out, img_label)
+            #print("imge out pred size ", out.size())
+            loss = criterion(out, img_labelNew)
 
             optimizer.zero_grad()
             loss.backward()
@@ -102,6 +115,7 @@ def run(cfg, logger):
             best.append(train_miou / len(train_loader))
             torch.save(model.state_dict(), os.path.join(cfg['logdir'], 'best_train_miou.pth'))
 
+        #scheduler.step()
         net = model.eval()
         eval_loss = 0
         eval_acc = 0
@@ -112,8 +126,14 @@ def run(cfg, logger):
             valImg = sample['image'].to(cfg['device'])
             valLabel = sample['label'].to(cfg['device'])
 
+            valLabelNew = valLabel
+            if cfg['loss'] != 'crossentropyloss2D':
+                #print("use more dimensional loss")
+                valLabelNew = get_one_hot(valLabel, cfg['n_classes'])
+                valLabelNew = valLabelNew.permute(0, 3 , 1, 2)
+
             out = net(valImg)
-            loss = criterion(out, valLabel)
+            loss = criterion(out, valLabelNew)
             eval_loss = loss.item() + eval_loss
             pre_label = out.max(dim=1)[1].data.cpu().numpy()
             pre_label = [i for i in pre_label]
@@ -130,8 +150,6 @@ def run(cfg, logger):
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Acc={eval_acc / len(val_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Mean IU={eval_miou / len(val_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Class Acc={list(eval_class_acc / len(val_loader))}')
-
-
 
 
 if __name__ == '__main__':
