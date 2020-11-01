@@ -2,7 +2,7 @@
     "model_name": "linknet",
     "n_classes": 2,
 
-    "dataset": "CrackSelected",
+    "dataset": "crackSegmentationSimple",
     "datasetpath": "data",
     "image_h": 448,
     "image_w": 448,
