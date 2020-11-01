@@ -9,7 +9,7 @@
     "augmentation": "True",
     "use_pt_norm": "True",
 
-    "loss": "bceWithLogitsLoss",
+    "loss": "softDiceLoss",
 
     "epoch": 60,
 

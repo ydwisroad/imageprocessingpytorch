@@ -1,5 +1,5 @@
 {
-    "model_name": "unet",
+    "model_name": "deeplabv3",
     "n_classes": 2,
 
     "dataset": "Crack_Segmentation_Dataset",
@@ -19,7 +19,7 @@
     "weight_decay": 1e-3,
 
     "batch_size": 4,
-    "num_workers": 1,
+    "num_workers": 4,
 
     "gpu_ids": "0"
 }

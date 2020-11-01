@@ -1,5 +1,5 @@
 {
-    "model_name": "unet",
+    "model_name": "fusionnet",
     "n_classes": 2,
 
     "dataset": "Crack_Segmentation_Dataset",
@@ -11,7 +11,7 @@
 
     "loss": "crossentropyloss2D",
 
-    "epoch": 60,
+    "epoch": 120,
 
     "lr": 1e-4,
     "lr_decay_steps": 40,

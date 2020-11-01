@@ -1,5 +1,5 @@
 {
-    "model_name": "unet",
+    "model_name": "resAttentionNet",
     "n_classes": 2,
 
     "dataset": "Crack_Segmentation_Dataset",
@@ -9,7 +9,7 @@
     "augmentation": "True",
     "use_pt_norm": "True",
 
-    "loss": "crossentropyloss2D",
+    "loss": "bceWithLogitsLoss",
 
     "epoch": 60,
 
@@ -19,7 +19,7 @@
     "weight_decay": 1e-3,
 
     "batch_size": 4,
-    "num_workers": 1,
+    "num_workers": 4,
 
     "gpu_ids": "0"
 }
