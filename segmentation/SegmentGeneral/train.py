@@ -79,8 +79,8 @@ def run(cfg, logger):
             img_labelNew = img_label
             if cfg['loss'] != 'crossentropyloss2D':
                 #print("use more dimensional loss")
-                img_labelNew = get_one_hot(img_label, cfg['n_classes'])
-                img_labelNew = img_labelNew.permute(0, 3 , 1, 2)
+                img_labelNew = get_one_hot(sample['label'], cfg['n_classes'])
+                img_labelNew = img_labelNew.permute(0, 3 , 1, 2).to(cfg['device'])
 
             #print("imge label size ", img_labelNew.size())
             # 训练
@@ -129,8 +129,8 @@ def run(cfg, logger):
             valLabelNew = valLabel
             if cfg['loss'] != 'crossentropyloss2D':
                 #print("use more dimensional loss")
-                valLabelNew = get_one_hot(valLabel, cfg['n_classes'])
-                valLabelNew = valLabelNew.permute(0, 3 , 1, 2)
+                valLabelNew = get_one_hot(sample['label'], cfg['n_classes'])
+                valLabelNew = valLabelNew.permute(0, 3 , 1, 2).to(cfg['device'])
 
             out = net(valImg)
             loss = criterion(out, valLabelNew)
