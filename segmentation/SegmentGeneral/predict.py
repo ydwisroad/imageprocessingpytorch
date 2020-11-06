@@ -26,13 +26,17 @@ def predict(cfg, runid, use_pth='best_train_miou.pth'):
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
     # 测试集
-    trainset, valset, testset = get_dataset(cfg)
+    trainset, valset = get_dataset(cfg)
+    #temporarily use valset as testset
+    testset = valset
 
     test_loader = DataLoader(testset, batch_size=1, shuffle=False, num_workers=cfg['num_workers'])
 
     # model
     model = get_model(cfg).to(device)
-    model.load_state_dict(torch.load(os.path.join(train_logdir, use_pth)))
+    modelPath = os.path.join(train_logdir, use_pth)
+    print("model Path ", modelPath)
+    model.load_state_dict(torch.load(modelPath))
 
     pd_label_color = pd.read_csv(trainset.file_path[2], sep=',')
     name_value = pd_label_color['name'].values
@@ -81,7 +85,7 @@ def predict(cfg, runid, use_pth='best_train_miou.pth'):
     logger.info(f'Test | Test Acc={test_acc / (len(test_loader)):.5f}')
     logger.info(f'Test | Test Mpa={test_mpa / (len(test_loader)):.5f}')
     logger.info(f'Test | Test Mean IU={test_miou / (len(test_loader)):.5f}')
-    logger.info(f'Test | Test_class_acc={list(test_class_acc / (len(test_loader)))}')
+    #logger.info(f'Test | Test_class_acc={list(test_class_acc / (len(test_loader)))}')
 
 
 if __name__ == '__main__':
@@ -102,6 +106,6 @@ if __name__ == '__main__':
     with open(args.config, 'r') as fp:
         cfg = json.load(fp)
 
-    args.id = '2020-07-15-10-59-5294'
+    #args.id = '2020-11-02-15-14-4953'
 
     predict(cfg, args.id)
