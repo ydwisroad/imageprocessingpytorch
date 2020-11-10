@@ -70,6 +70,9 @@ def run(cfg, logger):
         train_acc = 0
         train_miou = 0
         train_class_acc = 0
+        train_p = 0
+        train_r = 0
+        train_f1 = 0
 
         for i, sample in enumerate(train_loader):
             # 载入数据
@@ -105,11 +108,17 @@ def run(cfg, logger):
             train_acc += eval_metrix['mean_class_accuracy']
             train_miou += eval_metrix['miou']
             train_class_acc += eval_metrix['class_accuracy']
+            train_p += eval_metrix['p']
+            train_r += eval_metrix['r']
+            train_f1 += eval_metrix['f1']
 
         logger.info(f'Iter | [{ep + 1:3d}/{cfg["epoch"]}] train loss={train_loss / len(train_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train Acc={train_acc / len(train_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train Mean IU={train_miou / len(train_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train_class_acc={list(train_class_acc / len(train_loader))}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train precision={train_p / len(train_loader):.5f}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train_recall={train_r / len(train_loader):.5f}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Train_f1={train_f1 / len(train_loader):.5f}')
 
         if max(best) <= train_miou / len(train_loader):
             best.append(train_miou / len(train_loader))
@@ -121,6 +130,9 @@ def run(cfg, logger):
         eval_acc = 0
         eval_miou = 0
         eval_class_acc = 0
+        eval_p = 0
+        eval_r = 0
+        eval_f1 = 0
 
         for j, sample in enumerate(val_loader):
             valImg = sample['image'].to(cfg['device'])
@@ -145,11 +157,17 @@ def run(cfg, logger):
             eval_acc = eval_metrics['mean_class_accuracy'] + eval_acc
             eval_miou = eval_metrics['miou'] + eval_miou
             eval_class_acc = eval_metrix['class_accuracy'] + eval_class_acc
+            eval_p += eval_metrix['p']
+            eval_r += eval_metrix['r']
+            eval_f1 += eval_metrix['f1']
 
         logger.info(f'Iter | [{ep + 1:3d}/{cfg["epoch"]}] valid loss={eval_loss / len(val_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Acc={eval_acc / len(val_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Mean IU={eval_miou / len(val_loader):.5f}')
         logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid Class Acc={list(eval_class_acc / len(val_loader))}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid precision={eval_p / len(val_loader):.5f}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid recall={eval_r / len(val_loader):.5f}')
+        logger.info(f'Test | [{ep + 1:3d}/{cfg["epoch"]}] Valid f1={eval_f1 / len(val_loader):.5f}')
 
 
 if __name__ == '__main__':
