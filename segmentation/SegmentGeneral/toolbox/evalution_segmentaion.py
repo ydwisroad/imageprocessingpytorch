@@ -100,6 +100,45 @@ def calc_semantic_segmentation_iou(confusion):
     return iou
     # return iou
 
+def getLabel2idx(labels):
+    '''
+    获取所有类标
+    返回值：label2idx字典，key表示类名称，value表示编号0,1,2...
+    '''
+    label2idx = {0:0, 1:1}
+    #print("labels ", labels)
+    #for i in np.array(labels):
+    #    if not (i in label2idx.items()):
+    #        label2idx[i] = i  #len(label2idx)
+    #    print(label2idx)
+    return label2idx
+
+def calculate_label_prediction(confMatrix,labelidx):
+    '''
+    计算某一个类标预测精度：该类被预测正确的数除以该类的总数
+    '''
+    label_total_sum = confMatrix.sum(axis=0)[labelidx]
+    label_correct_sum = confMatrix[labelidx][labelidx]
+    prediction = 0
+    if label_total_sum != 0:
+        prediction = round(100*float(label_correct_sum)/float(label_total_sum),2)
+    return prediction
+
+def calculate_label_recall(confMatrix,labelidx):
+    '''
+    计算某一个类标的召回率：
+    '''
+    label_total_sum = confMatrix.sum(axis=1)[labelidx]
+    label_correct_sum = confMatrix[labelidx][labelidx]
+    recall = 0
+    if label_total_sum != 0:
+        recall = round(100*float(label_correct_sum)/float(label_total_sum),2)
+    return recall
+
+def calculate_f1(prediction,recall):
+    if (prediction+recall)==0:
+        return 0
+    return round(2*prediction*recall/(prediction+recall),2)
 
 def eval_semantic_segmentation(pred_labels, gt_labels, cfg):
     """Evaluate metrics used in Semantic Segmentation.
@@ -175,6 +214,25 @@ def eval_semantic_segmentation(pred_labels, gt_labels, cfg):
 
     confusion = calc_semantic_segmentation_confusion(
         pred_labels, gt_labels, cfg)
+
+    label2idx = getLabel2idx(gt_labels)
+    #print("confusion ", confusion)
+    #print("label2idx ", label2idx)
+    epsilon = 1e-7
+
+    label_prediction = []
+    label_recall = []
+
+    for i in label2idx:
+        label_prediction.append(calculate_label_prediction(confusion,label2idx[i]))
+        label_recall.append(calculate_label_recall(confusion,label2idx[i]))
+
+    p = round(np.array(label_prediction).sum()/len(label_prediction),2)
+    r = round(np.array(label_recall).sum()/len(label_prediction),2)
+    f1 = calculate_f1(p,r)
+    #print("precision ", p)
+    #print("recall ", r)
+    #print("f1 ", f1)
     iou = calc_semantic_segmentation_iou(confusion)     # (1２, )
     pixel_accuracy = np.diag(confusion).sum() / confusion.sum()
     class_accuracy = np.diag(confusion) / (np.sum(confusion, axis=1) + 1e-10)  # (1２, )
@@ -182,4 +240,7 @@ def eval_semantic_segmentation(pred_labels, gt_labels, cfg):
     return {'iou': iou, 'miou': np.nanmean(iou),
             'pixel_accuracy': pixel_accuracy,
             'class_accuracy': class_accuracy,
+            'p': p,
+            'r': r,
+            'f1': f1,
             'mean_class_accuracy': np.nanmean(class_accuracy)}
