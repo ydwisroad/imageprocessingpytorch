@@ -2,7 +2,7 @@ from __future__ import division
 
 import numpy as np
 import six
-
+import torch as torch
 
 def calc_semantic_segmentation_confusion(pred_labels, gt_labels, cfg):
     """Collect a confusion matrix.
@@ -100,17 +100,25 @@ def calc_semantic_segmentation_iou(confusion):
     return iou
     # return iou
 
+#https://blog.csdn.net/qq_36426650/article/details/88073089
 def getLabel2idx(labels):
     '''
     获取所有类标
     返回值：label2idx字典，key表示类名称，value表示编号0,1,2...
     '''
-    label2idx = {0:0, 1:1}
+    labels = iter(labels)
+    totalLabels = []
+    for gt_label in labels:
+        gt_label = gt_label.flatten()
+        totalLabels.append(gt_label)
+    finallabels = np.array(totalLabels).flatten()
+
+    label2idx = dict()  #{0:0, 1:1}
     #print("labels ", labels)
-    #for i in np.array(labels):
-    #    if not (i in label2idx.items()):
-    #        label2idx[i] = i  #len(label2idx)
-    #    print(label2idx)
+    for i in finallabels:
+        if not (i in label2idx.items()):
+            label2idx[i] = i  #len(label2idx)
+    #print(label2idx)
     return label2idx
 
 def calculate_label_prediction(confMatrix,labelidx):
@@ -215,11 +223,9 @@ def eval_semantic_segmentation(pred_labels, gt_labels, cfg):
     confusion = calc_semantic_segmentation_confusion(
         pred_labels, gt_labels, cfg)
 
+    #gt_labelsArray = torch.numpy(gt_labels)
+    #print(gt_labelsArray)
     label2idx = getLabel2idx(gt_labels)
-    #print("confusion ", confusion)
-    #print("label2idx ", label2idx)
-    epsilon = 1e-7
-
     label_prediction = []
     label_recall = []
 
@@ -230,9 +236,6 @@ def eval_semantic_segmentation(pred_labels, gt_labels, cfg):
     p = round(np.array(label_prediction).sum()/len(label_prediction),2)
     r = round(np.array(label_recall).sum()/len(label_prediction),2)
     f1 = calculate_f1(p,r)
-    #print("precision ", p)
-    #print("recall ", r)
-    #print("f1 ", f1)
     iou = calc_semantic_segmentation_iou(confusion)     # (1２, )
     pixel_accuracy = np.diag(confusion).sum() / confusion.sum()
     class_accuracy = np.diag(confusion) / (np.sum(confusion, axis=1) + 1e-10)  # (1２, )
