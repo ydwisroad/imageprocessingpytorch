@@ -2,7 +2,7 @@
     "model_name": "fcn",
     "n_classes": 2,
 
-    "dataset": "YdCrackDataset/full",
+    "dataset": "ydCrackSimple",
     "datasetpath": "data",
     "image_h": 448,
     "image_w": 448,
@@ -11,7 +11,7 @@
 
     "loss": "crossentropyloss2D",
 
-    "epoch": 120,
+    "epoch": 20,
 
     "lr": 1e-4,
     "lr_decay_steps": 40,

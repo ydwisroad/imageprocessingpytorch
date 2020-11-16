@@ -2,7 +2,7 @@
     "model_name": "myresnet34WithAttention",
     "n_classes": 2,
 
-    "dataset": "crackSegmentationSimple",
+    "dataset": "CrackSelected",
     "datasetpath": "data",
     "image_h": 448,
     "image_w": 448,

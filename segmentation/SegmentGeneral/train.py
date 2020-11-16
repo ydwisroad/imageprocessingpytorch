@@ -76,6 +76,7 @@ def run(cfg, logger):
 
         for i, sample in enumerate(train_loader):
             # 载入数据
+            #print("i " , i)
             img_data = sample['image'].to(cfg['device'])
             img_label = sample['label'].to(cfg['device'])
 

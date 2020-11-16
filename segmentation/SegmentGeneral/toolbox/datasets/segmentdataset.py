@@ -66,14 +66,16 @@ class SegmentDataset(Dataset):
         # 从文件名中读取数据（图片和标签都是png格式的图像数据）
         img = Image.open(img)
         img = img.convert('RGB')
-        #print("Get item img to RGB size ", img)
-
-        #print("label:" + label)
         labelImg = Image.open(label)
         label = labelImg.convert('RGB')
-        #print("Get item label to RGB size ", label)
 
-        img, label = self.center_crop(img, label, self.crop_size)
+        minSize = min(min(img.size[0], img.size[1]), min(label.size[0],label.size[1]))
+
+        img, label = self.center_crop(img, label, [minSize, minSize])
+        img, label = self.img_resize(img, label, self.crop_size)
+
+        #img.save("img" + str(index) + ".png")
+        #label.save("label" + str(index) + ".png")
 
         img, label = self.img_transform(img, label)
         # print('处理后的图片和标签大小：',img.shape, label.shape)
@@ -91,6 +93,11 @@ class SegmentDataset(Dataset):
         file_path_list = [os.path.join(path, img) for img in files_list]
         file_path_list.sort()
         return file_path_list
+
+    def img_resize(self, data, label, resize_size):
+        data = ff.resize(data, resize_size, interpolation=2)
+        label = ff.resize(label, resize_size, interpolation=2)
+        return data, label
 
     def center_crop(self, data, label, crop_size):
         """裁剪输入的图片和标签大小"""
