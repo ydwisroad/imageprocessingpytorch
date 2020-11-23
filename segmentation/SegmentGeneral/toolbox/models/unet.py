@@ -76,20 +76,32 @@ class unet(nn.Module):
 
     def forward(self, x):
         x1 = self.pre_conv(x)
+        print("x1 size " , x1.size())
         x2 = self.down1(x1)
+        print("x2 size ", x2.size())
+
         x3 = self.down2(x2)
+        print("x3 size ", x3.size())
         x4 = self.down3(x3)
+        print("x4 size ", x4.size())
         x5 = self.down4(x4)
+        print("x5 size ", x5.size())
+
         x = self.up1(x5, x4)
+        print("x size up1 ", x.size())
         x = self.up2(x, x3)
+        print("x size up2 ", x.size())
+
         x = self.up3(x, x2)
+        print("x size up3 ", x.size())
         x = self.up4(x, x1)
+        print("x size up4 ", x.size())
         x = self.end_conv(x)
+        print("x size env_cond ", x.size())
         return x
 
-
 if __name__ == '__main__':
-    inputs = torch.randn((4, 3, 360, 480)).cuda()
-    model = unet(n_classes=12).cuda()
+    inputs = torch.randn((4, 3, 572, 572))
+    model = unet(n_classes=12)
     out = model(inputs)
     print(out.size())

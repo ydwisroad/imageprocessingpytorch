@@ -247,6 +247,7 @@ class ASPP_module(nn.Module):
         x2 = self.aspp2(x)
         x3 = self.aspp3(x)
         x4 = self.aspp4(x)
+        print("ASPP_module x size ", x.size())
         x5 = self.global_avg_pool(x)
         x5 = F.interpolate(x5, size=x4.size()[2:], mode='bilinear', align_corners=True)
 
@@ -296,7 +297,9 @@ class DeepLabv3_plus(nn.Module):
                                        nn.Conv2d(256, n_classes, kernel_size=1, stride=1))
 
     def forward(self, input):
+        print("DeepLabv3_plus input size " , input.size())
         x, low_level_features = self.xception_features(input)
+        print("DeepLabv3_plus x size after xception_features: " , x.size())
         x = self.ASPP(x)
         x = self.conv1(x)
         x = self.bn1(x)
