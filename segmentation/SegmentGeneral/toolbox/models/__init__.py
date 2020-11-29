@@ -37,3 +37,24 @@ def get_model(cfg):
         'resAttentionNet': ResAttentionNet
 
     }[cfg['model_name']](n_classes=cfg['n_classes'])
+
+def get_modelMoreParams(model_name, n_classes):
+    return {
+        'unet': unet,
+        'segnet': segnet,
+        'linknet': linknet,
+        'enet': ENet,
+        'fcn': FCN,
+        'fusionnet': Fusionnet,
+        'deeplabv3': DeepLabv3_plus,
+        'gcn': GCN,
+        'exfuse': GCNFuse,
+        'dfn': DFN,
+        'myresnet34': MyResnet34,
+        'myresnet50': MyResnet50,
+        'myresnet34WithAttention': MyResnet34WithAttention,
+        'myresnet34WithTripletAttention': MyResnet34WithTripletAttention,
+        'lambdaresnet': LambdaResnet,
+        'resAttentionNet': ResAttentionNet
+
+    }[model_name](n_classes=n_classes)
