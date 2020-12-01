@@ -57,6 +57,7 @@ def predict(cfg, runid, use_pth='best_train_miou.pth'):
     for i, sample in enumerate(test_loader):
         valImg = sample['image'].to(device)
         valLabel = sample['label'].long().to(device)
+        print("valImg", valImg)
         out = model(valImg)
         out = F.log_softmax(out, dim=1)
 

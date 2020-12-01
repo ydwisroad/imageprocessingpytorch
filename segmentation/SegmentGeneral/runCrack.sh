@@ -29,4 +29,4 @@ python train.py --config=configsNew/crack_deeplabv3_crossentr.json
 python train.py --config=configsNew/crack_deeplabv3_bce.json
 python train.py --config=configsNew/crack_deeplabv3_dice.json
 
-#python predict.py --config=configs/crackselected_linknet.json -id=2020-11-02-15-14-4953
+#python predict.py --config=configs/cracksimple_fcn.json -id=2020-11-15-10-18-7387
