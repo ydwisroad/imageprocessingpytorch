@@ -45,12 +45,14 @@ def transparence2white(img):
 def convertAllFilesInFolder(inFolder, outFolder):
     for eachFile in os.listdir(inFolder):
         if(eachFile.find('.png')!=-1):
-            img = cv2.imread(inFolder + eachFile, -1)
+            filePath = inFolder + eachFile
+            print("filePath", filePath)
+            img = cv2.imread(filePath, -1)
             img = transparence2white(img)
             cv2.imwrite(outFolder + '/' + eachFile, img)
             print(eachFile)
 
-convertAllFilesInFolder('../../data/ydCrackSimple/val_labels/', '../../data/ydCrackSimple/vallb')
+convertAllFilesInFolder('F:/segmentRunResults/Final/CrackSilver/gthmanual/SegmentationClassPNG/', 'F:/segmentRunResults/Final/CrackSilver/gthmanual/gth')
 
 #img = cv2.imread('../../data/ydCrackSimple/test/504.png', -1)
 #img = transparence2white(img)
