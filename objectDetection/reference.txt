@@ -19,6 +19,11 @@ command line: labelme
 
 conda-env list
 
+git rm folder -r -f
+git add *
+git commit -m "test"
+git push
+
 
 2、conda常用的命令。
 
