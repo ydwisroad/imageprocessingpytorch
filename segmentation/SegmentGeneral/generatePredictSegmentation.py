@@ -70,5 +70,5 @@ if __name__ == '__main__':
 
     generatePredictSegmentation(args.modelName, args.modelPath, args.csvPath, args.inputPath, args.outputPath)
 
-    #python generatePredictSegmentation.py - modelPath = F:\segmentRunResults\Final\yantaiDataset\enet - BCE\best_train_miou.pth - inputPath = F:\segmentRunResults\Final\yantaiDataset\test - outputPath = F:\segmentRunResults\Final\yantaiDataset\output - modelName = enet - csvPath = F:\segmentRunResults\Final\yantaiDataset\class_dict.csv
+    #python generatePredictSegmentation.py - modelPath = F:\segmentRunResults\Final\yantaiDataset\enet - BCE\best_train_miou.pth -inputPath = F:\segmentRunResults\Final\yantaiDataset\test - outputPath = F:\segmentRunResults\Final\yantaiDataset\output - modelName = enet - csvPath = F:\segmentRunResults\Final\yantaiDataset\class_dict.csv
 
