@@ -1,0 +1,4 @@
+classes=221
+train=datatrafficsign/traintraffic.txt
+valid=datatrafficsign/valtraffic.txt
+names=datatrafficsign/trafficlabel.names
