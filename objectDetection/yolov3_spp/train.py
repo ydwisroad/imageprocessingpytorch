@@ -1,8 +1,7 @@
 import argparse
 
 import yaml
-import torch.optim as optim
-import torch.optim.lr_scheduler as lr_scheduler
+import torch.optim as optiimport torch.optim.lr_scheduler as lr_scheduler
 from torch.utils.tensorboard import SummaryWriter
 
 from models import *
@@ -22,7 +21,7 @@ def train(hyp):
 
     cfg = opt.cfg
     data = opt.data
-    epochs = 3   #opt.epochs
+    epochs = opt.epochs
     batch_size = opt.batch_size
     accumulate = max(round(64 / batch_size), 1)  # accumulate n times before optimizer update (bs 64)
     weights = opt.weights  # initial training weights
