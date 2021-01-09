@@ -382,6 +382,8 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
         x = self.labels[index]
         if x.size > 0:
             labels = x.copy()  # label: class, x, y, w, h
+        else:
+            labels = np.ndarray(labels)
         return torch.from_numpy(labels), o_shapes
 
     @staticmethod

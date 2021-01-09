@@ -23,26 +23,27 @@ def convert_to_coco_api(ds):
         img_dict['width'] = shapes[1]
         dataset['images'].append(img_dict)
 
-        for obj in targets:
-            ann = {}
-            ann["image_id"] = img_idx
-            # 将相对坐标转为绝对坐标
-            # box (x, y, w, h)
-            boxes = obj[1:]
-            # (x, y, w, h) to (xmin, ymin, w, h)
-            boxes[:2] -= 0.5*boxes[2:]
-            boxes[[0, 2]] *= img_dict["width"]
-            boxes[[1, 3]] *= img_dict["height"]
-            boxes = boxes.tolist()
+        if ( not targets.size()==torch.Size([])):
+            for obj in targets:
+                ann = {}
+                ann["image_id"] = img_idx
+                # 将相对坐标转为绝对坐标
+                # box (x, y, w, h)
+                boxes = obj[1:]
+                # (x, y, w, h) to (xmin, ymin, w, h)
+                boxes[:2] -= 0.5*boxes[2:]
+                boxes[[0, 2]] *= img_dict["width"]
+                boxes[[1, 3]] *= img_dict["height"]
+                boxes = boxes.tolist()
 
-            ann["bbox"] = boxes
-            ann["category_id"] = int(obj[0])
-            categories.add(int(obj[0]))
-            ann["area"] = boxes[2] * boxes[3]
-            ann["iscrowd"] = 0
-            ann["id"] = ann_id
-            dataset["annotations"].append(ann)
-            ann_id += 1
+                ann["bbox"] = boxes
+                ann["category_id"] = int(obj[0])
+                categories.add(int(obj[0]))
+                ann["area"] = boxes[2] * boxes[3]
+                ann["iscrowd"] = 0
+                ann["id"] = ann_id
+                dataset["annotations"].append(ann)
+                ann_id += 1
 
     dataset['categories'] = [{'id': i} for i in sorted(categories)]
     coco_ds.dataset = dataset

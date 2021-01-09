@@ -1,0 +1,11 @@
+../../../data/trafficMini/yolo/train/images/62.jpg
+../../../data/trafficMini/yolo/train/images/60.jpg
+../../../data/trafficMini/yolo/train/images/73.jpg
+../../../data/trafficMini/yolo/train/images/13.jpg
+../../../data/trafficMini/yolo/train/images/39.jpg
+../../../data/trafficMini/yolo/train/images/35.jpg
+../../../data/trafficMini/yolo/train/images/36.jpg
+../../../data/trafficMini/yolo/train/images/23.jpg
+../../../data/trafficMini/yolo/train/images/56.jpg
+../../../data/trafficMini/yolo/train/images/43.jpg
+../../../data/trafficMini/yolo/train/images/2.jpg

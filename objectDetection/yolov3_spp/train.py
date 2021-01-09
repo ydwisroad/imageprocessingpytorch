@@ -22,7 +22,7 @@ def train(hyp):
 
     cfg = opt.cfg
     data = opt.data
-    epochs = opt.epochs
+    epochs = 3   #opt.epochs
     batch_size = opt.batch_size
     accumulate = max(round(64 / batch_size), 1)  # accumulate n times before optimizer update (bs 64)
     weights = opt.weights  # initial training weights
@@ -238,7 +238,7 @@ def train(hyp):
                         'training_results': f.read(),
                         'epoch': epoch,
                         'best_map': best_map}
-                    torch.save(save_files, "./weights/yolov3spp-{}.pt".format(epoch))
+                    torch.save(save_files, "../../../data/weightspp/yolov3spp-{}.pt".format(epoch))
             else:
                 # only save best weights
                 if best_map == coco_mAP:
@@ -254,10 +254,10 @@ def train(hyp):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--epochs', type=int, default=5)
+    parser.add_argument('--epochs', type=int, default=60)
     parser.add_argument('--batch-size', type=int, default=4)
     parser.add_argument('--cfg', type=str, default='cfg/my_yolov3.cfg', help="*.cfg path")
-    parser.add_argument('--data', type=str, default='data/my_data.data', help='*.data path')
+    parser.add_argument('--data', type=str, default='data/my_data_mini.data', help='*.data path')
     parser.add_argument('--hyp', type=str, default='cfg/hyp.yaml', help='hyperparameters path')
     parser.add_argument('--multi-scale', type=bool, default=True,
                         help='adjust (67%% - 150%%) img_size every 10 batches')

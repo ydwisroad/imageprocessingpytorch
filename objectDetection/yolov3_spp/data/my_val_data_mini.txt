@@ -1,0 +1,10 @@
+../../../data/trafficMini/yolo/val/images/80045.jpg
+../../../data/trafficMini/yolo/val/images/80022.jpg
+../../../data/trafficMini/yolo/val/images/80020.jpg
+../../../data/trafficMini/yolo/val/images/80009.jpg
+../../../data/trafficMini/yolo/val/images/80026.jpg
+../../../data/trafficMini/yolo/val/images/80003.jpg
+../../../data/trafficMini/yolo/val/images/80014.jpg
+../../../data/trafficMini/yolo/val/images/80076.jpg
+../../../data/trafficMini/yolo/val/images/80058.jpg
+../../../data/trafficMini/yolo/val/images/80064.jpg
