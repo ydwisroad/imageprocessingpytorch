@@ -19,6 +19,9 @@ from train_utils.coco_utils import get_coco_api_from_dataset
 def main(opt, hyp):
     # 初始化各进程
     init_distributed_mode(opt)
+    
+    opt.rank=-1
+    opt.gpu= -1
 
     if opt.rank in [-1, 0]:
         print(opt)

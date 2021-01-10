@@ -1,0 +1,4 @@
+nvidia-smi
+fuser -v /dev/nvidia*      #check process is using GPU
+kill -9 xxxx
+
