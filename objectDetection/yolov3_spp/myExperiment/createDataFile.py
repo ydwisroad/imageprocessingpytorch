@@ -4,19 +4,19 @@ import json
 import shutil
 import cv2
 
-root_path = "../../../data/TrafficSign/"
+root_path = "../../../../data/TSRD/"
 
-save_file_root = "../../../data/TrafficSign/"
+save_file_root = "../../../../data/TSRD/"
 
-line_path = "../../../data/TrafficSign/"
+line_path = "../../../data/TSRD/"
 
 def writeDataFile():
 
-    list_file = open(os.path.join(save_file_root, 'valtraffic.data'), 'w')
+    list_file = open(os.path.join(save_file_root, 'trainTSRD.data'), 'w')
 
-    trainPath = os.path.join(root_path, 'val/images/')
+    trainPath = os.path.join(root_path, 'train/images/')
     for eachFile in os.listdir(trainPath):
-        line = os.path.join(line_path, 'val/images/') + eachFile
+        line = os.path.join(root_path, 'train/images/') + eachFile
         print(line)
         list_file.write(line)
         list_file.write("\n")
