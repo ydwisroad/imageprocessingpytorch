@@ -11,3 +11,8 @@ tensorboard==2.1.0
 PyYAML==5.3.1
 pycocotools==2.0.0
 tqdm==4.42.1
+<<<<<<< HEAD
+=======
+Cython
+fasttext
+>>>>>>> 6c9a6b567042dbc83f38eca25d1d6626eb2d5080

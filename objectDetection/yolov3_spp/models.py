@@ -26,14 +26,18 @@ def create_modules(modules_defs, img_size):
     yolo_index = -1
 
     # 遍历搭建每个层结构
+    countConv = 0
     for i, mdef in enumerate(modules_defs):
         modules = nn.Sequential()
 
         if mdef["type"] == "convolutional":
+            countConv = countConv + 1
             bn = mdef["batch_normalize"]  # 1 or 0 / use or not
             filters = mdef["filters"]
             k = mdef["size"]  # kernel size
             stride = mdef["stride"] if "stride" in mdef else (mdef['stride_y'], mdef["stride_x"])
+
+            #print("filters ", filters, " kernel ", k , " stride ", stride)
             if isinstance(k, int):
                 modules.add_module("Conv2d", nn.Conv2d(in_channels=output_filters[-1],
                                                        out_channels=filters,
