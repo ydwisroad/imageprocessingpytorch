@@ -78,12 +78,13 @@ def train(hyp):
     else:
         # 如果freeze_layer为False，默认仅训练除darknet53之后的部分
         # 若要训练全部权重，删除以下代码
-        darknet_end_layer = 74  # only yolov3spp cfg
+        print("train all weights, Freeze nothing")
+        #darknet_end_layer = 74  # only yolov3spp cfg
         # Freeze darknet53 layers
         # 总共训练21x3+3x2=69个parameters
-        for idx in range(darknet_end_layer + 1):  # [0, 74]
-            for parameter in model.module_list[idx].parameters():
-                parameter.requires_grad_(False)
+        #for idx in range(darknet_end_layer + 1):  # [0, 74]
+        #    for parameter in model.module_list[idx].parameters():
+        #        parameter.requires_grad_(False)
 
     # optimizer
     pg = [p for p in model.parameters() if p.requires_grad]
