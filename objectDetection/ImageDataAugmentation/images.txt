@@ -1,0 +1,9 @@
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/7_947_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/8_2422_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/5_5566_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/55_5493_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/5_5566_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/55_5762_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/55_61_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/5_5566_0.png
+/Users/i052090/Downloads/segmentation/data/TSRD/objects/54_5180_0.png
