@@ -2,3 +2,8 @@ nvidia-smi
 fuser -v /dev/nvidia*      #check process is using GPU
 kill -9 xxxx
 
+
+tar czvf full.tar.gz full
+split -b 3000m full.tar.gz
+cat xa*>alltars.tar.gz
+tar -xvf alltars.tar.gz
