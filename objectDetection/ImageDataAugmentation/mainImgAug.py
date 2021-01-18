@@ -25,8 +25,9 @@ if __name__ == "__main__":
     #generateAugmentedObjects("/Users/i052090/Downloads/segmentation/data/TSRD/objects",
     #                         "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/smallObjects")
     copySmallObjectsToOneBlankImage("/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/trafficsign.png",
-                                    "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/allSmallObjects",
-                                    "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/togetherimages", 9, 30000)
+                                    "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/select20smallobjects",
+                                    "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/images",
+                                    9, 15000)
 
 
 

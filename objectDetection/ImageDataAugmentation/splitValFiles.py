@@ -15,7 +15,7 @@ def copyToValFolder(allFilesPath, valFilesPath):
             imgFullPath =  imgFileName
             labelFullPath =  imgFileName.replace("png","txt")
 
-            shutil.copy(imgFullPath, valFilesPath + "/images")
+            .copy(shutilimgFullPath, valFilesPath + "/images")
             shutil.copy(labelFullPath, valFilesPath + "/labels")
 
         iCount = iCount + 1
