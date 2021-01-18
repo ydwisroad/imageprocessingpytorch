@@ -205,3 +205,56 @@ def copysmallobjects2(image_dir, label_dir, save_base_dir, small_img_dir,
              basename(image_dir).replace('.png', '_all_%s.png' % str(iCount))),
         image)
     convert_all_boxes(image.shape, all_boxes, yolo_txt_dir)
+
+
+def draw_rectForObj(im, cords, color=None):
+    """Draw the rectangle on the image
+    Parameters
+    ----------
+    im : numpy.ndarray
+        numpy image
+
+    cords: numpy.ndarray
+        Numpy array containing bounding boxes of shape `N X 4` where N is the
+        number of bounding boxes and the bounding boxes are represented in the
+        format `x1 y1 x2 y2`
+    Returns
+    -------
+    numpy.ndarray
+        numpy image with bounding boxes drawn on it
+
+    """
+    im = im.copy()
+
+    cords = cords[:, :4]
+    cords = cords.reshape(-1, 4)
+    if not color:
+        color = [255, 255, 255]
+    for cord in cords:
+        pt1, pt2 = (cord[0], cord[1]), (cord[2], cord[3])
+
+        pt1 = int(pt1[0]), int(pt1[1])
+        pt2 = int(pt2[0]), int(pt2[1])
+
+        im = cv2.rectangle(im.copy(), pt1, pt2, color, int(max(im.shape[:2]) / 200))
+    return im
+
+def addObjRectToImages(rootPath, outputImagesPath):
+    print("start to addObjRectToImages")
+    allImgFiles = os.listdir(rootPath + "/images/")
+    allImgFiles.sort()
+    for eachImgFile in allImgFiles:
+        count = count + 1
+        if (count % 10 == 0):
+            fullImgPath = rootPath + '/images/' + eachImgFile
+            fileParts = eachImgFile.split(".")
+            labelFilePath = root_path +  '/labels/' + fileParts[0] + '.txt'
+
+            img = cv2.imread(fullImgPath)
+
+            #...To be added
+
+
+
+
+
