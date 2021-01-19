@@ -322,17 +322,19 @@ def draw_rectForObj(im, cords, color=None):
     """
     im = im.copy()
 
-    cords = cords[:, :4]
-    cords = cords.reshape(-1, 4)
+    cords = cords[:, :5]
+    cords = cords.reshape(-1, 5)
     if not color:
         color = [255, 255, 255]
     #print("got cords ", cords)
+    font = cv2.FONT_HERSHEY_SIMPLEX
     for cord in cords:
         pt1, pt2 = (cord[0], cord[1]), (cord[2], cord[3])
-
-        pt1 = int(pt1[0]), int(pt1[1])
-        pt2 = int(pt2[0]), int(pt2[1])
+        indexNum = cord[4]
+        pt1 = int(float(pt1[0])), int(float(pt1[1]))
+        pt2 = int(float(pt2[0])), int(float(pt2[1]))
         #print("pt1 pt2 ", pt1, " ", pt2)
+        im = cv2.putText(im.copy(), str(indexNum), pt1,font, 1.2, (255, 255, 255), 2)
         im = cv2.rectangle(im.copy(), pt1, pt2, color)
     return im
 
@@ -358,7 +360,7 @@ def addObjRectToImages(rootPath, outputImagesPath):
                 parts = line.split(" ")
                 x1, y1,x2,y2 = centerxywhYoloTox1y1x2y2(iw, ih, float(parts[1]),
                                                         float(parts[2]), float(parts[3]),float(parts[4]))
-                eachPos = np.array([[x1, y1, x2, y2]])
+                eachPos = np.array([[x1, y1, x2, y2, parts[0]]])
                 if (bboxes is None):
                     bboxes = eachPos
                 else:
