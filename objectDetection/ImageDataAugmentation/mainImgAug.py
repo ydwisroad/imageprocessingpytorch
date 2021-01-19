@@ -29,8 +29,7 @@ if __name__ == "__main__":
     #                                "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/images",
     #                                9, 15000)
 
-    addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/images/",
-                       "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/labels",
+    addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
                        "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")
 
 

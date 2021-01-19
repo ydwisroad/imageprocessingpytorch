@@ -303,6 +303,78 @@ def sharpenImage(image):
 
     return modified_image
 
+def draw_rectForObj(im, cords, color=None):
+    """Draw the rectangle on the image
+    Parameters
+    ----------
+    im : numpy.ndarray
+        numpy image
+
+    cords: numpy.ndarray
+        Numpy array containing bounding boxes of shape `N X 4` where N is the
+        number of bounding boxes and the bounding boxes are represented in the
+        format `x1 y1 x2 y2`
+    Returns
+    -------
+    numpy.ndarray
+        numpy image with bounding boxes drawn on it
+
+    """
+    im = im.copy()
+
+    cords = cords[:, :4]
+    cords = cords.reshape(-1, 4)
+    if not color:
+        color = [255, 255, 255]
+    #print("got cords ", cords)
+    for cord in cords:
+        pt1, pt2 = (cord[0], cord[1]), (cord[2], cord[3])
+
+        pt1 = int(pt1[0]), int(pt1[1])
+        pt2 = int(pt2[0]), int(pt2[1])
+        #print("pt1 pt2 ", pt1, " ", pt2)
+        im = cv2.rectangle(im.copy(), pt1, pt2, color)
+    return im
+
+def addObjRectToImages(rootPath, outputImagesPath):
+    print("start to addObjRectToImages")
+    allImgFiles = os.listdir(rootPath + "/images/")
+    allImgFiles.sort()
+
+    for eachImgFile in allImgFiles:
+        if (not eachImgFile.endswith("jpg") and not eachImgFile.endswith("png")):
+            continue
+        fullImgPath = rootPath + '/images/' + eachImgFile
+        fileParts = eachImgFile.split(".")
+        labelFilePath = rootPath +  '/labels/' + fileParts[0] + '.txt'
+        print(" each image path ", fullImgPath)
+        img = cv2.imread(fullImgPath)
+        iw, ih, _ = img.shape
+
+        #...To be added
+        bboxes = None
+        with open(labelFilePath, "r") as labelFile:
+            for line in labelFile:
+                parts = line.split(" ")
+                x1, y1,x2,y2 = centerxywhYoloTox1y1x2y2(iw, ih, float(parts[1]),
+                                                        float(parts[2]), float(parts[3]),float(parts[4]))
+                eachPos = np.array([[x1, y1, x2, y2]])
+                if (bboxes is None):
+                    bboxes = eachPos
+                else:
+                    bboxes = np.concatenate((bboxes, eachPos), axis=0)
+            print(" bboxes ", bboxes)
+        imgRects = draw_rectForObj(img, bboxes)
+
+        outputRectImagePath = outputImagesPath + "/" + eachImgFile
+        cv2.imwrite(outputRectImagePath, imgRects)
+
+
+
+
+
+
+
 
 
 
