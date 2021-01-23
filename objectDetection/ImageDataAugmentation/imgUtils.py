@@ -167,6 +167,27 @@ def copySmallObjectsToOneBlankImage(oneEmptyImage, smallObjectsFolder, saveFolde
         small_imgs = np.random.choice(small_imgs_dir, times)
         copysmallobjects2(oneEmptyImage, None, saveFolder, small_imgs, times, iCount, area_max=40000, area_min=200)
 
+def copySmallObjectsToManyImages(imagesPath, smallObjectsFolder, saveFolder, times):
+    print("start to copy small objects to images", imagesPath, " ", smallObjectsFolder)
+
+    small_imgs_dir = []
+    for eachImageFile in os.listdir(smallObjectsFolder):
+        small_imgs_dir.append(smallObjectsFolder  + "/" + eachImageFile)
+    random.shuffle(small_imgs_dir)
+
+    iCount = 0
+    for eachImageFile in os.listdir(imagesPath):
+        print("process eachImageFile ", eachImageFile)
+        small_imgs = np.random.choice(small_imgs_dir, times)
+
+        copysmallobjects2(imagesPath + "/" + eachImageFile, None, saveFolder, small_imgs, times, iCount, area_max=40000, area_min=200)
+        iCount = iCount + 1
+
+def renamePNGtoNone(imagesPath):
+    for eachImageFile in os.listdir(imagesPath):
+        newFileName = eachImageFile.replace('.png', '')
+        os.rename(imagesPath + "/" + eachImageFile, imagesPath + "/" + newFileName)
+
 
 def generateAugmentedObjects(smallObjectsFolder, outputFolder):
     iCount = 0
@@ -370,6 +391,23 @@ def addObjRectToImages(rootPath, outputImagesPath):
 
         outputRectImagePath = outputImagesPath + "/" + eachImgFile
         cv2.imwrite(outputRectImagePath, imgRects)
+
+def resizeImagesToFixedSize(originalImagesPath, outImagesPath, targetSize = (512, 512)):
+    print("will change to size ", targetSize)
+    iCount = 0
+    for eachSmallImageFile in os.listdir(originalImagesPath):
+        print("process eachSmallImageFile ", eachSmallImageFile)
+        pureFileName = os.path.basename(eachSmallImageFile)
+
+        img = cv2.imread(originalImagesPath + "/" + eachSmallImageFile)
+        imgOutput = cv2.resize(img, targetSize)
+
+        cv2.imwrite(outImagesPath + "/" + pureFileName + ".png", imgOutput)
+
+
+
+
+
 
 
 

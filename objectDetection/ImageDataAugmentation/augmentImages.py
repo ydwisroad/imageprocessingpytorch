@@ -199,10 +199,10 @@ def copysmallobjects2(image_dir, label_dir, save_base_dir, small_img_dir,
     check_dir(save_dir)
     yolo_txt_dir = join(
         save_dir,
-        basename(image_dir.replace('.png', '_all_%s.txt' % str(iCount))))
+        basename(image_dir.replace('.jpg', '_all_%s.txt' % str(iCount))))
     cv2.imwrite(
         join(save_dir,
-             basename(image_dir).replace('.png', '_all_%s.png' % str(iCount))),
+             basename(image_dir).replace('.jpg', '_all_%s.jpg' % str(iCount))),
         image)
     convert_all_boxes(image.shape, all_boxes, yolo_txt_dir)
 

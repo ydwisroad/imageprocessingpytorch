@@ -29,8 +29,16 @@ if __name__ == "__main__":
     #                                "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/images",
     #                                9, 15000)
 
-    addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
-                       "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")
+    #addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
+    #                   "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")
+
+    #resizeImagesToFixedSize("F:/objectsDetectData/NoSignImages","F:/objectsDetectData/NoSignImages512")
+
+    copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/select20smallobjs",
+                                 "F:/objectsDetectData/trafficSignTT/train/images", 8)
+    #renamePNGtoNone("F:/objectsDetectData/NoSignImages512")
+
+
 
 
 
