@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
     #resizeImagesToFixedSize("F:/objectsDetectData/NoSignImages","F:/objectsDetectData/NoSignImages512")
 
-    copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/select20smallobjs",
-                                 "F:/objectsDetectData/trafficSignTT/train/images", 8)
+    copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/allSmallObjects",
+                                 "F:/objectsDetectData/trafficSignTT60/train/images", 10)
     #renamePNGtoNone("F:/objectsDetectData/NoSignImages512")
 
 
