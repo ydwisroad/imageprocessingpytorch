@@ -32,11 +32,14 @@ if __name__ == "__main__":
     #addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")
 
-    #resizeImagesToFixedSize("F:/objectsDetectData/NoSignImages","F:/objectsDetectData/NoSignImages512")
+    resizeImagesToFixedSize("E:/roadproject/experiment/data/TrafficSign/val/images",
+                            "E:/roadproject/experiment/data/trafficsign512TT/val/images")
 
-    copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/allSmallObjects",
-                                 "F:/objectsDetectData/trafficSignTT60/train/images", 10)
+    #copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/allSmallObjects",
+    #                             "F:/objectsDetectData/trafficSignTT60/train/images", 10)
     #renamePNGtoNone("F:/objectsDetectData/NoSignImages512")
+    #findUniqueIds("E:/roadproject/experiment/data/TrafficSign/train/labels")
+
 
 
 

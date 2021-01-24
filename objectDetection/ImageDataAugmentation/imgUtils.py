@@ -402,7 +402,20 @@ def resizeImagesToFixedSize(originalImagesPath, outImagesPath, targetSize = (512
         img = cv2.imread(originalImagesPath + "/" + eachSmallImageFile)
         imgOutput = cv2.resize(img, targetSize)
 
-        cv2.imwrite(outImagesPath + "/" + pureFileName + ".png", imgOutput)
+        cv2.imwrite(outImagesPath + "/" + pureFileName, imgOutput)
+
+def findUniqueIds(labelPath):
+    print("start to find unique Ids for this one")
+    iCount = 0
+    uniqueSet = set()
+    for eachFile in os.listdir(labelPath):
+        labelLines = [f.strip() for f in open(labelPath + "/" + eachFile).readlines()]
+        for eachLine in labelLines:
+            uniqueSet.add(int(eachLine.split(" ")[0]))
+    finalList = list(uniqueSet)
+    finalList.sort()
+    print("finalList ", finalList)
+
 
 
 
