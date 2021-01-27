@@ -1,0 +1,1 @@
+python train.py --freeze-epoch=0 --unfreeze-epoch=10 --batch-size=8 --image-size_width=416 --image-size_height=416 --classes-path="model_data/voc_classes.txt" --model-path="../../../data/weights/yolo4_weights.pth" --train-list="val.txt" --val-list="val.txt"
