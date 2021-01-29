@@ -1,1 +1,0 @@
-python -m torch.distributed.launch --nproc_per_node=4 --use_env train_multi_GPU.py --weights=''  --data=datatrafficsign/traffic.data --epochs=3 --batch-size=32 --save-best=True --freeze-layers=False
