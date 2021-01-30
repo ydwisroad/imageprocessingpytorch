@@ -135,7 +135,7 @@ class CoordConv1d(conv.Conv1d):
 
 
 class CoordConv2d(conv.Conv2d):
-    def __init__(self, in_channels, out_channels, kernel_size, stride=1,
+    def __init__(self, in_channels, out_channels, kernel_size=1, stride=1,
                  padding=0, dilation=1, groups=1, bias=True, with_r=False, use_cuda=False):
         super(CoordConv2d, self).__init__(in_channels, out_channels, kernel_size,
                                           stride, padding, dilation, groups, bias)
@@ -150,6 +150,7 @@ class CoordConv2d(conv.Conv2d):
         output_tensor_shape: N,C_out,H_out,W_out）
         :return: CoordConv2d Result
         """
+        #print("CoordConv2d ", input_tensor.shape)
         out = self.addcoords(input_tensor)
         out = self.conv(out)
 
@@ -157,7 +158,7 @@ class CoordConv2d(conv.Conv2d):
 
 
 class CoordConv3d(conv.Conv3d):
-    def __init__(self, in_channels, out_channels, kernel_size, stride=1,
+    def __init__(self, in_channels, out_channels, kernel_size=1, stride=1,
                  padding=0, dilation=1, groups=1, bias=True, with_r=False, use_cuda=False):
         super(CoordConv3d, self).__init__(in_channels, out_channels, kernel_size,
                                           stride, padding, dilation, groups, bias)

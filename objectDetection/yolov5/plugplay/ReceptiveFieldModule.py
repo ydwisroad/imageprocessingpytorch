@@ -45,6 +45,7 @@ class BasicRFB(nn.Module):
     '''
     def __init__(self, in_planes, out_planes, stride=1, scale=0.1, visual=1):
         super(BasicRFB, self).__init__()
+        #print("BasicRFB in_planes  ", in_planes, " out_planes ", out_planes)
         self.scale = scale
         self.out_channels = out_planes
         inter_planes = in_planes // 8
@@ -106,6 +107,7 @@ class BasicRFB(nn.Module):
         self.relu = nn.ReLU(inplace=False)
 
     def forward(self, x):
+        #print("BasicRFB x size ", x.shape)
         x0 = self.branch0(x)
         x1 = self.branch1(x)
         x2 = self.branch2(x)
@@ -223,7 +225,7 @@ if __name__ == '__main__':
     output = bsRFBSmall(testx)
     print("RFBSmall output shape ", output.shape)
 
-    bsRFB = BasicRFB(64, 32)
+    bsRFB = BasicRFB(64, 64)
     testx = torch.randn(8, 64, 160, 160)
     print("RFB input shape ", testx.shape)
     output = bsRFB(testx)
