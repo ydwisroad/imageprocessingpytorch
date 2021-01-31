@@ -3,7 +3,7 @@ import torch
 
 #SKNet
 class SKConv(nn.Module):
-    def __init__(self, features, WH=1, M=2, G=1, r=2, stride=1, L=32):
+    def __init__(self, features, sudoOutChannels, WH=1, M=2, G=1, r=2, stride=1, L=32):
         """ Constructor
         Args:
             features: input channel dimensionality.
@@ -15,6 +15,7 @@ class SKConv(nn.Module):
             L: the minimum dim of the vector z in paper, default 32.
         """
         super(SKConv, self).__init__()
+        self.sudoOutChannels = sudoOutChannels
         d = max(int(features / r), L)
         self.M = M
         self.features = features
@@ -28,7 +29,7 @@ class SKConv(nn.Module):
                               stride=stride,
                               padding=1 + i,
                               groups=G), nn.BatchNorm2d(features),
-                    nn.ReLU(inplace=False)))
+                    nn.SiLU()))
         # self.gap = nn.AvgPool2d(int(WH/stride))
         #print("D:", d)
         self.fc = nn.Linear(features, d)

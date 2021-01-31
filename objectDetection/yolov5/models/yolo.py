@@ -18,6 +18,16 @@ from plugplay.CoordConv import *
 from plugplay.ReceptiveFieldModule import *
 from plugplay.MixedDepthwiseConv import *
 from plugplay.GhostModule import *
+from plugplay.StripPooling import *   #SPHead
+from plugplay.SlimConv import * #SlimConv3x3
+from plugplay.SematicEmbbedBlock import * #SematicEmbbedBlock
+from plugplay.PSPModule import *
+from plugplay.PSConv import *   #PSGConv2d
+from plugplay.SSHContextModule import * #SSHContextModule
+from plugplay.DOConv import * #DOConv2d
+
+from plugplay.attention.SCSE import *   #csSE
+from plugplay.attention.SKConv import *  #SKConv
 
 try:
     import thop  # for FLOPS computation
@@ -216,7 +226,10 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
                 pass
 
         n = max(round(n * gd), 1) if n > 1 else n  # depth gain
-        if m in [Conv, Bottleneck, SPP, DWConv, MixConv2d, Focus, CrossConv, BottleneckCSP, C3, CoordConv2d, C3CoordConv, GhostModule, BasicRFB, MixConv2d]:
+        if m in [Conv, Bottleneck, SPP, DWConv, MixConv2d, Focus,PSGConvComp,SSHContextModule, csSE,
+                 CrossConv, BottleneckCSP, C3, CoordConv2d, C3CoordConv, GhostModule,DOConvComp,
+                 BasicRFB, MixConv2dComp, SPHead, SlimConv3x3, PSPModule, SematicEmbbedBlock, DynamicConvComp,
+                 SKConv]:
             c1, c2 = ch[f], args[0]
 
             # Normal

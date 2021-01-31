@@ -18,8 +18,9 @@ class Conv3x3BNReLU(nn.Module):
 
 
 class SSHContextModule(nn.Module):
-    def __init__(self, in_channel):
+    def __init__(self, in_channel, sudoOutParam):
         super(SSHContextModule, self).__init__()
+        self.outParam = sudoOutParam
         self.stem = Conv3x3BNReLU(in_channel, in_channel//2)
         self.branch1_conv3x3 = Conv3x3BNReLU(in_channel//2, in_channel//2)
         self.branch2_conv3x3_1 = Conv3x3BNReLU(in_channel//2, in_channel//2)

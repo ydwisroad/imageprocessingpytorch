@@ -30,15 +30,20 @@ class cSE(nn.Module):
         return U * z.expand_as(U)
 
 class csSE(nn.Module):
-    def __init__(self, in_channels):
+    def __init__(self, in_channels, psudoChannel):
         super().__init__()
+        print("csSE in_channels ", in_channels)
+        self.psudoChannel = psudoChannel
         self.cSE = cSE(in_channels)
         self.sSE = sSE(in_channels)
 
     def forward(self, U):
+        #print("csSE input size ", U.shape)
         U_sse = self.sSE(U)
         U_cse = self.cSE(U)
-        return U_cse+U_sse
+        output = U_cse+U_sse
+        #print("csSE output size ", output.shape)
+        return output
 
 if __name__ == "__main__":
 
