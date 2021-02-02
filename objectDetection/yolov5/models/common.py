@@ -22,6 +22,7 @@ from plugplay.PSConv import *   #PSGConv2d
 from plugplay.SSHContextModule import * #SSHContextModule
 from plugplay.DOConv import * #DOConv2d
 from plugplay.DynamicConv import * #Dynamic_conv2d
+from plugplay.attention.AFF import * #AFF
 
 def autopad(k, p=None):  # kernel, padding
     # Pad to 'same'
@@ -254,6 +255,8 @@ class Concat(nn.Module):
         self.d = dimension
 
     def forward(self, x):
+        #print("Concat x0 size ", x[0].shape)
+        #print("Concat x1 size ", x[1].shape)
         return torch.cat(x, self.d)
 
 

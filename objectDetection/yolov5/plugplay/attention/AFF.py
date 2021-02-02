@@ -22,8 +22,9 @@ class AFF(nn.Module):
     多特征融合 AFF
     '''
 
-    def __init__(self, channels=64, r=4):
+    def __init__(self, channels=64, sudoOutput=64, r=4):
         super(AFF, self).__init__()
+        #print("AFF channels:", channels)
         inter_channels = int(channels // r)
 
         self.local_att = nn.Sequential(
@@ -45,14 +46,21 @@ class AFF(nn.Module):
 
         self.sigmoid = nn.Sigmoid()
 
-    def forward(self, x, residual):
-        xa = x + residual
+    def forward(self, x):
+        #print("AFF x0 size ", x[0].shape)
+        #print("AFF x1 size ", x[1].shape)
+        #if (x[0].shape[0] < 2):
+            #return torch.cat(x, 1)
+        #print("residual size ", residual.shape)
+        #x[0] + x[1]
+        xa = x[0] + x[1]
         xl = self.local_att(xa)
         xg = self.global_att(xa)
         xlg = xl + xg
         wei = self.sigmoid(xlg)
-
-        xo = 2 * x * wei + 2 * residual * (1 - wei)
+        #
+        xo = 2 * x[0] * wei + 2 * x[1] * (1 - wei)
+        #print("AFF xo size ", xo.shape)
         return xo
 
 if __name__ == '__main__':

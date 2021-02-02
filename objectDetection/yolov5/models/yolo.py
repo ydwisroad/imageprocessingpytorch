@@ -28,6 +28,7 @@ from plugplay.DOConv import * #DOConv2d
 
 from plugplay.attention.SCSE import *   #csSE
 from plugplay.attention.SKConv import *  #SKConv
+from plugplay.attention.AFF import * #AFF
 
 try:
     import thop  # for FLOPS computation
@@ -80,6 +81,7 @@ class Detect(nn.Module):
 class Model(nn.Module):
     def __init__(self, cfg='yolov5s.yaml', ch=3, nc=None):  # model, input channels, number of classes
         super(Model, self).__init__()
+        logger.info("Model init ")
         if isinstance(cfg, dict):
             self.yaml = cfg  # model dict
         else:  # is *.yaml
@@ -101,7 +103,9 @@ class Model(nn.Module):
         m = self.model[-1]  # Detect()
         if isinstance(m, Detect):
             s = 256  # 2x min stride
-            m.stride = torch.tensor([s / x.shape[-2] for x in self.forward(torch.zeros(1, ch, s, s))])  # forward
+            #m.stride = torch.tensor([s / x.shape[-2] for x in self.forward(torch.zeros(8, ch, s, s))])  # forward
+            #print("m.stride ", m.stride)     #tensor([ 8., 16., 32.]
+            m.stride = torch.tensor([8,16,32])
             m.anchors /= m.stride.view(-1, 1, 1)
             check_anchor_order(m)
             self.stride = m.stride
@@ -147,6 +151,7 @@ class Model(nn.Module):
                 dt.append((time_synchronized() - t) * 100)
                 print('%10.1f%10.0f%10.1fms %-40s' % (o, m.np, dt[-1], m.type))
 
+            #print("current m ", m)
             x = m(x)  # run
             y.append(x if m.i in self.save else None)  # save output
 
@@ -258,6 +263,13 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
             args = [ch[f]]
         elif m is Concat:
             c2 = sum([ch[x if x < 0 else x + 1] for x in f])
+        elif m is AFF:
+            #print("args ", args)
+            c1, c2 = ch[f[0]], ch[f[0]]
+            #print("c ", [ch[x if x < 0 else x + 1] for x in f])
+            #c2 = sum([ch[x if x < 0 else x + 1] for x in f])
+            args = [c1, c2]
+            print("args got ", args)
         elif m is Detect:
             args.append([ch[x + 1] for x in f])
             if isinstance(args[1], int):  # number of anchors
