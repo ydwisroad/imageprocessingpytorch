@@ -11,7 +11,7 @@ class Conv3x3BNReLU(nn.Module):
         super(Conv3x3BNReLU,self).__init__()
         self.conv3x3 = nn.Conv2d(in_channel, out_channel, 3, 1, 1)
         self.bn = nn.BatchNorm2d(out_channel)
-        self.relu = nn.ReLU(inplace=True)
+        self.relu = nn.ReLU(inplace=False)
 
     def forward(self, x):
         return self.relu(self.bn(self.conv3x3(x)))

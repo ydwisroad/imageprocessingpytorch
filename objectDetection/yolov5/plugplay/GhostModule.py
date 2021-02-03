@@ -13,14 +13,14 @@ class GhostModule(nn.Module):
             nn.Conv2d(inp, init_channels, kernel_size,
                       stride, kernel_size//2, bias=False),
             nn.BatchNorm2d(init_channels),
-            nn.ReLU(inplace=True) if relu else nn.Sequential(),
+            nn.ReLU(inplace=False) if relu else nn.Sequential(),
         )
 
         self.cheap_operation = nn.Sequential(
             nn.Conv2d(init_channels, new_channels, dw_size, 1,
                       dw_size//2, groups=init_channels, bias=False),
             nn.BatchNorm2d(new_channels),
-            nn.ReLU(inplace=True) if relu else nn.Sequential(),
+            nn.ReLU(inplace=False) if relu else nn.Sequential(),
         )
 
     def forward(self, x):

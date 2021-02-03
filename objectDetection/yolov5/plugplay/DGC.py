@@ -11,7 +11,7 @@ class DynamicMultiHeadConv(nn.Module):
                  padding=0, dilation=1, heads=4, squeeze_rate=16, gate_factor=0.25):
         super(DynamicMultiHeadConv, self).__init__()
         self.norm = nn.BatchNorm2d(in_channels)
-        self.relu = nn.ReLU(inplace=True)
+        self.relu = nn.ReLU(inplace=False)
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
         self.in_channels = in_channels
         self.out_channels = out_channels
@@ -91,9 +91,9 @@ class HeadConv(nn.Module):
         if in_channels < 80:
             squeeze_rate = squeeze_rate // 2
         self.fc1 = nn.Linear(in_channels, in_channels // squeeze_rate, bias=False)
-        self.relu_fc1 = nn.ReLU(inplace=True)
+        self.relu_fc1 = nn.ReLU(inplace=False)
         self.fc2 = nn.Linear(in_channels // squeeze_rate, in_channels, bias=True)
-        self.relu_fc2 = nn.ReLU(inplace=True)
+        self.relu_fc2 = nn.ReLU(inplace=False)
 
         nn.init.kaiming_normal_(self.fc1.weight)
         nn.init.kaiming_normal_(self.fc2.weight)
@@ -130,7 +130,7 @@ class Conv(nn.Sequential):
                  stride=1, padding=0, groups=1):
         super(Conv, self).__init__()
         self.add_module('norm', nn.BatchNorm2d(in_channels))
-        self.add_module('relu', nn.ReLU(inplace=True))
+        self.add_module('relu', nn.ReLU(inplace=False))
         self.add_module('conv', nn.Conv2d(in_channels, out_channels,
                                           kernel_size=kernel_size,
                                           stride=stride,

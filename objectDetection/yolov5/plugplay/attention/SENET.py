@@ -7,7 +7,7 @@ class SELayer(nn.Module):
         self.avgpool = nn.AdaptiveAvgPool2d(1)
         self.fc = nn.Sequential(
             nn.Linear(channel, channel//reduction,bias=False),
-            nn.ReLU(inplace=True),
+            nn.ReLU(inplace=False),
             nn.Linear(channel//reduction,channel, bias=False),
             nn.Sigmoid()
         )
@@ -21,7 +21,7 @@ class SELayer(nn.Module):
 if __name__ == '__main__':
 
     import torch
-    
+
     module = SELayer(64)
 
     testx1 = torch.randn(8, 64, 160, 160)

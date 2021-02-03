@@ -26,7 +26,7 @@ class BasicConv(nn.Module):
                               bias=bias)
         self.bn = nn.BatchNorm2d(
             out_planes, eps=1e-5, momentum=0.01, affine=True) if bn else None
-        self.relu = nn.ReLU(inplace=True) if relu else None
+        self.relu = nn.ReLU(inplace=False) if relu else None
 
     def forward(self, x):
         x = self.conv(x)

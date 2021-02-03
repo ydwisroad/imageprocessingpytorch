@@ -31,11 +31,11 @@ class BlazeBlock(nn.Module):
             nn.Conv2d(inp, oup1, 1, 1, 0, bias=True),
             nn.BatchNorm2d(oup1),
         )
-        self.act = nn.ReLU(inplace=True)
+        self.act = nn.ReLU(inplace=False)
 
         if self.use_double_block:
             self.conv2 = nn.Sequential(
-                nn.ReLU(inplace=True),
+                nn.ReLU(inplace=False),
                 # dw
                 nn.Conv2d(oup1, oup1, kernel_size=kernel_size,
                           stride=1, padding=padding, groups=oup1, bias=True),

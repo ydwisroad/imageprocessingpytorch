@@ -89,7 +89,7 @@ class MixConv2d(nn.Module):
 
         self.m = nn.ModuleList([nn.Conv2d(c1, int(c_[g]), k[g], s, k[g] // 2, bias=False) for g in range(groups)])
         self.bn = nn.BatchNorm2d(c2)
-        self.act = nn.LeakyReLU(0.1, inplace=True)
+        self.act = nn.LeakyReLU(0.1, inplace=False)
 
     def forward(self, x):
         return x + self.act(self.bn(torch.cat([m(x) for m in self.m], 1)))
