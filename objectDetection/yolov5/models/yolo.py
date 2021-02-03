@@ -29,6 +29,7 @@ from plugplay.DOConv import * #DOConv2d
 from plugplay.attention.SCSE import *   #csSE
 from plugplay.attention.SKConv import *  #SKConv
 from plugplay.attention.AFF import * #AFF
+from plugplay.attention.iAFF import * #iAFF
 
 try:
     import thop  # for FLOPS computation
@@ -263,7 +264,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
             args = [ch[f]]
         elif m is Concat:
             c2 = sum([ch[x if x < 0 else x + 1] for x in f])
-        elif m is AFF:
+        elif m in [AFF, iAFF]:
             #print("args ", args)
             c1, c2 = ch[f[0]], ch[f[0]]
             #print("c ", [ch[x if x < 0 else x + 1] for x in f])

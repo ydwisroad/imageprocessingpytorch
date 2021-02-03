@@ -23,6 +23,7 @@ from plugplay.SSHContextModule import * #SSHContextModule
 from plugplay.DOConv import * #DOConv2d
 from plugplay.DynamicConv import * #Dynamic_conv2d
 from plugplay.attention.AFF import * #AFF
+from plugplay.attention.iAFF import * #iAFF
 
 def autopad(k, p=None):  # kernel, padding
     # Pad to 'same'
