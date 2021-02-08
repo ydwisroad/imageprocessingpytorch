@@ -9,6 +9,9 @@ from augmentImages import *
 from Helpers import *
 from util import *
 
+import xml.etree.ElementTree as ET
+from os import getcwd
+
 #https://blog.csdn.net/qq_20622615/article/details/80929746
 def letterbox(img: np.ndarray,
               new_shape=(416, 416),
@@ -415,6 +418,56 @@ def findUniqueIds(labelPath):
     finalList = list(uniqueSet)
     finalList.sort()
     print("finalList ", finalList)
+
+def getRetinacsvFormatImagesList(imagesPath, labelsPath, exportPath):
+    print(" This is the start of getRetinacsvFormatImagesList ")
+
+    fOutFile = open(exportPath, "w")
+
+    for imageFileName in os.listdir(imagesPath):
+
+        print("image file Name ", imageFileName)
+        labelFileFullPath = labelsPath + "/" + imageFileName.split(".")[0] + ".txt"
+        img_o = cv2.imread(imagesPath + imageFileName)
+        print("img_o shape ", img_o.shape)
+        with open(labelFileFullPath) as labelFile:
+            for line in labelFile:
+                eachImageFileData = imagesPath + imageFileName
+                lineItems = line.split(" ")
+                x1,y1, x2,y2 = centerxywhYoloTox1y1x2y2(int(img_o.shape[0]),int(img_o.shape[1]),
+                                                        float(lineItems[1]), float(lineItems[2]),
+                                                        float(lineItems[3]), float(lineItems[4]))
+                eachImageFileData=eachImageFileData+"," + str(int(x1)) + ","+ str(int(y1))+ "," + str(int(x2)) + "," + str(int(y2)) + ","+ lineItems[0]
+                fOutFile.write(eachImageFileData)
+                fOutFile.write('\n')
+
+    fOutFile.close()
+
+#['i1', 'i10', 'i11', 'i12', 'i13', 'i14', 'i15', 'i2', 'i3', 'i4', 'i5', 'il100', 'il110', 'il50', 'il60', 'il70', 'il80', 'il90', 'io', 'ip', 'p1', 'p10', 'p11', 'p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18', 'p19', 'p2', 'p20', 'p21', 'p22', 'p23', 'p24', 'p25', 'p26', 'p27', 'p28', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'pa10', 'pa12', 'pa13', 'pa14', 'pa8', 'pb', 'pc', 'pg', 'ph1.5', 'ph2', 'ph2.1', 'ph2.2', 'ph2.4', 'ph2.5', 'ph2.8', 'ph2.9', 'ph3', 'ph3.2', 'ph3.5', 'ph3.8', 'ph4', 'ph4.2', 'ph4.3', 'ph4.5', 'ph4.8', 'ph5', 'ph5.3', 'ph5.5', 'pl10', 'pl100', 'pl110', 'pl120', 'pl15', 'pl20', 'pl25', 'pl30', 'pl35', 'pl40', 'pl5', 'pl50', 'pl60', 'pl65', 'pl70', 'pl80', 'pl90', 'pm10', 'pm13', 'pm15', 'pm1.5', 'pm2', 'pm20', 'pm25', 'pm30', 'pm35', 'pm40', 'pm46', 'pm5', 'pm50', 'pm55', 'pm8', 'pn', 'pne', 'po', 'pr10', 'pr100', 'pr20', 'pr30', 'pr40', 'pr45', 'pr50', 'pr60', 'pr70', 'pr80', 'ps', 'pw2', 'pw2.5', 'pw3', 'pw3.2', 'pw3.5', 'pw4', 'pw4.2', 'pw4.5', 'w1', 'w10', 'w12', 'w13', 'w16', 'w18', 'w20', 'w21', 'w22', 'w24', 'w28', 'w3', 'w30', 'w31', 'w32', 'w34', 'w35', 'w37', 'w38', 'w41', 'w42', 'w43', 'w44', 'w45', 'w46', 'w47', 'w48', 'w49', 'w5', 'w50', 'w55', 'w56', 'w57', 'w58', 'w59', 'w60', 'w62', 'w63', 'w66', 'w8', 'wo', 'i6', 'i7', 'i8', 'i9', 'ilx', 'p29', 'w29', 'w33', 'w36', 'w39', 'w4', 'w40', 'w51', 'w52', 'w53', 'w54', 'w6', 'w61', 'w64', 'w65', 'w67', 'w7', 'w9', 'pax', 'pd', 'pe', 'phx', 'plx', 'pmx', 'pnl', 'prx', 'pwx', 'w11', 'w14', 'w15', 'w17', 'w19', 'w2', 'w23', 'w25', 'w26', 'w27', 'pl0', 'pl4', 'pl3', 'pm2.5', 'ph4.4', 'pn40', 'ph3.3', 'ph2.6']
+def generateRetinaClassesList(classesArray, exportClassesFile):
+    fOutFile = open(exportClassesFile, "w")
+    for iIndex, item in enumerate(classesArray):
+        print("iIndex ", iIndex)
+        eachImageFileData = str(iIndex) + "," + item
+        fOutFile.write(eachImageFileData)
+        fOutFile.write('\n')
+
+    fOutFile.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
