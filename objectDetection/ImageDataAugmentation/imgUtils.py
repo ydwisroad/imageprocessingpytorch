@@ -454,6 +454,15 @@ def generateRetinaClassesList(classesArray, exportClassesFile):
 
     fOutFile.close()
 
+def generateIndexFile(maxIndex, exportFilePath):
+    fOutFile = open(exportFilePath, "w")
+    for iIndex in range(maxIndex):
+        fOutFile.write("'")
+        fOutFile.write(str(iIndex))
+        fOutFile.write("',")
+
+    fOutFile.close()
+
 
 
 
