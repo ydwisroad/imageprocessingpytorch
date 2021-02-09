@@ -287,7 +287,7 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
 
             # Forward
             with amp.autocast(enabled=cuda):
-                print("images :", imgs)
+                #print("images :", imgs)
                 pred = model(imgs)  # forward
                 loss, loss_items = compute_loss(pred, targets.to(device))  # loss scaled by batch_size
                 if rank != -1:
@@ -296,7 +296,7 @@ def train(hyp, opt, device, tb_writer=None, wandb=None):
                     loss *= 4.
 
             # Backward
-            print("loss got ", loss)
+            #print("loss got ", loss)
             scaler.scale(loss).backward()
 
             # Optimize
