@@ -121,9 +121,9 @@ def yoloDataToVOCData(yoloDataPath, vocOutputPath, outputListFilePath):
 if __name__ == "__main__":
     print("This is the start of Yolo Dataset to VOC Dataset ")
 
-    yoloDataToVOCData("/Users/i052090/Downloads/segmentation/data/TrafficSign/train/",
-                      "/Users/i052090/Downloads/segmentation/data/TrafficSign/voc/train",
-                      "/Users/i052090/Downloads/segmentation/data/TrafficSign/voc/train/ImageSets/Main/train.txt")
+    yoloDataToVOCData("/Users/i052090/Downloads/segmentation/data/trafficsign512TT/train/",
+                      "/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train",
+                      "/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train/ImageSets/Main/train.txt")
 
 
 
