@@ -9,6 +9,12 @@ from torch import nn
 from torch.nn import DataParallel
 import os
 
+#from evaler import SSD, Evaler
+from .evaler import Evaler
+from Data.Dataset_VOC import VOCDataset
+from Configs import _C as cfg
+from Data import SSDTramsfrom,SSDTargetTransform
+
 __all__ = ['Trainer']
 
 class Trainer(object):
@@ -80,6 +86,10 @@ class Trainer(object):
         self.optimizer = None
         self.scheduler = None
 
+        self.test_dataset = VOCDataset(cfg=self.cfg, is_train=False,
+                                  transform=SSDTramsfrom(cfg=self.cfg, is_train=False),
+                                  target_transform=SSDTargetTransform(self.cfg))
+
     def __call__(self, model, dataset):
         """
         训练器使用, 传入 模型 与数据集.
@@ -132,6 +142,12 @@ class Trainer(object):
 
             if iteration % 10 == 0:
                 print('Iter : {}/{} | Lr : {} | Loss : {:.4f} | cls_loss : {:.4f} | reg_loss : {:.4f}'.format(iteration, self.iterations, lr, loss.item(), cls_loss.item(), reg_loss.item()))
+
+                evaler = Evaler(cfg, eval_devices=None)
+                # 验证器开始在数据集上验证模型
+                ap, map = evaler(model=model,
+                                 test_dataset=self.test_dataset)
+                print("ap:", ap, " map:", map)
 
             if self.vis and iteration % self.vis_step == 0:
                 visdom_line(self.vis, y=[loss], x=iteration, win_name='loss')
