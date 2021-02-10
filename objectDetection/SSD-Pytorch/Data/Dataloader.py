@@ -14,7 +14,7 @@ class BatchSampler_Our(Sampler):
     在取完一批次后没达到指定迭代数会进行循环，直到输出指定的批次数量。
     """
 
-    def __init__(self, sampler, batch_size, max_iteration=100000000, drop_last=True):
+    def __init__(self, sampler, batch_size, max_iteration=100, drop_last=True):
         """
         数据加载,默认循环加载1亿次,几近无限迭代.
         每次迭代输出一个批次的数据.
@@ -92,7 +92,7 @@ class BatchCollator:
         return images, boxes, labels, img_ids
 
 
-def Our_Dataloader(dataset,batch_size,shuffle=True,num_workers=2,drop_last=True,max_iteration=100000000):
+def Our_Dataloader(dataset,batch_size,shuffle=True,num_workers=2,drop_last=True,max_iteration=100):
     """
     几近无限迭代器,迭代次数为1亿次,每次迭代输出一个批次的数据.
     :param dataset:         数据集

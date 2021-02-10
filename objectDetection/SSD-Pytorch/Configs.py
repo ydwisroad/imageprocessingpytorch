@@ -44,7 +44,7 @@ _C.MODEL.ANCHORS.SIZE_VARIANCE = 0.2    # 解码
 _C.TRAIN = CN()
 
 _C.TRAIN.NEG_POS_RATIO = 3      # 负正例比例
-_C.TRAIN.MAX_ITER = 3      # 训练轮数
+_C.TRAIN.MAX_ITER = 100      # 训练轮数
 _C.TRAIN.BATCH_SIZE = 10        # 训练批次
 _C.TRAIN.NUM_WORKERS = 4        # 数据数据所使用的线程数
 _C.OPTIM = CN()
@@ -98,6 +98,6 @@ _C.DATA.DATALOADER = CN()
 
 _C.STEP = CN()
 _C.STEP.VIS_STEP = 10           # visdom可视化训练过程,打印步长
-_C.STEP.MODEL_SAVE_STEP = 1000  # 训练过程中,模型保存步长
+_C.STEP.MODEL_SAVE_STEP = 10   # 训练过程中,模型保存步长
 _C.STEP.EVAL_STEP = 1000        # 在训练过程中,并没有进行检测流程,建议保存模型后另外检测
 

@@ -91,7 +91,8 @@ class Trainer(object):
             # raise TypeError('请用 DataParallel 包装模型. eg: model = DataParallel(model, device_ids=[0,1,2]),使用device_ids指定需要使用的gpu')
             model = DataParallel(model, device_ids=self.train_devices)
         self.model = model
-        data_loader = Our_Dataloader(dataset, batch_size=self.batch_size, shuffle=True, num_workers=self.num_workers)
+        data_loader = Our_Dataloader(dataset, batch_size=self.batch_size, shuffle=True,
+                                     num_workers=self.num_workers, max_iteration=self.iterations)
         print(' Max_iter = {}, Batch_size = {}'.format(self.iterations, self.batch_size))
         print(' Model will train on cuda:{}'.format(self.train_devices))
 
@@ -139,7 +140,8 @@ class Trainer(object):
                 visdom_line(self.vis, y=[lr], x=iteration, win_name='lr')
 
             if iteration % self.model_save_step == 0:
-                torch.save(model.module.state_dict(), '{}/model_{}.pkl'.format(self.model_save_root, iteration))
+                #torch.save(model.module.state_dict(), '{}/model_{}.pkl'.format(self.model_save_root, iteration))
+                torch.save(model.module.state_dict(), '{}/model_final.pt'.format(self.model_save_root))
         return True
 
     def set_optimizer(self, lr=None, momentum=None, weight_decay=None):
