@@ -28,3 +28,5 @@ pandas
 # extras --------------------------------------
 thop  # FLOPS computation
 pycocotools>=2.0  # COCO mAP
+apt-get update
+apt install libgl1-mesa-gl
