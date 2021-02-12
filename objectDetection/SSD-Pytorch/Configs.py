@@ -12,15 +12,15 @@ _C = CN()
 
 _C.FILE = CN()
 
-_C.FILE.PRETRAIN_WEIGHT_ROOT = '../../../data/weights/'   # 会使用到的预训练模型
+_C.FILE.PRETRAIN_WEIGHT_ROOT = './'   # 会使用到的预训练模型
 _C.FILE.MODEL_SAVE_ROOT = project_root+'/Weights/trained'           # 训练模型的保存
 _C.FILE.VGG16_WEIGHT = 'vgg16_reducedfc.pth'                        # vgg预训练模型
 
 _C.DEVICE = CN()
 
-_C.DEVICE.MAINDEVICE =  'cpu'   #'cuda:0' # 主gpu
-_C.DEVICE.TRAIN_DEVICES = [0,1] # 训练gpu
-_C.DEVICE.TEST_DEVICES = [0,1]  # 检测gpu
+_C.DEVICE.MAINDEVICE =  'cuda'   #'cuda:0' # 主gpu
+_C.DEVICE.TRAIN_DEVICES = [0] # 训练gpu
+_C.DEVICE.TEST_DEVICES = [0]  # 检测gpu
 
 _C.MODEL = CN()
 
@@ -44,7 +44,7 @@ _C.MODEL.ANCHORS.SIZE_VARIANCE = 0.2    # 解码
 _C.TRAIN = CN()
 
 _C.TRAIN.NEG_POS_RATIO = 3      # 负正例比例
-_C.TRAIN.MAX_ITER = 100      # 训练轮数
+_C.TRAIN.MAX_ITER = 500      # 训练轮数
 _C.TRAIN.BATCH_SIZE = 10        # 训练批次
 _C.TRAIN.NUM_WORKERS = 4        # 数据数据所使用的线程数
 _C.OPTIM = CN()
@@ -89,15 +89,15 @@ _C.DATA.DATASET.CLASS_NAME = ( '0','1','2','3','4','5','6','7','8','9','10','11'
     '210','211','212','213','214','215','216','217','218','219','220')
 
 #_C.DATA.DATASET.DATA_DIR = '/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/'   # 数据集voc格式,根目录
-_C.DATA.DATASET.DATA_DIR = '/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train/'
-_C.DATA.DATASET.TRAIN_SPLIT = 'trainMini'       # 训练集,对应于 /VOCdevkit/VOC2007/ImageSets/Main/train.txt'
-_C.DATA.DATASET.TEST_SPLIT = 'trainMini'          # 测试集,对应于 /VOCdevkit/VOC2007/ImageSets/Main/val.txt'
+_C.DATA.DATASET.DATA_DIR = '/data/nextcloud/data/trafficsign512TT/VOC/train'
+_C.DATA.DATASET.TRAIN_SPLIT = 'train'       # 训练集,对应于 /VOCdevkit/VOC2007/ImageSets/Main/train.txt'
+_C.DATA.DATASET.TEST_SPLIT = 'val'          # 测试集,对应于 /VOCdevkit/VOC2007/ImageSets/Main/val.txt'
 
 _C.DATA.DATALOADER = CN()
 
 
 _C.STEP = CN()
-_C.STEP.VIS_STEP = 10           # visdom可视化训练过程,打印步长
+#_C.STEP.VIS_STEP = 10           # visdom可视化训练过程,打印步长
 _C.STEP.MODEL_SAVE_STEP = 10   # 训练过程中,模型保存步长
 _C.STEP.EVAL_STEP = 1000        # 在训练过程中,并没有进行检测流程,建议保存模型后另外检测
 

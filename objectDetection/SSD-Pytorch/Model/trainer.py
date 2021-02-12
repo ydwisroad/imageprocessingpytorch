@@ -4,7 +4,7 @@ import torch
 from torch.optim.lr_scheduler import MultiStepLR
 from Data import Our_Dataloader
 from .structs import multiboxloss
-from Utils.visdom_op import visdom_line, setup_visdom, visdom_bar
+#from Utils.visdom_op import visdom_line, setup_visdom, visdom_bar
 from torch import nn
 from torch.nn import DataParallel
 import os
@@ -74,12 +74,12 @@ class Trainer(object):
         if model_save_step:
             self.model_save_step = model_save_step
 
-        self.vis = setup_visdom()
-        if vis:
-            self.vis = vis
-        self.vis_step = self.cfg.STEP.VIS_STEP
-        if vis_step:
-            self.vis_step = vis_step
+        #self.vis = setup_visdom()
+        #if vis:
+        #    self.vis = vis
+        #self.vis_step = self.cfg.STEP.VIS_STEP
+        #if vis_step:
+        #    self.vis_step = vis_step
 
         self.model = None
         self.loss_func = None
@@ -149,11 +149,11 @@ class Trainer(object):
                                  test_dataset=self.test_dataset)
                 print("ap:", ap, " map:", map)
 
-            if self.vis and iteration % self.vis_step == 0:
-                visdom_line(self.vis, y=[loss], x=iteration, win_name='loss')
-                visdom_line(self.vis, y=[reg_loss], x=iteration, win_name='reg_loss')
-                visdom_line(self.vis, y=[cls_loss], x=iteration, win_name='cls_loss')
-                visdom_line(self.vis, y=[lr], x=iteration, win_name='lr')
+            #if self.vis and iteration % self.vis_step == 0:
+            #    visdom_line(self.vis, y=[loss], x=iteration, win_name='loss')
+            #    visdom_line(self.vis, y=[reg_loss], x=iteration, win_name='reg_loss')
+            #    visdom_line(self.vis, y=[cls_loss], x=iteration, win_name='cls_loss')
+            #    visdom_line(self.vis, y=[lr], x=iteration, win_name='lr')
 
             if iteration % self.model_save_step == 0:
                 #torch.save(model.module.state_dict(), '{}/model_{}.pkl'.format(self.model_save_root, iteration))
