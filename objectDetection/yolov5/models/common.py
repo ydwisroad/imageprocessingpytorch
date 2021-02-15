@@ -46,7 +46,11 @@ class Conv(nn.Module):
         self.act = nn.SiLU() if act is True else (act if isinstance(act, nn.Module) else nn.Identity())
 
     def forward(self, x):
-        return self.act(self.bn(self.conv(x)))
+        #print("Conv shape before ", x.shape)
+        result = self.act(self.bn(self.conv(x)))
+        #print("Conv shape after ", result.shape)
+
+        return result
 
     def fuseforward(self, x):
         return self.act(self.conv(x))
@@ -178,7 +182,10 @@ class C3(nn.Module):
         # self.m = nn.Sequential(*[CrossConv(c_, c_, 3, 1, g, 1.0, shortcut) for _ in range(n)])
 
     def forward(self, x):
-        return self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), dim=1))
+        #print("C3 shape before ", x.shape)
+        result = self.cv3(torch.cat((self.m(self.cv1(x)), self.cv2(x)), dim=1))
+        #print("C3 shape after ", result.shape)
+        return result
 
 class C3CoordConv(nn.Module):
     # CSP Bottleneck with 3 convolutions
@@ -205,8 +212,11 @@ class SPP(nn.Module):
         self.m = nn.ModuleList([nn.MaxPool2d(kernel_size=x, stride=1, padding=x // 2) for x in k])
 
     def forward(self, x):
+        #print("SPP before shape ", x.shape)
         x = self.cv1(x)
-        return self.cv2(torch.cat([x] + [m(x) for m in self.m], 1))
+        result = self.cv2(torch.cat([x] + [m(x) for m in self.m], 1))
+        #print("SPP after shape ", result.shape)
+        return result
 
 
 class Focus(nn.Module):
