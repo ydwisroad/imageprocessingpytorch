@@ -44,6 +44,7 @@ def run(cfg, logger):
     if len(gpu_ids) > 1:
         model = nn.DataParallel(model, device_ids=gpu_ids)
     model = model.to(cfg["device"])
+    print("Model ", model)
 
     # 优化器 & 学习率衰减
     logger.info(f'Conf | use optimizer Adam, lr={cfg["lr"]}, weight_decay={cfg["weight_decay"]}')
