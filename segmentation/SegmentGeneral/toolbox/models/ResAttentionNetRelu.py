@@ -58,7 +58,7 @@ class CompDecoder(nn.Module):
         self.tp_conv = nn.Sequential(nn.ConvTranspose2d(in_planes//2, in_planes//2, kernel_size=2,
                                      stride=2, padding=0, dilation = 1, output_padding=0, bias=bias),
                                 nn.BatchNorm2d(in_planes//2),
-                                nn.Relu(),)
+                                nn.ReLU(),)
 
         self.conv3 = nn.Sequential(nn.Conv2d(in_planes//2, out_planes, kernel_size=1, stride=1, padding=padding, bias=bias),
                                 nn.Dropout2d(p=dropout_prob),
