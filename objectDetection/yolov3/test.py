@@ -28,7 +28,7 @@ def test(data,
          save_json=False,
          single_cls=False,
          augment=False,
-         verbose=False,
+         verbose=True,
          model=None,
          dataloader=None,
          save_dir=Path(''),  # for saving images
@@ -213,9 +213,12 @@ def test(data,
 
     # Compute statistics
     stats = [np.concatenate(x, 0) for x in zip(*stats)]  # to numpy
+    #print("start to compute statistics len(stats) ", len(stats), " stats[0].any():", stats[0].any())
     if len(stats) and stats[0].any():
         p, r, ap, f1, ap_class = ap_per_class(*stats, plot=plots, save_dir=save_dir, names=names)
+        #print("1.Calculated before aggregation p ", p, " r ", " ap ", ap, " f1 ", f1)
         p, r, ap50, ap = p[:, 0], r[:, 0], ap[:, 0], ap.mean(1)  # [P, R, AP@0.5, AP@0.5:0.95]
+        #print("2.Calculated before aggregation p ", p, " r ", " ap50 ", ap50, " ap ", ap)
         mp, mr, map50, map = p.mean(), r.mean(), ap50.mean(), ap.mean()
         nt = np.bincount(stats[3].astype(np.int64), minlength=nc)  # number of targets per class
     else:
@@ -226,6 +229,7 @@ def test(data,
     print(pf % ('all', seen, nt.sum(), mp, mr, map50, map))
 
     # Print results per class
+    #print("verbose ", verbose, " nc ", nc, " len(stats) ", len(stats), " ap_class ", ap_class)
     if verbose and nc > 1 and len(stats):
         for i, c in enumerate(ap_class):
             print(pf % (names[c], seen, nt[c], p[i], r[i], ap50[i], ap[i]))
