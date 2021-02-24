@@ -14,7 +14,7 @@ torchvision>=0.8.1
 tqdm>=4.41.0
 
 # logging -------------------------------------
-# wandb
+wandb
 
 # plotting ------------------------------------
 seaborn>=0.11.0
@@ -28,3 +28,6 @@ pandas
 # extras --------------------------------------
 thop  # FLOPS computation
 pycocotools>=2.0  # COCO mAP
+
+#apt update
+#apt install libgl1-mesa-glx
