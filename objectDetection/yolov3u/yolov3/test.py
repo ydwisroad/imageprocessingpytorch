@@ -22,13 +22,13 @@ from utils.torch_utils import select_device, time_synchronized
 def test(data,
          weights=None,
          batch_size=32,
-         imgsz=640,
+         imgsz=512,
          conf_thres=0.001,
          iou_thres=0.6,  # for NMS
          save_json=False,
          single_cls=False,
          augment=False,
-         verbose=False,
+         verbose=True,
          model=None,
          dataloader=None,
          save_dir=Path(''),  # for saving images
@@ -227,6 +227,7 @@ def test(data,
     print(pf % ('all', seen, nt.sum(), mp, mr, map50, map))
 
     # Print results per class
+    print("Going to print results per class verbose ", verbose , " len(stas) ", len(stats) ," ap_class", ap_class)
     if (verbose or (nc <= 20 and not training)) and nc > 1 and len(stats):
         for i, c in enumerate(ap_class):
             print(pf % (names[c], seen, nt[c], p[i], r[i], ap50[i], ap[i]))
