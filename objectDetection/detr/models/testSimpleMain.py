@@ -32,10 +32,10 @@ def testLeFF():
 
 def testPEG():
     print("start of test PEG")
-    testx = torch.randn(8, 196, 3)
+    testx = torch.randn(8, 400, 256)
     print("input shape ", testx.shape)
-    peg = PEG(3)
-    output = peg(testx, 14, 14)
+    peg = PEG(256)
+    output = peg(testx, 20, 20)
     print("output shape ", output.shape)
 
 

@@ -47,6 +47,8 @@ class DETR(nn.Module):
         self.input_proj = DeformableConv2d(in_channels=backbone.num_channels, out_channels=hidden_dim, kernel_size=1, stride=1, padding=0)
         self.backbone = backbone
         self.aux_loss = aux_loss
+        #Here 256 is the channel
+        self.peg = PEG(256)
 
         with_lca = False
 
@@ -69,9 +71,11 @@ class DETR(nn.Module):
             samples = nested_tensor_from_tensor_list(samples)
         features, pos = self.backbone(samples)
         #features[0].tensors.shape  [2, 2048, 20, 20] ,features[0].mask.shape: [2, 20, 20]   pos[0].shape: [2, 256, 20, 20]
+        outputPeg = self.peg(pos[0])
+
         src, mask = features[-1].decompose()
         assert mask is not None
-        hs = self.transformer(self.input_proj(src), mask, self.query_embed.weight, pos[-1])[0]
+        hs = self.transformer(self.input_proj(src), mask, self.query_embed.weight, pos[-1] + outputPeg)[0]
         #len(hs) : 6   hs[0]: [2, 100, 256]
 
         outputs_class = self.class_embed(hs)

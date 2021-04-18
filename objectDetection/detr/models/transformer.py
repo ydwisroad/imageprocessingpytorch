@@ -223,6 +223,10 @@ class TransformerDecoderLayer(nn.Module):
         super().__init__()
         self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
         self.multihead_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout)
+
+        self.self_attnPrj = ProjAttention(dim = d_model, proj_kernel = 3, kv_proj_stride = 2, heads = nhead, dim_head = 64, dropout = 0.)
+        self.leFF = LeFF(dim=d_model, scale=4, depth_kernel=3, h=10, w=10)
+
         # Implementation of Feedforward model
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.dropout = nn.Dropout(dropout)
@@ -252,7 +256,20 @@ class TransformerDecoderLayer(nn.Module):
         #tgt: [100, 2, 256], memory: [400, 2, 256] memory_mask: None tgt_key_padding_mask:None memory_key_padding_mask: [2,400]
         tgt2 = self.self_attn(q, k, value=tgt, attn_mask=tgt_mask,
                               key_padding_mask=tgt_key_padding_mask)[0] #tgt2: [100,2,256]
-        tgt = tgt + self.dropout1(tgt2)
+
+        tgtProj = tgt2.permute(1, 2, 0)  # Now 2,256,400
+        B, C, HW = tgtProj.shape
+        #print("srcPrj shape ", B, " ", C, " ", HW)
+        H = 10
+        W = 10
+        tgtProj = tgtProj.view(B, C, H, W)
+        projAtten = self.self_attnPrj(tgtProj)  #
+        projAtten = projAtten.view(B, C, -1).permute(2,0,1)
+
+        #src2: [400, 6, 256]
+        tgt = tgt + self.dropout1(projAtten)
+
+        #tgt = tgt + self.dropout1(tgt2)
         tgt = self.norm1(tgt)  #tgt: [100,2,256]
         tgt2 = self.multihead_attn(query=self.with_pos_embed(tgt, query_pos),  #100,2,256
                                    key=self.with_pos_embed(memory, pos),       #400,2,256
@@ -260,7 +277,10 @@ class TransformerDecoderLayer(nn.Module):
                                    key_padding_mask=memory_key_padding_mask)[0]
         tgt = tgt + self.dropout2(tgt2)  #tgt2: [100,2,256]
         tgt = self.norm2(tgt)
-        tgt2 = self.linear2(self.dropout(self.activation(self.linear1(tgt))))  #tgt2: 100,2,256
+
+        tgt2 = self.leFF(tgt.permute(1, 0, 2)).permute(1, 0, 2)
+        #tgt2 = self.linear2(self.dropout(self.activation(self.linear1(tgt))))  #tgt2: 100,2,256
+
         tgt = tgt + self.dropout3(tgt2)
         tgt = self.norm3(tgt)
         return tgt
