@@ -68,14 +68,17 @@ class DETR(nn.Module):
                                 dictionnaries containing the two above keys for each decoder layer.
         """
         if isinstance(samples, (list, torch.Tensor)):
-            samples = nested_tensor_from_tensor_list(samples)
+            samples = nested_tensor_from_tensor_list(samples)  #samples.tensors.shape: [batch, c, H, W]  samples.mask.shape: [Batch, H, W]
+
         features, pos = self.backbone(samples)
-        #features[0].tensors.shape  [2, 2048, 20, 20] ,features[0].mask.shape: [2, 20, 20]   pos[0].shape: [2, 256, 20, 20]
-        outputPeg = self.peg(pos[0])
+        # features[0].tensors.shape  [batch, 2048, 20, 20] ,features[0].mask.shape: [batch, 20, 20]
+        # pos[0].shape: [batch, 256, 20, 20]
+
+        #outputPeg = self.peg(pos[0])   # +outputPeg
 
         src, mask = features[-1].decompose()
-        assert mask is not None
-        hs = self.transformer(self.input_proj(src), mask, self.query_embed.weight, pos[-1] + outputPeg)[0]
+        assert mask is not None   #inputproj [batch, 256, 20, 20]
+        hs = self.transformer(self.input_proj(src), mask, self.query_embed.weight, pos[-1] )[0]
         #len(hs) : 6   hs[0]: [2, 100, 256]
 
         outputs_class = self.class_embed(hs)

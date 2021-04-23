@@ -20,3 +20,20 @@ class PEG(nn.Module):
         #x = x.flatten(2).transpose(1, 2)
         #x = torch.cat((cls_token.unsqueeze(1), x), dim=1)
         return x
+
+class PEGThree(nn.Module):
+
+    def __init__(self, dim=256, k=3):
+        super().__init__()
+        self.proj = nn.Conv2d(dim, dim, k, 1, k//2, groups=dim)
+
+        # Only for demo use, more complicated functions are effective too.
+    def forward(self, x, H, W):
+        B, C, _ = x.shape
+        #cls_token, feat_token = x[:, 0], x[:, 1:] # cls token不参与PEG
+        feat_token = x
+        cnn_feat = feat_token.view(B, C, H, W)
+        x = self.proj(cnn_feat) + cnn_feat # 产生PE加上自身
+        x = x.flatten(2).permute(2, 0, 1)   #.transpose(1, 2)
+        #x = torch.cat((cls_token.unsqueeze(1), x), dim=1)
+        return x

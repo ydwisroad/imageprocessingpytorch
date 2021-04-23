@@ -22,23 +22,23 @@ import torch.utils.data as Data
 # P: Symbol that will fill in blank sequence if current batch data size is short than time steps
 sentences = [
     # enc_input           dec_input         dec_output
-    ['ich mochte ein bier P', 'S i want a beer .', 'i want a beer . E'],
-    ['ich mochte ein cola P', 'S i want a coke .', 'i want a coke . E'],
-    ['ich mochte bier cola P', 'S i want a want .', 'i want a beer . E'],
-    ['ich mochte bier ein P', 'S i want a a .', 'i want a coke . E'],
-    ['ich mochte ein ein P', 'S i want a i .', 'i want a beer . E']
+    ['ich mochte ein bier kafka zabbix elastic . P', 'S i want a beer kafka zabbix elastic .', 'i want a beer kafka zabbix elastic . E'],
+    ['ich mochte ein cola kafka zabb elast . P', 'S i want a coke kafka zabbix elastic .', 'i want a coke kafka zabbix elastic . E'],
+    ['ich mochte bier cola kafka zabbx elast . P', 'S i want a want kafka zabbix elastic .', 'i want a beer kafka zabbix elastic . E'],
+    ['ich mochte bier ein kafka zab elast . P', 'S i want a kafka zabbix elastic la .', 'i want a coke kafka zabbix elastic . E'],
+    ['ich mochte ein ein kafk zabb elast . P', 'S i want a kafka zabbix elastic  la .', 'i want a beer kafka zabbix elastic . E']
 ]
 
 # Padding Should be Zero
-src_vocab = {'P': 0, 'ich': 1, 'mochte': 2, 'ein': 3, 'bier': 4, 'cola': 5}
+src_vocab = {'P': 0, 'ich': 1, 'mochte': 2, 'ein': 3, 'bier': 4, 'cola': 5, 'kafka': 6, 'zabbix': 7, 'elastic': 8, 'zabb': 9, 'elast':10, 'zab':11, 'kafk':12, 'zabbx': 13, '.': 14}
 src_vocab_size = len(src_vocab)
 
-tgt_vocab = {'P': 0, 'i': 1, 'want': 2, 'a': 3, 'beer': 4, 'coke': 5, 'S': 6, 'E': 7, '.': 8}
+tgt_vocab = {'P': 0, 'i': 1, 'want': 2, 'a': 3, 'beer': 4, 'coke': 5, 'S': 6, 'E': 7, '.': 8, 'kafka': 9, 'zabbix':10, 'elastic':11, 'la':12}
 idx2word = {i: w for i, w in enumerate(tgt_vocab)}
 tgt_vocab_size = len(tgt_vocab)
 
-src_len = 5  # enc_input max sequence length
-tgt_len = 6  # dec_input(=dec_output) max sequence length
+src_len = 9  # enc_input max sequence length
+tgt_len = 9  # dec_input(=dec_output) max sequence length
 
 # Transformer Parameters
 d_model = 512  # Embedding Size

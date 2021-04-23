@@ -13,7 +13,7 @@ from typing import Optional, List
 import torch
 import torch.nn.functional as F
 from torch import nn, Tensor
-from .PEG import PEG
+from .PEG import PEG, PEGThree
 from torch import einsum
 
 from einops import rearrange, repeat
@@ -54,8 +54,9 @@ class Transformer(nn.Module):
 
     def forward(self, src, mask, query_embed, pos_embed):
         # flatten NxCxHxW to HWxNxC  mask.shape: [2, 20, 20]  query_embed.shape: [100, 256] pos_embed.shape: [2, 256, 20, 20]
-        bs, c, h, w = src.shape   #src [2, 256, 20, 20]
+        bs, c, h, w = src.shape   #src [batch, 256, 20, 20]
         src = src.flatten(2).permute(2, 0, 1)
+
         pos_embed = pos_embed.flatten(2).permute(2, 0, 1)
         query_embed = query_embed.unsqueeze(1).repeat(1, bs, 1)
         mask = mask.flatten(1)
@@ -77,6 +78,7 @@ class TransformerEncoder(nn.Module):
         self.layers = _get_clones(encoder_layer, num_layers)
         self.num_layers = num_layers
         self.norm = norm
+        self.peg = PEGThree(256)
 
     def forward(self, src,
                 mask: Optional[Tensor] = None,
@@ -84,9 +86,17 @@ class TransformerEncoder(nn.Module):
                 pos: Optional[Tensor] = None):
         output = src
         #src.shape  [400, 2, 256] mask: None src_key_padding_mask: [2,400] pos: [400, 2, 256]
+        i = 0
         for layer in self.layers:
             output = layer(output, src_mask=mask,
                            src_key_padding_mask=src_key_padding_mask, pos=pos)
+            if i ==0 :
+                #print("Will add PEG result output shape ", output.shape)  #[400, 12, 256]
+                temp = output.permute(1, 2, 0)
+                temp = self.peg(temp, 20, 20)
+                output = output + temp
+            i = i + 1
+
 
         if self.norm is not None:
             output = self.norm(output)
