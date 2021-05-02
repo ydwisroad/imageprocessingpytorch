@@ -42,7 +42,7 @@ class ProjAttention(nn.Module):
         b, n, _, y, h = *shape, self.heads
         q, k, v = (self.to_q(x), *self.to_kv(x).chunk(2, dim = 1))
         q, k, v = map(lambda t: rearrange(t, 'b (h d) x y -> (b h) (x y) d', h = h), (q, k, v))
-
+        #q: 48, 400, 64   k: 48, 100,64  v: 48,100, 64
         dots = einsum('b i d, b j d -> b i j', q, k) * self.scale
 
         attn = self.attend(dots)
