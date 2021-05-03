@@ -260,6 +260,13 @@ def renameAllToNumberInFolder(folderPath, prefixNum):
 
         iCount = iCount + 1
 
+def renameTojpgFiles(folderPath):
+    for eachFile in os.listdir(folderPath):
+        if eachFile.endswith("JPG"):
+            fileName = eachFile.split(".")[0]
+            newName = fileName + ".jpg"
+            os.rename(folderPath + "/" + eachFile, folderPath + "/" + newName)
+
 def renameZeroStartFiles(folderPath):
     print("going to rename zero start Files ", folderPath)
     for eachFile in os.listdir(folderPath):

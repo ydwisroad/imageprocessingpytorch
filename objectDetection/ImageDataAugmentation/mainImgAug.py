@@ -51,14 +51,15 @@ if __name__ == "__main__":
     folderPath = "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/annotations"
     #renameAllInFolder(folderPath, "800")
     #renameAllToNumberInFolder(folderPath, 50000)
+    renameTojpgFiles("")
     #makeFileNameAndNameConsistent(folderPath)
 
     #renameZeroStartFiles("/Users/i052090/Downloads/segmentation/data/markedhkbridge/all")
 
     #generateXMLListFile("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/Annotations", "./hkbridgexml.txt")
 
-    generateXMLListTrainValFile("/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/annotations",
-                                "./ydbridgetrainxml.txt", "./ydbridgevalxml.txt")
+    #generateXMLListTrainValFile("/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/annotations",
+    #                            "./ydbridgetrainxml.txt", "./ydbridgevalxml.txt")
 
     #generateFileNameOnlyDivideTrainValList("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/annotations/",
     #                         "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/ImageSets/Main/train.txt",

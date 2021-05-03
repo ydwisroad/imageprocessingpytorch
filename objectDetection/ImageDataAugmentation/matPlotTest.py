@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 
+plt.rcParams['font.sans-serif']=['SimHei']
+
 #pip install xlrd
 def plotIncomeTest():
     datafile = u'./incomeData.xls'
@@ -49,16 +51,16 @@ def plotTSTrainLossResult():
     #print("time ", data["Time"])
 
     plt.figure(figsize=(12, 5))  # 设置画布的尺寸
-    plt.title('Train Loss ', fontsize=10)  # 标题，并设定字号大小
-    plt.xlabel(u'Epoch', fontsize=12)     # 设置x轴，并设定字号大小
-    plt.ylabel(u'Loss', fontsize=12)      # 设置y轴，并设定字号大小
+    plt.title('训练损失', fontsize=10)  # 标题，并设定字号大小
+    plt.xlabel(u'代', fontsize=12)     # 设置x轴，并设定字号大小
+    plt.ylabel(u'损失', fontsize=12)      # 设置y轴，并设定字号大小
 
     # color：颜色，linewidth：线宽，linestyle：线条类型，label：图例，marker：数据点的类型
     # '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'
     #, marker = 'o' , marker='+'  , marker='*'
-    plt.plot(data['Epoch'], data['trainBoxLoss'], color="green", linewidth=1, linestyle='solid', label='box loss')
-    plt.plot(data['Epoch'], data['trainObjLoss'], color="darkblue", linewidth=1, linestyle='-', label='object loss')
-    plt.plot(data['Epoch'], data['trainClsLoss'], color="goldenrod", linewidth=1, linestyle='-.', label='class loss')
+    plt.plot(data['Epoch'], data['trainBoxLoss'], color="green", linewidth=1, linestyle='solid', label='边界框损失')
+    plt.plot(data['Epoch'], data['trainObjLoss'], color="darkblue", linewidth=1, linestyle=':', label='目标损失')
+    plt.plot(data['Epoch'], data['trainClsLoss'], color="goldenrod", linewidth=1, linestyle='-.', label='类别损失')
 
     plt.legend(loc=1)  #
     plt.savefig("./resultsTrainLoss.png", dpi=200)
@@ -70,16 +72,16 @@ def plotTSValLossResult():
     #print("time ", data["Time"])
 
     plt.figure(figsize=(12, 5))  # 设置画布的尺寸
-    plt.title('Validation Loss ', fontsize=10)  # 标题，并设定字号大小
-    plt.xlabel(u'Epoch', fontsize=12)     # 设置x轴，并设定字号大小
-    plt.ylabel(u'Loss', fontsize=12)      # 设置y轴，并设定字号大小
+    plt.title('验证损失', fontsize=10)  # 标题，并设定字号大小
+    plt.xlabel(u'代', fontsize=12)     # 设置x轴，并设定字号大小
+    plt.ylabel(u'损失', fontsize=12)      # 设置y轴，并设定字号大小
 
     # color：颜色，linewidth：线宽，linestyle：线条类型，label：图例，marker：数据点的类型
     # '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'
     #, marker = 'o' , marker='+'  , marker='*'
-    plt.plot(data['Epoch'], data['valBoxLoss'], color="green", linewidth=1, linestyle='solid', label='box loss')
-    plt.plot(data['Epoch'], data['valObjLoss'], color="darkblue", linewidth=1, linestyle='-', label='object loss')
-    plt.plot(data['Epoch'], data['valClsLoss'], color="goldenrod", linewidth=1, linestyle='-.', label='class loss')
+    plt.plot(data['Epoch'], data['valBoxLoss'], color="green", linewidth=1, linestyle='solid', label='边界框损失')
+    plt.plot(data['Epoch'], data['valObjLoss'], color="darkblue", linewidth=1, linestyle=':', label='目标损失')
+    plt.plot(data['Epoch'], data['valClsLoss'], color="goldenrod", linewidth=1, linestyle='-.', label='类别损失')
 
     plt.legend(loc=1)  #
     plt.savefig("./resultsValLoss.png", dpi=200)
@@ -91,15 +93,15 @@ def plotPrecisionRecallResult():
     #print("time ", data["Time"])
 
     plt.figure(figsize=(12, 5))  # 设置画布的尺寸
-    plt.title('metrics:precision/recall', fontsize=10)  # 标题，并设定字号大小
-    plt.xlabel(u'Epoch', fontsize=12)     # 设置x轴，并设定字号大小
-    plt.ylabel(u'precision/recall', fontsize=12)      # 设置y轴，并设定字号大小
+    plt.title('指标:精确度/召回率', fontsize=10)  # 标题，并设定字号大小
+    plt.xlabel(u'代', fontsize=12)     # 设置x轴，并设定字号大小
+    plt.ylabel(u'精确度/召回率', fontsize=12)      # 设置y轴，并设定字号大小
 
     # color：颜色，linewidth：线宽，linestyle：线条类型，label：图例，marker：数据点的类型
     # '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'
     #, marker = 'o' , marker='+'  , marker='*'
-    plt.plot(data['Epoch'], data['precision'], color="green", linewidth=1, linestyle='solid', label='precision')
-    plt.plot(data['Epoch'], data['recall'], color="darkblue", linewidth=1, linestyle='-', label='recall')
+    plt.plot(data['Epoch'], data['precision'], color="green", linewidth=1, linestyle=':', label='精确度')
+    plt.plot(data['Epoch'], data['recall'], color="darkblue", linewidth=1, linestyle='-', label='召回率')
 
     plt.legend(loc=4)  #
     plt.savefig("./resultsPrecisionRecall.png", dpi=200)
@@ -111,14 +113,14 @@ def plotMetricsMapResult():
     # print("time ", data["Time"])
 
     plt.figure(figsize=(12, 5))  # 设置画布的尺寸
-    plt.title('metrics:mAP_0.5/mAP_0.5:95', fontsize=10)  # 标题，并设定字号大小
-    plt.xlabel(u'Epoch', fontsize=12)  # 设置x轴，并设定字号大小
+    plt.title('指标:mAP_0.5/mAP_0.5:95', fontsize=10)  # 标题，并设定字号大小
+    plt.xlabel(u'代', fontsize=12)  # 设置x轴，并设定字号大小
     plt.ylabel(u'mAP_0.5/mAP_0.5:95', fontsize=12)  # 设置y轴，并设定字号大小
 
     # color：颜色，linewidth：线宽，linestyle：线条类型，label：图例，marker：数据点的类型
     # '-', '--', '-.', ':', 'None', ' ', '', 'solid', 'dashed', 'dashdot', 'dotted'
     # , marker = 'o' , marker='+'  , marker='*'
-    plt.plot(data['Epoch'], data['map05'], color="green", linewidth=1, linestyle='solid', label='mAP_0.5')
+    plt.plot(data['Epoch'], data['map05'], color="green", linewidth=1, linestyle=':', label='mAP_0.5')
     plt.plot(data['Epoch'], data['map0595'], color="darkblue", linewidth=1, linestyle='-', label='mAP_0.5:95')
 
     plt.legend(loc=4)  #
