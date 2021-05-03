@@ -40,8 +40,8 @@ def plot_logs(logs, fields=('class_error', 'loss_bbox_unscaled', 'mAP'), ewm_col
     for i, dir in enumerate(logs):
         if not isinstance(dir, PurePath):
             raise ValueError(f"{func_name} - non-Path object in logs argument of {type(dir)}: \n{dir}")
-        if not dir.exists():
-            raise ValueError(f"{func_name} - invalid directory in logs argument:\n{dir}")
+        #if not dir.exists():
+        #    raise ValueError(f"{func_name} - invalid directory in logs argument:\n{dir}")
         # verify log_name exists
         fn = Path(dir / log_name)
         if not fn.exists():
@@ -105,3 +105,8 @@ def plot_precision_recall(files, naming_scheme='iter'):
     axs[1].set_title('Scores / Recall')
     axs[1].legend(names)
     return fig, axs
+
+if __name__ == '__main__':
+    plot_logs(PurePath("C:/ydwisroad/imageprocessingpytorch/objectDetection/detr/log"))
+
+
