@@ -139,7 +139,8 @@ def copysmallobjects2(image_dir, label_dir, save_base_dir, small_img_dir,
     for small_img_dirs in small_img_dir:
         print("current small img ", small_img_dirs)
         image_bbox = cv2.imread(small_img_dirs)
-
+        if ((image_bbox is None) or image_bbox.shape[0] < 10 or image_bbox.shape[1] < 10):
+            continue
         smallObjName = os.path.basename(small_img_dirs)
         objName = smallObjName.split(".")[0]
         cls = objName.split("_")[0]
@@ -199,10 +200,10 @@ def copysmallobjects2(image_dir, label_dir, save_base_dir, small_img_dir,
     check_dir(save_dir)
     yolo_txt_dir = join(
         save_dir,
-        basename(image_dir.replace('.jpg', '_all_%s.txt' % str(iCount))))
+        basename(image_dir.replace('.png', '_all_%s.txt' % str(iCount))))
     cv2.imwrite(
         join(save_dir,
-             basename(image_dir).replace('.jpg', '_all_%s.jpg' % str(iCount))),
+             basename(image_dir).replace('.png', '_all_%s.jpg' % str(iCount))),
         image)
     convert_all_boxes(image.shape, all_boxes, yolo_txt_dir)
 

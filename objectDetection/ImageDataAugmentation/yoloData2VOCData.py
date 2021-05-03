@@ -52,6 +52,11 @@ xml_end = '''
 
 labels = ['0', '1', '2', '3']  # label for datasets
 
+catMap = { "0": "spall",
+        "1": "rebar",
+        "2": "crack"
+}
+
 def writeToVOCXML(image_path, yoloLabelPath, annotationOutputPath, outputListFilePath):
     outputListFile = open(outputListFilePath, 'w')
 
@@ -73,7 +78,8 @@ def writeToVOCXML(image_path, yoloLabelPath, annotationOutputPath, outputListFil
             with open(yoloLabelPath + "/" +  ftxt, 'r') as f:  # read text file content
                 for line in f.readlines():
                     yolo_datas = line.strip().split(' ')
-                    label = int(float(yolo_datas[0].strip()))
+                    key = str(int(float(yolo_datas[0].strip())))
+                    label = catMap[key]
                     center_x = round(float(str(yolo_datas[1]).strip()) * img_w)
                     center_y = round(float(str(yolo_datas[2]).strip()) * img_h)
                     bbox_width = round(float(str(yolo_datas[3]).strip()) * img_w)
@@ -121,9 +127,9 @@ def yoloDataToVOCData(yoloDataPath, vocOutputPath, outputListFilePath):
 if __name__ == "__main__":
     print("This is the start of Yolo Dataset to VOC Dataset ")
 
-    yoloDataToVOCData("/Users/i052090/Downloads/segmentation/data/trafficsign512TT/train/",
-                      "/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train",
-                      "/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train/ImageSets/Main/train.txt")
+    yoloDataToVOCData("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/augmented/",
+                      "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/augmented/VOC",
+                      "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/augmented/train.txt")
 
 
 

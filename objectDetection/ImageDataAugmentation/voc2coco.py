@@ -18,6 +18,12 @@ PRE_DEFINE_CATEGORIES = {}
                          #  "motorbike": 14, "person": 15, "pottedplant": 16,
                          #  "sheep": 17, "sofa": 18, "train": 19, "tvmonitor": 20}
 
+PRE_DEFINE_CATEGORIES = {
+       "spall": 0,
+       "rebar": 1,
+       "crack": 2
+}
+
 def get(root, name):
     vars = root.findall(name)
     return vars
@@ -55,12 +61,13 @@ def convert(xml_list, xml_dir, json_file):
         tree = ET.parse(xml_f)
         root = tree.getroot()
         path = get(root, 'path')
-        if len(path) == 1:
-            filename = os.path.basename(path[0].text)
-        elif len(path) == 0:
-            filename = get_and_check(root, 'filename', 1).text
-        else:
-            raise NotImplementedError('%d paths found in %s'%(len(path), line))
+        #if len(path) == 1:
+        #    filename = os.path.basename(path[0].text)
+        #elif len(path) == 0:
+        #    filename = get_and_check(root, 'filename', 1).text
+        #else:
+        #    raise NotImplementedError('%d paths found in %s'%(len(path), line))
+        filename = get_and_check(root, 'filename', 1).text
         ## The filename must be a number
         image_id = get_filename_as_int(filename)
         size = get_and_check(root, 'size', 1)
@@ -106,9 +113,13 @@ def convert(xml_list, xml_dir, json_file):
 #python voc2coco.py "./XML_LIST.txt" "/Users/i052090/Downloads/segmentation/data/trafficsign512TT/VOC/train/Annotations" "./out.json"
 
 if __name__ == '__main__':
-    if len(sys.argv) <= 1:
-        print('3 auguments are need.')
-        print('Usage: %s XML_LIST.txt XML_DIR OUTPU_JSON.json'%(sys.argv[0]))
-        exit(1)
+    #if len(sys.argv) <= 1:
+    #    print('3 auguments are need.')
+    #    print('Usage: %s XML_LIST.txt XML_DIR OUTPU_JSON.json'%(sys.argv[0]))
+    #    exit(1)
 
-    convert(sys.argv[1], sys.argv[2], sys.argv[3])
+    convert("ydbridgetrainxml.txt", "/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/annotations",
+            "ydbridgecocotrain.json")
+
+    convert("ydbridgevalxml.txt", "/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/annotations",
+            "ydbridgecocoval.json")

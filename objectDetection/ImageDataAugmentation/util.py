@@ -231,3 +231,127 @@ def random_add_patches2(cls, bbox_img, rescale_boxes, shape, paste_number, iou_t
             continue
 
     return new_bboxes
+
+def renameAllInFolder(folderPath, prefix):
+    print("going to rename all ", folderPath)
+    for eachFile in os.listdir(folderPath):
+        fileName = eachFile.split(".")[0]
+        newName = prefix + eachFile
+        print("newName ", newName)
+        os.rename(folderPath + "/" +eachFile, folderPath + "/" + newName)
+
+def renameAllToNumberInFolder(folderPath, prefixNum):
+    print("going to rename all to number ", folderPath)
+    #Annotations #JPEGImages
+    iCount = 1
+    for eachFile in os.listdir(folderPath + "/JPEGImages"):
+        nameNum = prefixNum + iCount
+
+        fileName = eachFile.split(".")[0]
+
+        os.rename(folderPath + "/JPEGImages/" +eachFile, folderPath + "/JPEGImages/" + str(nameNum) + ".jpg")
+        corresXML = folderPath + "/Annotations/" + fileName + ".txt"
+        if (not os.path.exists(corresXML)):
+            #os.remove(folderPath + "/JPEGImages/" +eachFile)
+            os.remove(folderPath + "/JPEGImages/" + str(nameNum) + ".jpg")
+        else:
+            os.rename(corresXML, folderPath + "/Annotations/" + str(nameNum) + ".txt")
+
+
+        iCount = iCount + 1
+
+def renameZeroStartFiles(folderPath):
+    print("going to rename zero start Files ", folderPath)
+    for eachFile in os.listdir(folderPath):
+        if eachFile.startswith("0"):
+            newName = "80" + eachFile
+            #if eachFile.endswith("jpg"):
+            print("handling name first(add 80 to the beginning) ", eachFile)
+            os.rename(folderPath + "/" + eachFile, folderPath + "/" + newName)
+            if eachFile.endswith("xml"):
+                print("xml handling(add 80 and replace content) ", eachFile)
+
+def makeFileNameAndNameConsistent(folderPath):
+    print("going to makeFileNameAndNameConsistent all ", folderPath)
+    for eachFile in os.listdir(folderPath):
+        if eachFile.endswith("xml"):
+            with open(folderPath + "/" + eachFile, "r") as f_r:
+                lines = f_r.readlines()
+
+            with open(folderPath + "/" + eachFile, "w") as f_w:
+                fileName = eachFile.split(".")[0]
+                for line in lines:
+                    if "filename" in line:
+                        line = "<filename>" + fileName + ".jpg" + "</filename>"
+                        #line = line.replace("<filename>", "tasting")
+                    f_w.write(line)
+                    f_w.write("\n")
+            f_w.close()
+            f_r.close()
+
+def generateXMLListFile(xmlFilePath,outputFileName):
+    print("this is to generate xml list file ", xmlFilePath)
+
+    with open(outputFileName, "w") as f_w:
+        for eachFile in os.listdir(xmlFilePath):
+            if eachFile.endswith("xml"):
+                f_w.write(eachFile)
+                f_w.write("\n")
+
+    f_w.close()
+
+
+def generateFileNameOnlyList(xmlFilePath,outputFileName):
+    print("this is to generate xml list file ", xmlFilePath)
+
+    with open(outputFileName, "w") as f_w:
+        for eachFile in os.listdir(xmlFilePath):
+            if eachFile.endswith("xml"):
+                fileName = eachFile.split(".")[0]
+                f_w.write(fileName)
+                f_w.write("\n")
+
+    f_w.close()
+
+def generateFileNameOnlyDivideTrainValList(xmlFilePath,outputTrainFileName, outputValFileName):
+    print("this is to generate xml list file ", xmlFilePath)
+
+    iCount = 0
+    with open(outputTrainFileName, "w") as f_wtr, open(outputValFileName, "w") as f_wval:
+        for eachFile in os.listdir(xmlFilePath):
+            if eachFile.endswith("xml"):
+                fileName = eachFile.split(".")[0]
+                if (iCount % 5 == 0):
+                    f_wval.write(fileName)
+                    f_wval.write("\n")
+                else:
+                    f_wtr.write(fileName)
+                    f_wtr.write("\n")
+            iCount = iCount + 1
+
+    f_wtr.close()
+    f_wval.close()
+
+def generateXMLListTrainValFile(xmlFilePath,outputTrainFileName, outputValFileName):
+    print("this is to generate xml list file ", xmlFilePath)
+
+    iCount = 0
+    with open(outputTrainFileName, "w") as f_wtr, open(outputValFileName, "w") as f_wval:
+        for eachFile in os.listdir(xmlFilePath):
+            if eachFile.endswith("xml"):
+                if (iCount % 5 == 0):
+                    f_wval.write(eachFile)
+                    f_wval.write("\n")
+                else:
+                    f_wtr.write(eachFile)
+                    f_wtr.write("\n")
+            iCount = iCount + 1
+
+    f_wtr.close()
+    f_wval.close()
+
+
+
+
+
+
