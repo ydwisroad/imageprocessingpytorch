@@ -1,1 +1,0 @@
-python train.py --cfg=models/yolov3.yaml --data=data/trafficsign.yaml --weights=../../../data/weights/yolov3.pt --epochs=5

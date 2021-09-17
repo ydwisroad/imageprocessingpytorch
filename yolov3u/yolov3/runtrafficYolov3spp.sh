@@ -1,1 +1,0 @@
-python train.py --cfg=models/yolov3-spp.yaml --weights='' --batch-size=24 --data=data/trafficSign512TT.yaml --epochs=600 --device=0

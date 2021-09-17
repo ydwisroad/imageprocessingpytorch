@@ -1,8 +1,0 @@
-diningtable 166 175 425 344
-chair 244 156 316 287
-chair 328 162 388 194
-chair 355 180 440 328
-chair 289 197 373 336
-chair 164 195 264 342
-chair 150 161 186 282
-pottedplant 436 301 500 374 difficult

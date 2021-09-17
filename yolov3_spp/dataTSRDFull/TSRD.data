@@ -1,4 +1,0 @@
-classes=58
-train=dataTSRDFull/trainTSRDFull.txt
-valid=dataTSRDFull/valTSRDFull.txt
-names=dataTSRDFull/TSRDlabel.names

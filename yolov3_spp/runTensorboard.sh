@@ -1,1 +1,0 @@
-tensorboard --logdir=runs/Jan09_18-20-53_C02Y110BJGH6/
