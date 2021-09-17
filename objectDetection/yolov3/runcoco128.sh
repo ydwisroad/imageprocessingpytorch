@@ -1,0 +1,1 @@
+python train.py --epochs=6 --weights='../../../data/weights/yolov3.pt' --data=data/coco128.yaml --cfg=models/yolov3.yaml

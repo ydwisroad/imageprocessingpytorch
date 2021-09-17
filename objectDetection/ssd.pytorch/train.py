@@ -25,7 +25,7 @@ parser = argparse.ArgumentParser(
 train_set = parser.add_mutually_exclusive_group()
 parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO'],
                     type=str, help='VOC or COCO')
-parser.add_argument('--dataset_root', default='../../../data/VOCdevkit/',
+parser.add_argument('--dataset_root', default='/Users/i052090/Downloads/segmentation/data/TrafficSign/voc/',
                     help='Dataset root directory path')
 parser.add_argument('--basenet', default='vgg16_reducedfc.pth',
                     help='Pretrained base model')
@@ -257,3 +257,5 @@ def update_vis_plot(iteration, loc, conf, window1, window2, update_type,
 
 if __name__ == '__main__':
     train()
+
+

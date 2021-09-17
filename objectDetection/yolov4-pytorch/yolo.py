@@ -28,10 +28,10 @@ class YOLO(object):
         "model_path"        : 'model_data/yolo4_weights.pth',
         "anchors_path"      : 'model_data/yolo_anchors.txt',
         "classes_path"      : 'model_data/coco_classes.txt',
-        "model_image_size"  : (416, 416, 3),
+        "model_image_size"  : (512, 512, 3),
         "confidence"        : 0.5,
         "iou"               : 0.3,
-        "cuda"              : True
+        "cuda"              : False
     }
 
     @classmethod

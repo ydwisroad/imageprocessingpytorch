@@ -1,1 +1,1 @@
-python train.py --cfg=models/yolov3.yaml --weights='' --data=data/trafficsign.yaml --epochs=1200
+python train.py --cfg=models/yolov3.yaml --weights='../../../data/weights/yolov3.pt' --data=data/trafficsign.yaml --epochs=10

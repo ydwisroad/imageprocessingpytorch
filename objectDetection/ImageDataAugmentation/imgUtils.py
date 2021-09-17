@@ -136,6 +136,7 @@ def cropObjectsFromImage(imgFile, labelFile, saveImagePath, countParent):
     boxes_list = []
     count = 0
     for eachLabel in labelsYoloPos:
+        print("cropObjectsFromImage ", eachLabel)
         eachLabelSplit = eachLabel.split(" ")
         x1, y1, x2, y2 = centerxywhYoloTox1y1x2y2(float(image.shape[1]), float(image.shape[0]),
                                                   float(eachLabelSplit[1]), float(eachLabelSplit[2]),
@@ -144,6 +145,25 @@ def cropObjectsFromImage(imgFile, labelFile, saveImagePath, countParent):
 
         object_im = cv2.imwrite(saveImagePath + "/" + str(eachLabelSplit[0]) + "_" + str(countParent) + "_"
         + str(count) + ".png", region)
+        count = count + 1
+
+#crop objects which are annotated in image, save as an independent image.
+def cropObjectsFromImageSameFilename(imgFile, labelFile, saveImagePath, countParent):
+    image = cv2.imread(imgFile)
+
+    (filepath, tempfilename) = os.path.split(imgFile);
+
+    labelsYoloPos = [f.strip() for f in open(labelFile).readlines()]
+    boxes_list = []
+    count = 0
+    for eachLabel in labelsYoloPos:
+        eachLabelSplit = eachLabel.split(" ")
+        x1, y1, x2, y2 = centerxywhYoloTox1y1x2y2(float(image.shape[1]), float(image.shape[0]),
+                                                  float(eachLabelSplit[1]), float(eachLabelSplit[2]),
+                                                  float(eachLabelSplit[3]), float(eachLabelSplit[4]))
+        region = image[int(y1):int(y2), int(x1):int(x2)]
+
+        object_im = cv2.imwrite(saveImagePath + "/" + tempfilename, region)
         count = count + 1
 
 def cropObjectsFromImagePath(imgFilePath, labelFilePath, saveImagePath):
@@ -155,6 +175,7 @@ def cropObjectsFromImagePath(imgFilePath, labelFilePath, saveImagePath):
         print("eachLabelFile ", eachLabelFile)
         fullImgPath = imgFilePath + "/" + eachImageFile
         print("fullImgPath ", fullImgPath)
+        #cropObjectsFromImageSameFilename(fullImgPath, eachLabelFile, saveImagePath, count)
         cropObjectsFromImage(fullImgPath, eachLabelFile, saveImagePath, count)
         count = count + 1
 
@@ -395,7 +416,7 @@ def addObjRectToImages(rootPath, outputImagesPath):
         outputRectImagePath = outputImagesPath + "/" + eachImgFile
         cv2.imwrite(outputRectImagePath, imgRects)
 
-def resizeImagesToFixedSize(originalImagesPath, outImagesPath, targetSize = (512, 512)):
+def resizeImagesToFixedSize(originalImagesPath, outImagesPath, targetSize = (640, 640)):
     print("will change to size ", targetSize)
     iCount = 0
     for eachSmallImageFile in os.listdir(originalImagesPath):

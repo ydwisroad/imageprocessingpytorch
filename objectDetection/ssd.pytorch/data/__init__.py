@@ -1,4 +1,4 @@
-from data.voc0712 import VOCDetection, VOCAnnotationTransform, VOC_CLASSES, VOC_ROOT
+from data.voc0712 import VOCDetection, VOCAnnotationTransform, VOC_CLASSES
 
 from data.coco import COCODetection, COCOAnnotationTransform, COCO_CLASSES, COCO_ROOT, get_label_map
 from data.config import *

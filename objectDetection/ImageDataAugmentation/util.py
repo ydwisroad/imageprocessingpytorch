@@ -320,7 +320,7 @@ def generateFileNameOnlyList(xmlFilePath,outputFileName):
 
     f_w.close()
 
-def generateFileNameOnlyDivideTrainValList(xmlFilePath,outputTrainFileName, outputValFileName):
+def generateFileNameOnlyDivideTrainValList(xmlFilePath,outputTrainFileName, outputValFileName, portion=5):
     print("this is to generate xml list file ", xmlFilePath)
 
     iCount = 0
@@ -328,7 +328,7 @@ def generateFileNameOnlyDivideTrainValList(xmlFilePath,outputTrainFileName, outp
         for eachFile in os.listdir(xmlFilePath):
             if eachFile.endswith("xml"):
                 fileName = eachFile.split(".")[0]
-                if (iCount % 5 == 0):
+                if (iCount % portion == 0):
                     f_wval.write(fileName)
                     f_wval.write("\n")
                 else:

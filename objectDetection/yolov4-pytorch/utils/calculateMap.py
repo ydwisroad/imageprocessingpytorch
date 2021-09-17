@@ -103,6 +103,7 @@ def handleEachImageDrGt(epochFolder, image_valImg, targets_valImg, outputsImg, f
                                            (model_image_size[1], model_image_size[0])))
 
     output_list = []
+    print("outputsImg[0] ", outputsImg[0].shape, " ", outputsImg[1].shape, " ", outputsImg[2].shape)
     for i in range(3):
         output_list.append(yolo_decodes[i](outputsImg[i]))
 

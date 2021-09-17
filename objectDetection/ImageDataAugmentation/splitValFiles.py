@@ -55,6 +55,12 @@ def replaceIndexInLabels(labelsFolder):
         os.remove(eachLabelFile)
         os.rename(eachLabelFile +".bak", eachLabelFile)
 
+def renamePNGtoJPG(folder):
+    for fileName in os.listdir(folder):
+        eachFile = folder + "/" + fileName
+        newFileName = fileName.replace("png", "jpg")
+        newFile = folder + "/" + newFileName
+        os.rename(eachFile, newFile)
 
 
 if __name__ == "__main__":
@@ -67,4 +73,7 @@ if __name__ == "__main__":
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/allSmallObjects",
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/select20smallobjects")
 
-    replaceIndexInLabels("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/labelstest/")
+    #replaceIndexInLabels("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/labelstest/")
+    folder = "/Users/i052090/Downloads/roadproject/marks/yolo/all/images"
+    renamePNGtoJPG(folder)
+

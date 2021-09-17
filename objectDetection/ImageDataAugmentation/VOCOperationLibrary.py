@@ -42,7 +42,8 @@ def _parseannotation(annofile):
                             xmax = size.text
                         if 'ymax' in size.tag:
                             ymax = size.text
-                    annos.append([name, int(xmin), int(ymin), int(xmax), int(ymax)])
+                    print(xmin, ymin,xmax,ymax)
+                    annos.append([name, int(float(xmin)), int(float(ymin)), int(float(xmax)), int(float(ymax))])
     return annos, (weight, height)
 
 
@@ -93,13 +94,13 @@ def _changeone(annofile, oldcls, newcls, newsize=None):
                     if 'bndbox' in element.tag:
                         for coordinate in list(element):
                             if 'xmin' in coordinate.tag:
-                                coordinate.text = str(int(int(coordinate.text) * sizechangerate_x))
+                                coordinate.text = str(int(float(coordinate.text) * sizechangerate_x))
                             if 'xmax' in coordinate.tag:
-                                coordinate.text = str(int(int(coordinate.text) * sizechangerate_x))
+                                coordinate.text = str(int(float(coordinate.text) * sizechangerate_x))
                             if 'ymin' in coordinate.tag:
-                                coordinate.text = str(int(int(coordinate.text) * sizechangerate_y))
+                                coordinate.text = str(int(float(coordinate.text) * sizechangerate_y))
                             if 'ymax' in coordinate.tag:
-                                coordinate.text = str(int(int(coordinate.text) * sizechangerate_y))
+                                coordinate.text = str(int(float(coordinate.text) * sizechangerate_y))
 
     tree = ET.ElementTree(root)
     tree.write(annofile, encoding="utf-8", xml_declaration=True)

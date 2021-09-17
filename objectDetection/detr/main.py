@@ -16,8 +16,6 @@ from datasets import build_dataset, get_coco_api_from_dataset
 from engine import evaluate, train_one_epoch
 from models import build_model
 
-torch.multiprocessing.set_sharing_strategy('file_system')
-print("start to run Main program")
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Set transformer detector', add_help=False)
@@ -83,17 +81,18 @@ def get_args_parser():
     # dataset parameters
     parser.add_argument('--dataset_file', default='coco')
     #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/coco2017/", type=str)
-    #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/markedhkbridge/resized", type=str)
-    #parser.add_argument('--coco_path', default="/data/nextcloud/dbc2017/data/coco", type=str)
-    parser.add_argument('--coco_path', default="/data/nextcloud/dbc2017/data/yd", type=str)
 
+    parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/", type=str)
+
+    #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll",
+    #                   type=str)
 
     parser.add_argument('--coco_panoptic_path', type=str)
     parser.add_argument('--remove_difficult', action='store_true')
 
     parser.add_argument('--output_dir', default='./',
                         help='path where to save, empty for no saving')
-    parser.add_argument('--device', default='gpu',
+    parser.add_argument('--device', default='cpu',
                         help='device to use for training / testing')
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--resume', default='', help='resume from checkpoint')

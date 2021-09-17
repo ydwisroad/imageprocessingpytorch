@@ -12,6 +12,7 @@ import random
 import shutil
 import VOCOperationLibrary as vol
 
+imageSurfix = '.png'
 
 class VOC(object):
     def __init__(self, dataset_anno, dataset_img=None, num_class=None, datasetdir=None):
@@ -101,9 +102,9 @@ class VOC(object):
         total = len(annos)
         for num, annotation in enumerate(annos):
             annofile = annotation['file']
-            if os.path.exists(imgdir + annofile[:-4] + '.jpg') == False:
+            if os.path.exists(imgdir + annofile[:-4] + imageSurfix) == False:
                 raise FileNotFoundError
-            pil_im = Image.open(imgdir + annofile[:-4] + '.jpg')
+            pil_im = Image.open(imgdir + annofile[:-4] + imageSurfix)
             for i, obj in enumerate(annotation['info']):
                 obj_class = obj[0]
                 obj_box = tuple(obj[1:5])
@@ -112,7 +113,7 @@ class VOC(object):
                 region = pil_im.crop(obj_box)
                 pil_region = Image.fromarray(np.uint8(region))
                 pil_region.save(os.path.join(cropdir + obj_class,
-                                             annofile[:-4] + '_' + str(i) + '.jpg'))
+                                             annofile[:-4] + '_' + str(i) + imageSurfix))
             process = int(num * 100 / total)
             s1 = "\r%d%%[%s%s]" % (process, "*" * process, " " * (100 - process))
             s2 = "\r%d%%[%s]" % (100, "*" * 100)
@@ -170,7 +171,7 @@ class VOC(object):
                       annofile-annotation file name
                       nums-the object number of annotation which you want display
         """
-        im = Image.open(self.dataset_img + annofile[:-4] + '.jpg')
+        im = Image.open(self.dataset_img + annofile[:-4] + imageSurfix)
         fig, ax = plt.subplots(figsize=(12, 12))
         ax.imshow(im, aspect='equal')
         for i, obj in enumerate(objs):
@@ -233,7 +234,7 @@ class VOC(object):
         total = len(annolist)
         for num, f in enumerate(annolist):
             anno_path = os.path.join(annodir, f)
-            img_path = os.path.join(imgdir, f)[:-4] + '.jpg'
+            img_path = os.path.join(imgdir, f)[:-4] + imageSurfix
             img = Image.open(img_path)
             img = img.resize(newsize)
             img.save(img_path, 'jpeg', quality=95)
@@ -307,8 +308,8 @@ class VOC(object):
         for i, xml in enumerate(xml_list):
             shutil.copyfile(os.path.join(from_xml_path, xml),
                             os.path.join(save_xml_dir, xml))
-            shutil.copyfile(os.path.join(from_img_path, xml)[:-4] + '.jpg',
-                            os.path.join(save_img_dir, xml)[:-4] + '.jpg')
+            shutil.copyfile(os.path.join(from_img_path, xml)[:-4] + imageSurfix,
+                            os.path.join(save_img_dir, xml)[:-4] + imageSurfix)
 
     def _Find(self, cls, annodir=None):
         """
@@ -351,8 +352,8 @@ class VOC(object):
         self._Copy(xml_files, annodir, imgdir, save_xml_path, save_img_path)
 
 
-v = VOC('/Users/i052090/Downloads/segmentation/data/ydbridge/all/Annotations/',
-        '/Users/i052090/Downloads/segmentation/data/ydbridge/all/JPEGImages/')
+v = VOC('/Users/i052090/Downloads/roadproject/marks/centercrop/Annotations/',
+        '/Users/i052090/Downloads/roadproject/marks/centercrop/JPEGImages/')
 # print(v._ParseAnnos())
 # v._Crop('F:/数据集/JPEGImages/', 'F:/数据集/crops/')
 # v._DelAnnotations(['123', '234'])

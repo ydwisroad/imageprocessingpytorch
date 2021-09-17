@@ -95,7 +95,7 @@ def get_args_parser():
     parser.add_argument('--dataset_file', default='coco')
     #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/coco2017/", type=str)
 
-    parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/", type=str)
+    #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/", type=str)
 
     #parser.add_argument('--coco_path', default="/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll",
     #                   type=str)
@@ -162,18 +162,18 @@ def plot_result(pil_img, prob, boxes,save_name=None,imshow=False, imwrite=False)
         cl = p.argmax()
         label_text = '{}: {}%'.format(LABEL[cl],round(p[cl]*100,2))
 
-        cv2.rectangle(opencvImage, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (255, 255, 0), 2)
-        cv2.putText(opencvImage, label_text,(int(xmin)+10, int(ymin)+30), cv2.FONT_HERSHEY_SIMPLEX, 1,
-            (255, 255, 0), 2)
+        cv2.rectangle(opencvImage, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (0, 0, 0), 1)
+        cv2.putText(opencvImage, label_text,(int(xmin)+10, int(ymin)+30), cv2.FONT_HERSHEY_SIMPLEX, 0.6,
+            (0, 0, 0), 1)
 
     if imshow:
         cv2.imshow('detect', opencvImage)
         cv2.waitKey(0)
 
     if imwrite:
-        if not os.path.exists("./result/pred"):
-            os.makedirs('./result/pred')
-        cv2.imwrite('./result/pred/{}'.format(save_name), opencvImage)
+        if not os.path.exists("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/all/prediction"):
+            os.makedirs('/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/all/prediction')
+        cv2.imwrite('/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/all/prediction/{}'.format(save_name), opencvImage)
 
 
 # 单张图像的推断
@@ -215,14 +215,15 @@ if __name__ == '__main__':
     #detr = detr_resnet50(pretrained=False,num_classes=3+1).eval()  # <------这里类别需要+1
 
     model, _, _ = build_model(args)
-    state_dict = torch.load('/Users/i052090/Downloads/segmentation/data/ydbridge/5_4/ydcheckpoint100iter.pth',
+    state_dict = torch.load('/Users/i052090/Downloads/segmentation/data/ydbridge/checkpoint0099_hk100iter.pth',
                             map_location=torch.device(device))   # <-----------修改加载模型的路径
     print("state_dict ", state_dict)
 
     model.load_state_dict(state_dict["model"])
     model.to(device)
 
-    testImgPath = "/Users/i052090/Downloads/segmentation/data/ydbridge/all/originalVOC/JPEGImages"
+    #testImgPath = "/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/JPEGImages"
+    testImgPath = "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/JPEGImages"
     files = os.listdir(testImgPath)
 
     for file in files:

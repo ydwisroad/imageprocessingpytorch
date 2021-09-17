@@ -228,14 +228,15 @@ if __name__ == "__main__":
     #   权值文件请看README，百度网盘下载
     #------------------------------------------------------#
     model_path = opt.model_path    #"../../../data/weights/yolo4_weights.pth"
-    print('Loading weights into state dict...')
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model_dict = model.state_dict()
-    pretrained_dict = torch.load(model_path, map_location=device)
-    pretrained_dict = {k: v for k, v in pretrained_dict.items() if np.shape(model_dict[k]) ==  np.shape(v)}
-    model_dict.update(pretrained_dict)
-    model.load_state_dict(model_dict)
-    print('Finished!')
+    if (not model_path == ""):
+        print('Loading weights into state dict...')
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        model_dict = model.state_dict()
+        pretrained_dict = torch.load(model_path, map_location=device)
+        pretrained_dict = {k: v for k, v in pretrained_dict.items() if np.shape(model_dict[k]) ==  np.shape(v)}
+        model_dict.update(pretrained_dict)
+        model.load_state_dict(model_dict)
+        print('Finished!')
 
     if os.path.exists("./mapresults"):
         shutil.rmtree("./mapresults")

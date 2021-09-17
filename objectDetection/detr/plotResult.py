@@ -12,7 +12,10 @@ import os
 
 #https://github.com/DataXujing/detr_transformer/blob/master/util/plot_utils.py
 
-def plot_logs(logs, fields=('class_error', 'loss', 'loss_bbox','loss_giou','loss_bbox_unscaled', 'mAP'), ewm_col=0, log_name='log.txt'):
+#def plot_logs(logs, fields=('class_error', 'loss', 'loss_bbox','loss_giou','loss_bbox_unscaled', 'mAP'), ewm_col=0, log_name='log.txt'):
+#def plot_logs(logs, fields=('class_error', 'loss'), ewm_col=0,
+def plot_logs(logs, fields=('loss_bbox','mAP'), ewm_col=0,
+              log_name='log.txt'):
     '''
     Function to plot specific fields from training log(s). Plots both training and test results.
     :: Inputs - logs = list containing Path objects, each pointing to individual dir with a log file
@@ -74,10 +77,12 @@ def plot_logs(logs, fields=('class_error', 'loss', 'loss_bbox','loss_giou','loss
                 )
     for ax, field in zip(axs, fields):
         # ax.legend([p for p in [logs]])
-        ax.legend([field])
+        #ax.legend([field])
+        ax.set_xlabel('epoch')
         ax.set_title(field)
     # plt.show()
-    plt.savefig("log.png")
+    plt.legend(loc=1)
+    plt.savefig('{}/log.png'.format(logs))
 
 
 def plot_precision_recall(files, naming_scheme='iter'):
@@ -116,5 +121,5 @@ def plot_precision_recall(files, naming_scheme='iter'):
 
 
 if __name__ == "__main__":
-    log_dir = "/Users/i052090/Downloads/segmentation/data/ydbridge/5_4/logs"
+    log_dir = "/Users/i052090/Downloads/segmentation/data/ydbridge/results/yd"
     plot_logs(log_dir)

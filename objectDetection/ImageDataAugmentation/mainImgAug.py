@@ -13,14 +13,14 @@ if __name__ == "__main__":
     #                        "/Users/i052090/Downloads/segmentation/data/TSRDMini/letterboxed/labels",
     #                        [512,512],[0,0,0])
 
-    #cropObjectsFromImagePath("/Users/i052090/Downloads/segmentation/data/ydbridge/all/yolo/train/images",
-    #                         "/Users/i052090/Downloads/segmentation/data/ydbridge/all/yolo/train/labels",
-    #                         "/Users/i052090/Downloads/segmentation/data/ydbridge/all/yolo/objects")
+    #cropObjectsFromImagePath("/Users/i052090/Downloads/roadproject/marks/yolo/train/images",
+    #                         "/Users/i052090/Downloads/roadproject/marks/yolo/train/labels",
+    #                         "/Users/i052090/Downloads/roadproject/marks/yolo/objects")
 
-    #copySmallObjectsToOneBlankImage("/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/trafficsign.png",
-    #                                "/Users/i052090/Downloads/segmentation/data/TSRD/objects",
-    #                                "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/images",
-    #                                8, 20000)
+    #copySmallObjectsToOneBlankImage("/Users/i052090/Downloads/roadproject/marks/yolo/blankRoad.png",
+    #                                "/Users/i052090/Downloads/roadproject/marks/yolo/objects",
+    #                                "/Users/i052090/Downloads/roadproject/marks/yolo/augmented/images",
+    #                                3, 2000)
 
     #generateAugmentedObjects("/Users/i052090/Downloads/segmentation/data/TSRD/objects",
     #                         "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/smallObjects")
@@ -33,13 +33,13 @@ if __name__ == "__main__":
     #addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")
 
-    #resizeImagesToFixedSize("E:/roadproject/experiment/data/TrafficSign/val/images",
-    #                        "E:/roadproject/experiment/data/trafficsign512TT/val/images")
+    #resizeImagesToFixedSize("/Users/i052090/Downloads/segmentation/data/bagspic/marked/original",
+    #                        "/Users/i052090/Downloads/segmentation/data/bagspic/marked/resized")
 
     #copySmallObjectsToManyImages("F:/objectsDetectData/NoSignImages512", "F:/objectsDetectData/allSmallObjects",
     #                             "F:/objectsDetectData/trafficSignTT60/train/images", 10)
     #renamePNGtoNone("F:/objectsDetectData/NoSignImages512")
-    #findUniqueIds("E:/roadproject/experiment/data/TrafficSign/train/labels")
+    #("E:/roadproject/experiment/data/TrafficSign/train/labels")
 
     #getRetinacsvFormatImagesList("/Users/i052090/Downloads/segmentation/data/TrafficSign/train/images/",
     #                             "/Users/i052090/Downloads/segmentation/data/TrafficSign/train/labels/",
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     folderPath = "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/annotations"
     #renameAllInFolder(folderPath, "800")
     #renameAllToNumberInFolder(folderPath, 50000)
-    renameTojpgFiles("")
+    #renameTojpgFiles("")
     #makeFileNameAndNameConsistent(folderPath)
 
     #renameZeroStartFiles("/Users/i052090/Downloads/segmentation/data/markedhkbridge/all")
@@ -61,9 +61,12 @@ if __name__ == "__main__":
     #generateXMLListTrainValFile("/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/annotations",
     #                            "./ydbridgetrainxml.txt", "./ydbridgevalxml.txt")
 
-    #generateFileNameOnlyDivideTrainValList("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/annotations/",
-    #                         "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/ImageSets/Main/train.txt",
-    #                         "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/VOCAll/ImageSets/Main/val.txt")
+    #generateFileNameOnlyDivideTrainValList("/Users/i052090/Downloads/roadproject/marks/centercrop/Annotations/",
+    #                        "/Users/i052090/Downloads/roadproject/marks/centercrop/ImageSets/Main/train.txt",
+    #                         "/Users/i052090/Downloads/roadproject/marks/centercrop/ImageSets/Main/val.txt",
+    #                        1000)
+
+
 
 
 

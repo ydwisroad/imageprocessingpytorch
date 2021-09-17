@@ -14,18 +14,18 @@ import shutil
 
 
 # voc??????????
-voc_root = "../../../data/VOCdevkit"
-voc_version = "VOC2012"
+voc_root = "/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll"
+voc_version = "./"
 
 # ?????????????txt??
 train_txt = "train.txt"
 val_txt = "val.txt"
 
 # ??????????
-save_file_root = "./my_yolo_dataset"
+save_file_root = "/Users/i052090/Downloads/segmentation/data/ydbridge/all/VOCAll/yolo"
 
 # label????json??
-label_json_path = './data/pascal_voc_classes.json'
+label_json_path = '/Users/i052090/Downloads/segmentation/data/markedhkbridge/VOC/VOC2012/voc_classes.json'
 
 # ???voc?images???xml???txt??
 voc_images_path = os.path.join(voc_root, voc_version, "JPEGImages")
@@ -95,7 +95,8 @@ def translate_info(file_names, save_root, class_dict, train_val='train'):
 
         # read xml
         with open(xml_path) as fid:
-            xml_str = fid.read()
+            xml_str = fid.read().encode()
+        #xml_str = xml_str.decode('utf-8').encode('ascii')
         xml = etree.fromstring(xml_str)
         data = parse_xml_to_dict(xml)["annotation"]
         img_height = int(data["size"]["height"])
@@ -110,7 +111,7 @@ def translate_info(file_names, save_root, class_dict, train_val='train'):
                 ymin = float(obj["bndbox"]["ymin"])
                 ymax = float(obj["bndbox"]["ymax"])
                 class_name = obj["name"]
-                class_index = class_dict[class_name] - 1  # ??id?0??
+                class_index = class_dict[class_name]  #- 1  # ??id?0??
 
                 # ?box?????yolo??
                 xcenter = xmin + (xmax - xmin) / 2
