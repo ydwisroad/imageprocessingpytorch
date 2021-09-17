@@ -1,0 +1,15 @@
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80057.jpg
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80053.jpg
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80045.jpg 1465,701,1511,802,110 1456,940,1508,1056,10
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80022.jpg 1080,868,1113,900,160
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80020.jpg 1379,782,1411,814,21 1138,945,1153,963,38 1303,955,1313,967,108
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80009.jpg 805,802,842,840,98 953,934,978,960,44 953,959,979,986,47
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80025.jpg
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80024.jpg
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80026.jpg 1395,967,1410,983,85 1396,983,1413,999,108
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80003.jpg 907,759,933,822,88
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80014.jpg 19,937,63,987,108
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80076.jpg 48,805,101,870,114
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80077.jpg
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80058.jpg 265,849,297,882,9 412,838,444,871,7
+/Users/i052090/Downloads/segmentation/data/trafficMini/images/val/80064.jpg 99,846,122,871,35 1049,1350,1287,1561,35

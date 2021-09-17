@@ -1,0 +1,30 @@
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000008.jpg 53,87,471,420,12 158,44,289,167,14
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000015.jpg 270,1,378,176,4 57,1,164,150,4
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000019.jpg 139,2,372,197,11 165,66,318,236,11 361,1,480,112,11
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000023.jpg 6,1,314,262,19 40,97,121,411,4 137,36,169,109,14 180,36,216,104,14 96,39,123,103,14
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000028.jpg 158,199,231,240,6 47,202,94,238,6
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000033.jpg 104,61,476,257,0
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000036.jpg 120,1,203,35,1 117,38,273,121,1 206,74,395,237,14 24,2,500,188,3 1,187,500,282,3
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000037.jpg 47,157,450,282,0
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000041.jpg 271,170,386,234,14 295,189,328,231,14 206,176,256,236,14 122,162,198,330,14 457,212,500,297,14 438,173,500,243,14 351,272,452,375,8 265,250,353,364,8 189,260,286,375,8 149,224,402,331,10 358,188,469,359,14
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000045.jpg 45,42,455,342,18
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000053.jpg 54,2,500,375,11
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000060.jpg 1,32,343,336,7
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000066.jpg 1,9,439,500,11
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000070.jpg 180,260,213,293,19 367,244,447,353,8 255,247,371,375,8
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000074.jpg 46,178,387,335,6
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000085.jpg 1,1,395,375,6
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000089.jpg 71,18,307,494,8
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000093.jpg 392,3,479,95,19 307,178,412,280,8 328,194,473,328,8 143,163,320,247,17 1,173,145,317,17
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000095.jpg 251,161,287,270,2
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000096.jpg 1,1,500,375,14 96,124,416,375,7
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000097.jpg 101,203,181,274,2
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000099.jpg 122,11,336,223,11 98,176,425,357,16
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000103.jpg 156,48,287,338,2
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000105.jpg 215,182,377,240,6
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000109.jpg 293,70,420,197,13 41,95,444,375,6 228,90,338,365,14
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000112.jpg 83,74,386,320,7 324,1,394,116,4
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000128.jpg 11,29,500,375,17 1,85,361,375,14 92,173,212,357,14
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000131.jpg 185,119,332,180,2
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000132.jpg 431,106,474,253,14 39,111,81,262,14 1,255,500,375,5
+/Users/i052090/Downloads/segmentation/data/VOCdevkit/VOC2012/JPEGImages/2008_000141.jpg 94,9,500,333,12 42,167,75,223,14

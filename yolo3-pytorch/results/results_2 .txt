@@ -1,0 +1,94 @@
+# AP and precision/recall per class
+100.00% = aeroplane AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = aeroplane AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = bicycle AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = bicycle AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = bird AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = bird AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = boat AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = boat AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = bottle AP 
+ Precision: ['1.00', '1.00', '1.00', '1.00']
+ Recall :['0.33', '0.67', '0.67', '1.00']
+100.00% = bottle AP 	||	score_threhold=0.5 : F1=0.80 ; Recall=66.67% ; Precision=100.00%
+
+100.00% = bus AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = bus AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = car AP 
+ Precision: ['1.00', '1.00', '1.00', '1.00']
+ Recall :['0.25', '0.50', '0.75', '1.00']
+100.00% = car AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=25.00% ; Precision=100.00%
+
+100.00% = cat AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = cat AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+100.00% = chair AP 
+ Precision: ['1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00']
+ Recall :['0.11', '0.22', '0.33', '0.44', '0.56', '0.67', '0.78', '0.78', '0.89', '1.00']
+100.00% = chair AP 	||	score_threhold=0.5 : F1=0.71 ; Recall=55.56% ; Precision=100.00%
+
+100.00% = cow AP 
+ Precision: ['1.00', '1.00', '1.00']
+ Recall :['0.33', '0.67', '1.00']
+100.00% = cow AP 	||	score_threhold=0.5 : F1=0.50 ; Recall=33.33% ; Precision=100.00%
+
+100.00% = diningtable AP 
+ Precision: ['1.00']
+ Recall :['1.00']
+100.00% = diningtable AP 	||	score_threhold=0.5 : F1=1.00 ; Recall=100.00% ; Precision=100.00%
+
+100.00% = dog AP 
+ Precision: ['1.00', '1.00', '1.00', '1.00']
+ Recall :['0.25', '0.50', '0.75', '1.00']
+100.00% = dog AP 	||	score_threhold=0.5 : F1=0.40 ; Recall=25.00% ; Precision=100.00%
+
+100.00% = horse AP 
+ Precision: ['1.00']
+ Recall :['1.00']
+100.00% = horse AP 	||	score_threhold=0.5 : F1=1.00 ; Recall=100.00% ; Precision=100.00%
+
+100.00% = motorbike AP 
+ Precision: ['1.00']
+ Recall :['1.00']
+100.00% = motorbike AP 	||	score_threhold=0.5 : F1=1.00 ; Recall=100.00% ; Precision=100.00%
+
+100.00% = person AP 
+ Precision: ['1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00', '1.00']
+ Recall :['0.06', '0.11', '0.17', '0.22', '0.28', '0.33', '0.39', '0.44', '0.50', '0.56', '0.61', '0.61', '0.67', '0.72', '0.78', '0.83', '0.89', '0.94', '1.00']
+100.00% = person AP 	||	score_threhold=0.5 : F1=0.56 ; Recall=38.89% ; Precision=100.00%
+
+100.00% = sheep AP 
+ Precision: ['1.00']
+ Recall :['1.00']
+100.00% = sheep AP 	||	score_threhold=0.5 : F1=1.00 ; Recall=100.00% ; Precision=100.00%
+
+100.00% = train AP 
+ Precision: ['1.00']
+ Recall :['1.00']
+100.00% = train AP 	||	score_threhold=0.5 : F1=1.00 ; Recall=100.00% ; Precision=100.00%
+
+100.00% = tvmonitor AP 
+ Precision: ['1.00', '1.00']
+ Recall :['0.50', '1.00']
+100.00% = tvmonitor AP 	||	score_threhold=0.5 : F1=0.67 ; Recall=50.00% ; Precision=100.00%
+
+
+# mAP of all classes
+mAP = 100.00%

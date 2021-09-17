@@ -1,0 +1,4 @@
+classes=58
+train=dataTSRD/trainTSRD.txt
+valid=dataTSRD/valTSRD.txt
+names=dataTSRD/TSRDlabel.names

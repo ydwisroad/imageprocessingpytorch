@@ -1,0 +1,20 @@
+[I 13:41:32.151 NotebookApp] Writing notebook server cookie secret to /Users/i052090/Library/Jupyter/runtime/notebook_cookie_secret
+[I 13:41:36.854 NotebookApp] JupyterLab extension loaded from /Applications/anaconda3/lib/python3.8/site-packages/jupyterlab
+[I 13:41:36.854 NotebookApp] JupyterLab application directory is /Applications/anaconda3/share/jupyter/lab
+[I 13:41:36.856 NotebookApp] Serving notebooks from local directory: /Users/i052090/Downloads/segmentation/imageprocessingpytorch/objectDetection/ssd.pytorch
+[I 13:41:36.856 NotebookApp] The Jupyter Notebook is running at:
+[I 13:41:36.856 NotebookApp] http://C02Y110BJGH6:8888/?token=10df8aeecd7b37c4e7f44e9e84868ddc1d764a0d6408f76d
+[I 13:41:36.856 NotebookApp]  or http://127.0.0.1:8888/?token=10df8aeecd7b37c4e7f44e9e84868ddc1d764a0d6408f76d
+[I 13:41:36.856 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:41:36.874 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/i052090/Library/Jupyter/runtime/nbserver-11260-open.html
+    Or copy and paste one of these URLs:
+        http://C02Y110BJGH6:8888/?token=10df8aeecd7b37c4e7f44e9e84868ddc1d764a0d6408f76d
+     or http://127.0.0.1:8888/?token=10df8aeecd7b37c4e7f44e9e84868ddc1d764a0d6408f76d
+[I 13:44:15.025 NotebookApp] 302 GET / (127.0.0.1) 0.67ms
+[I 13:44:15.029 NotebookApp] 302 GET /tree? (127.0.0.1) 0.77ms
+[W 13:44:29.489 NotebookApp] 401 POST /login?next=%2Ftree%3F (127.0.0.1) 1.17ms referer=http://localhost:8888/login?next=%2Ftree%3F
+[I 13:49:18.172 NotebookApp] 302 GET /?token=10df8aeecd7b37c4e7f44e9e84868ddc1d764a0d6408f76d (127.0.0.1) 0.41ms
+[I 13:50:11.550 NotebookApp] 302 GET / (127.0.0.1) 0.53ms

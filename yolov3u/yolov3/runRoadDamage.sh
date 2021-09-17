@@ -1,0 +1,1 @@
+python train.py --cfg=models/yolov3_damage.yaml --data=data/roadDamage.yaml --weights=../../../../data/weights/yolov3.pt --epochs=5

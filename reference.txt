@@ -1,0 +1,98 @@
+https://github.com/object-detection-algorithm
+https://r-cnn.readthedocs.io/zh_CN/latest/
+https://github.com/wonbeomjang/pytorch-computer-vision-basic
+
+
+
+https://blog.csdn.net/weixin_41063476/article/details/87713860
+
+tensorboard
+https://zhuanlan.zhihu.com/p/115802478?from_voters_page=true
+执行"tensorboard --logdir=D:\tf_dir\tensorboard_study"，然后在http://localhost:6006/#graphs&run=tensorboard_study 中便可以查看到图形：
+
+mklink /d  c:\ydwisroad\imageprocessingpytorch\data  E:\roadproject\experiment\data
+
+Replace /r in linux for shell commands
+sed -i 's/\r$//' runCrackActivations.sh
+
+Models
+https://www.it610.com/article/1281066727819460608.htm
+
+
+Start labelme
+command line: labelme
+
+conda-env list
+
+git rm folder -r -f
+git add *
+git commit -m "test"
+git push
+
+
+2、conda常用的命令。
+
+    1）conda list 查看安装了哪些包。
+
+    2）conda env list 或 conda info -e 查看当前存在哪些虚拟环境
+
+    3）conda update conda 检查更新当前conda
+
+3、创建python虚拟环境。
+
+     使用 conda create -n your_env_name python=X.X（2.7、3.6等)命令创建python版本为X.X、名字为your_env_name的虚拟环境。your_env_name文件可以在Anaconda安装目录envs文件下找到。
+
+4、使用激活(或切换不同python版本)的虚拟环境。
+
+    打开命令行输入python --version可以检查当前python的版本。
+
+    使用如下命令即可 激活你的虚拟环境(即将python的版本改变)。
+
+    Linux:  source activate your_env_name(虚拟环境名称)
+
+    Windows: activate your_env_name(虚拟环境名称)
+
+   这是再使用python --version可以检查当前python版本是否为想要的。
+
+5、对虚拟环境中安装额外的包。
+
+    使用命令conda install -n your_env_name [package]即可安装package到your_env_name中
+
+6、关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)。
+
+   使用如下命令即可。
+
+   Linux: source deactivate
+
+   Windows: deactivate
+
+7、删除虚拟环境。
+
+   使用命令conda remove -n your_env_name(虚拟环境名称) --all， 即可删除。
+
+8、删除环境中的某个包。
+   使用命令conda remove --name your_env_name  package_name 即可。
+
+
+
+Label me
+https://blog.csdn.net/weixin_40428368/article/details/80979016
+
+
+GPU Usage
+nvidia-smi -l 1
+
+删除远程分支和本地分支文件夹：
+
+　　查看本地分支下的文件：
+　　ls
+　　删除a 文件夹及其下所有文件：
+　　git rm a -r -f
+　　同步删除操作到远程分支：
+　　git commit -m ‘delete a’
+　　提交到分支：
+　　git push
+
+
+
+
