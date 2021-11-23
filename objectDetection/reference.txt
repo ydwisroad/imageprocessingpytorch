@@ -92,6 +92,11 @@ nvidia-smi -l 1
 　　git commit -m ‘delete a’
 　　提交到分支：
 　　git push
+  
+  
+  github access token
+  ydwisroad
+  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
 
 
 
