@@ -22,7 +22,7 @@ from efficientdet.loss import FocalLoss
 from utils.sync_batchnorm import patch_replication_callback
 from utils.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights, boolean_string
 
-device = torch.device(opt.device if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #print("Using {} device training.".format(device.type))
 
 class Params:
