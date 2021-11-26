@@ -40,6 +40,8 @@ class CocoDataset(Dataset):
     def __getitem__(self, idx):
 
         img = self.load_image(idx)
+        if img is None:
+            return None
         annot = self.load_annotations(idx)
         sample = {'img': img, 'annot': annot}
         if self.transform:
@@ -49,11 +51,12 @@ class CocoDataset(Dataset):
     def load_image(self, image_index):
         image_info = self.coco.loadImgs(self.image_ids[image_index])[0]
         path = os.path.join(self.root_dir, self.set_name, image_info['file_name'])
-        #print("loading image ", path)
+        print("loading image ", path)
         img = cv2.imread(path)
         if img is None:
-            print("path ", path , " img ", img)
-        #print("image size ", img.shape)
+            print("path ", path, " img ", img)
+            return None
+        print("image size ", img.shape)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         return img.astype(np.float32) / 255.
@@ -88,9 +91,22 @@ class CocoDataset(Dataset):
 
 
 def collater(data):
-    imgs = [s['img'] for s in data]
-    annots = [s['annot'] for s in data]
-    scales = [s['scale'] for s in data]
+    imgs = []
+    annots = []
+    scales = []
+    for s in data:
+        if s is None:
+            print("Meet a None s skip")
+            continue
+        imgs.append(s['img'])
+        annots.append(s['annot'])
+        scales.append(s['scale'])
+
+    #imgs = [s['img'] for s in data]
+    #annots = [s['annot'] for s in data]
+    #scales = [s['scale'] for s in data]
+    if len(imgs)==0:
+        return {'img': None, 'annot': None, 'scale': None}
 
     imgs = torch.from_numpy(np.stack(imgs, axis=0))
 

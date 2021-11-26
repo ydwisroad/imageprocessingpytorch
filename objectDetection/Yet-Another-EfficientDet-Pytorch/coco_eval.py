@@ -25,11 +25,11 @@ from efficientdet.utils import BBoxTransform, ClipBoxes
 from utils.utils import preprocess, invert_affine, postprocess, boolean_string
 
 ap = argparse.ArgumentParser()
-ap.add_argument('-p', '--project', type=str, default='coco', help='project file that contains parameters')
+ap.add_argument('-p', '--project', type=str, default='coco2017', help='project file that contains parameters')
 ap.add_argument('-c', '--compound_coef', type=int, default=0, help='coefficients of efficientdet')
 ap.add_argument('-w', '--weights', type=str, default=None, help='/path/to/weights')
 ap.add_argument('--nms_threshold', type=float, default=0.5, help='nms threshold, don\'t change it if not for testing purposes')
-ap.add_argument('--cuda', type=boolean_string, default=True)
+ap.add_argument('--cuda', type=boolean_string, default=False)
 ap.add_argument('--device', type=int, default=0)
 ap.add_argument('--float16', type=boolean_string, default=False)
 ap.add_argument('--override', type=boolean_string, default=True, help='override previous bbox results file if exists')
@@ -42,7 +42,7 @@ gpu = args.device
 use_float16 = args.float16
 override_prev_results = args.override
 project_name = args.project
-weights_path = f'weights/efficientdet-d{compound_coef}.pth' if args.weights is None else args.weights
+weights_path = f'./logs/coco2021/tensorboard/efficientdet-d{compound_coef}.pth' if args.weights is None else args.weights
 
 print(f'running coco-style evaluation on project {project_name}, weights {weights_path}...')
 
@@ -63,6 +63,8 @@ def evaluate_coco(img_path, set_name, image_ids, coco, model, threshold=0.05):
         image_path = img_path + image_info['file_name']
 
         ori_imgs, framed_imgs, framed_metas = preprocess(image_path, max_size=input_sizes[compound_coef], mean=params['mean'], std=params['std'])
+        if len(framed_imgs) < 1:
+            continue
         x = torch.from_numpy(framed_imgs[0])
 
         if use_cuda:
@@ -137,8 +139,8 @@ def _eval(coco_gt, image_ids, pred_json_path):
 
 if __name__ == '__main__':
     SET_NAME = params['val_set']
-    VAL_GT = f'datasets/{params["project_name"]}/annotations/instances_{SET_NAME}.json'
-    VAL_IMGS = f'datasets/{params["project_name"]}/{SET_NAME}/'
+    VAL_GT = f'../../../../data/ydcrackobjectdetect/{params["project_name"]}/annotations/instances_{SET_NAME}.json'
+    VAL_IMGS = f'../../../../data/ydcrackobjectdetect/{params["project_name"]}/{SET_NAME}/'
     MAX_IMAGES = 10000
     coco_gt = COCO(VAL_GT)
     image_ids = coco_gt.getImgIds()[:MAX_IMAGES]

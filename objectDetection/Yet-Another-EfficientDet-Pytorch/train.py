@@ -23,6 +23,9 @@ from utils.sync_batchnorm import patch_replication_callback
 from utils.utils import replace_w_sync_bn, CustomDataParallel, get_last_weights, init_weights, boolean_string
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+gpuAvail=False
+if torch.cuda.is_available():
+    gpuAvail = True
 #print("Using {} device training.".format(device.type))
 
 class Params:
@@ -183,7 +186,8 @@ def train(opt):
     model = ModelWithLoss(model, debug=opt.debug)
 
     if params.num_gpus > 0:
-        model = model.to(device)  #.cuda()
+        if gpuAvail:
+            model = model.cuda()
         if params.num_gpus > 1:
             model = CustomDataParallel(model, params.num_gpus)
             if use_sync_bn:
@@ -223,8 +227,9 @@ def train(opt):
                     if params.num_gpus == 1:
                         # if only one gpu, just send it to cuda:0
                         # elif multiple gpus, send it to multiple gpus in CustomDataParallel, not here
-                        imgs = imgs.to(device) #.cuda()
-                        annot = annot.to(device) #.cuda()
+                        if gpuAvail:
+                            imgs = imgs.cuda()
+                            annot = annot.cuda()
 
                     optimizer.zero_grad()
                     cls_loss, reg_loss = model(imgs, annot, obj_list=params.obj_list)
@@ -274,9 +279,12 @@ def train(opt):
                         imgs = data['img']
                         annot = data['annot']
 
+                        if imgs is None:
+                            continue
                         if params.num_gpus == 1:
-                            imgs = imgs.to(device) #.cuda()
-                            annot = annot.to(device) #.cuda()
+                            if gpuAvail:
+                                imgs = imgs.cuda()
+                                annot = annot.cuda()
 
                         cls_loss, reg_loss = model(imgs, annot, obj_list=params.obj_list)
                         cls_loss = cls_loss.mean()
