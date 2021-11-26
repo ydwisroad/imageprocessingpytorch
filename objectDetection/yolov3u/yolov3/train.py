@@ -35,6 +35,7 @@ from utils.torch_utils import ModelEMA, select_device, intersect_dicts, torch_di
 
 logger = logging.getLogger(__name__)
 
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 def train(hyp, opt, device, tb_writer=None, wandb=None):
     logger.info("opt train data " + str(opt.data))
