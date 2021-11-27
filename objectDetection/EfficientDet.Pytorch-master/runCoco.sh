@@ -1,1 +1,0 @@
-python train.py --dataset COCO --dataset_root /Users/i052090/Downloads/segmentation/data/coco2017/ --network efficientdet-d0 --batch_size 4

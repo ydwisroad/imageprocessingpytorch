@@ -1,6 +1,0 @@
-numpy
-pandas
-torch
-torchvision
-pytoan
-albumentations
