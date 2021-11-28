@@ -1,0 +1,1 @@
+python train.py /root/mini-imagenet --model convit_tiny

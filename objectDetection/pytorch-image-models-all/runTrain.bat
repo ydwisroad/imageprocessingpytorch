@@ -1,0 +1,1 @@
+python train.py E:\ubuntushare\data\mini-imagenet
