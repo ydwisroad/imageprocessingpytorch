@@ -29,8 +29,8 @@ class Efficientdet(object):
         #   验证集损失较低不代表mAP较高，仅代表该权值在验证集上泛化性能较好。
         #   如果出现shape不匹配，同时要注意训练时的model_path和classes_path参数的修改
         #--------------------------------------------------------------------------#
-        "model_path"        : 'model_data/efficientdet-d0.pth',
-        "classes_path"      : 'model_data/coco_classes.txt',
+        "model_path"        : './ep064-loss0.034-val_loss0.017.pth',
+        "classes_path"      : 'model_data/voc_tools.txt',
         #---------------------------------------------------------------------#
         #   用于选择所使用的模型的版本，0-7
         #---------------------------------------------------------------------#
@@ -94,6 +94,10 @@ class Efficientdet(object):
         self.net    = EfficientDetBackbone(self.num_classes, self.phi)
 
         device      = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        if device.type == 'cpu':
+            self.cuda = False
+        else:
+            self.cuda = True
         self.net.load_state_dict(torch.load(self.model_path, map_location=device))
         self.net    = self.net.eval()
         print('{} model, anchors, and classes loaded.'.format(self.model_path))

@@ -490,6 +490,14 @@ class EfficientDetBackbone(nn.Module):
             7: [72, 200, 576],
         }
 
+        #-------------------------------------------#
+        #   获得三个shape的有效特征层
+        #   分别是C3  64, 64, 40
+        #         C4  32, 32, 112
+        #         C5  16, 16, 320
+        #-------------------------------------------#
+        self.backbone_net   = EfficientNet(self.backbone_phi[phi], pretrained)
+
         #------------------------------------------------------#
         #   在经过多次BiFPN模块的堆叠后，我们获得的fpn_features
         #   假设我们使用的是efficientdet-D0包括五个有效特征层：
@@ -519,13 +527,6 @@ class EfficientDetBackbone(nn.Module):
 
         self.anchors        = Anchors(anchor_scale=self.anchor_scale[phi])
 
-        #-------------------------------------------#
-        #   获得三个shape的有效特征层
-        #   分别是C3  64, 64, 40
-        #         C4  32, 32, 112
-        #         C5  16, 16, 320
-        #-------------------------------------------#
-        self.backbone_net   = EfficientNet(self.backbone_phi[phi], pretrained)
 
     def freeze_bn(self):
         for m in self.modules():

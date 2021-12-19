@@ -1,0 +1,1066 @@
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_908.png 225,155,417,327,0 19,15,409,132,0 61,331,438,459,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_537.png 315,8,487,239,2 53,211,227,407,2 22,33,304,197,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_725.png 8,52,178,246,0 241,32,439,203,1 45,260,215,462,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_409.png 228,19,507,184,1 72,227,174,509,0 206,203,493,309,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_110.png 75,109,300,254,2 90,271,333,448,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_47.png 6,226,153,449,1 265,201,439,410,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_620.png 49,64,238,266,1 258,11,417,236,1 160,286,399,480,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_428.png 71,139,285,340,0 83,361,365,478,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_70.png 188,189,391,414,0 0,0,376,128,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_122.png 71,265,304,409,1 338,289,490,466,2 159,37,420,217,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_183.png 17,170,201,414,0 320,284,494,500,1 227,69,479,258,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_508.png 175,48,337,315,1 109,321,326,510,2 351,177,508,385,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_219.png 126,177,278,354,2 136,22,411,158,0 314,160,474,411,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_387.png 122,199,452,328,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_558.png 186,38,398,256,2 156,259,340,503,0 2,77,149,219,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_860.png 223,295,412,497,1 229,4,419,199,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802996.png 27,69,462,199,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_380.png 214,247,465,411,1 130,8,361,199,0 15,225,196,483,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_525.png 30,264,197,486,2 220,137,499,302,1 7,2,180,196,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803702.png 127,118,506,349,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_418.png 111,297,324,455,1 143,37,339,210,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_967.png 52,281,291,475,2 199,72,485,238,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_431.png 113,48,326,206,1 34,235,364,356,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_974.png 44,152,188,414,0 210,178,469,364,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_346.png 109,115,486,243,0 209,262,419,452,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803681.png 122,52,374,432,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_177.png 48,73,327,238,1 42,289,340,406,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_548.png 178,53,349,294,2 217,347,499,464,0 4,98,170,301,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_48.png 184,169,483,274,0 8,211,179,452,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_379.png 79,-1,365,165,1 9,270,227,477,0 245,288,458,446,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_178.png 138,211,364,371,2 101,24,327,184,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_353.png 233,312,474,466,1 98,81,200,363,0 346,53,481,309,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_299.png 66,17,341,153,0 231,242,492,398,1 32,227,228,400,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_841.png 5,370,362,498,0 294,186,441,328,2 149,24,506,152,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_220.png 95,118,313,325,0 329,-1,487,227,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_817.png 146,333,445,438,0 64,22,264,230,2 265,62,474,293,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_919.png 143,185,303,410,1 56,13,338,177,1 343,204,503,455,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_721.png 243,211,411,340,2 18,85,225,303,0 21,310,234,468,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_716.png 10,116,289,283,1 382,50,505,382,0 78,305,321,509,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_831.png 123,63,331,267,2 227,322,480,478,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802948.png 170,0,356,353,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_749.png 27,25,231,186,1 73,297,326,453,1 237,54,498,234,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_990.png 109,130,275,333,2 395,189,497,471,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_170.png 288,237,491,462,0 29,167,179,383,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803604.png 50,147,391,449,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803396.png 63,35,394,379,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804342.png 133,36,316,275,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_360.png 138,289,417,454,1 237,2,386,272,0 0,87,220,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_591.png 139,136,400,316,0 181,359,501,508,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_916.png 15,61,451,110,0 285,279,447,503,1 130,238,277,461,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_630.png 216,145,459,322,0 29,366,262,510,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803384.png 104,0,355,355,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_626.png 189,134,470,301,1 207,311,472,496,2 16,26,178,253,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_49.png 264,181,438,443,1 91,3,389,120,0 69,208,254,402,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_423.png 79,118,264,298,1 134,322,382,469,1 320,17,494,226,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_74.png 139,5,324,185,1 254,237,457,462,0 19,291,199,473,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_29.png 266,90,428,314,1 34,135,220,316,2 232,332,448,510,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804195.png 91,0,325,234,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_723.png 222,225,461,419,2 1,126,191,361,0 255,35,480,180,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_566.png 204,253,396,425,0 178,58,406,230,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_486.png 210,240,436,400,2 44,240,195,456,1 144,26,423,193,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_229.png 50,125,212,346,2 225,55,450,200,2 311,218,493,453,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_324.png 143,144,464,252,0 69,271,345,435,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_673.png 173,300,351,502,1 284,30,464,212,2 -1,27,241,204,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_173.png 172,49,386,210,0 4,259,218,460,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_184.png 255,62,425,256,0 35,29,223,274,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_90.png 91,199,308,388,2 109,57,439,178,0 311,198,455,460,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_98.png 193,125,391,358,2 10,222,180,424,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_185.png 262,24,460,195,0 87,179,251,395,2 283,324,481,495,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_355.png 218,159,461,349,1 22,351,281,505,1 8,51,194,232,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803830.png 142,50,371,331,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_823.png 173,98,441,269,1 183,297,356,491,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_576.png 93,162,255,429,1 68,11,458,128,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_304.png 247,289,433,470,2 170,111,452,228,0 81,244,243,471,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803093.png 101,15,416,253,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_806.png 48,247,316,408,0 192,66,403,246,1 336,286,487,502,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_705.png 140,21,419,186,1 167,323,435,484,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_538.png 137,113,321,357,0 328,25,498,219,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_188.png 14,101,273,255,1 349,283,509,488,1 87,352,335,499,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802721.png 87,44,452,319,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_97.png 168,183,327,408,1 346,154,481,442,0 5,12,154,282,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_661.png 113,219,287,412,0 67,55,352,164,0 293,227,482,412,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804378.png 168,144,335,274,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_522.png 215,165,400,345,1 212,384,496,499,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_855.png 177,48,458,215,1 191,285,399,489,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_246.png 182,11,398,189,0 97,256,391,356,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_143.png 58,285,226,414,2 79,121,409,250,0 230,315,489,469,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_176.png 33,156,213,350,2 261,4,418,212,2 353,224,501,498,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_94.png 72,136,223,352,1 302,189,462,394,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_564.png 69,303,239,497,0 13,65,265,254,2 262,317,454,489,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_707.png 331,305,505,498,0 144,85,387,262,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_793.png 218,160,401,311,2 38,109,200,330,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_973.png 20,57,456,106,0 75,168,244,375,2 268,268,486,475,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802852.png 96,27,395,364,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_327.png 102,114,396,214,0 237,232,394,440,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_433.png 49,51,230,317,1 54,326,270,504,0 296,37,455,262,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_766.png 72,238,222,454,1 271,86,456,266,1 277,301,502,446,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803136.png 87,0,379,346,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_491.png 37,43,197,268,1 221,174,391,368,0 221,8,434,166,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_89.png 162,160,352,395,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_432.png 146,329,293,471,2 78,145,337,299,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_358.png 199,52,361,319,1 36,361,275,498,1 -1,0,173,262,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_528.png 340,110,507,332,2 154,183,322,312,2 85,342,338,498,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_557.png 151,67,471,216,0 120,249,264,494,0 288,245,447,470,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_469.png 148,100,407,286,1 170,298,432,466,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_320.png 252,245,495,435,1 20,156,231,327,2 270,-1,454,243,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_408.png 6,102,249,292,1 294,149,429,437,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_843.png 27,97,347,246,0 113,259,437,383,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_594.png -1,90,205,264,2 292,173,452,398,1 5,327,173,456,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_571.png 274,216,409,472,0 32,65,356,189,0 109,215,266,423,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_688.png 57,197,398,314,0 303,5,499,178,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802846.png 53,150,432,280,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_926.png 136,395,423,501,0 37,31,357,160,0 276,179,428,356,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_685.png 295,241,509,442,0 51,77,276,222,2 130,254,277,396,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_338.png 158,239,365,457,0 151,6,349,177,0 368,14,491,346,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_218.png 286,160,409,492,0 39,190,240,400,2 103,31,493,148,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_728.png 270,111,485,325,2 48,331,276,503,0 11,17,192,283,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_509.png 59,73,336,245,1 58,351,284,504,1 344,67,504,272,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_901.png 97,41,285,286,2 35,387,359,511,0 313,0,487,216,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_495.png 44,101,295,265,1 138,307,381,484,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803473.png 129,158,408,325,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_709.png 241,156,454,314,1 11,337,244,481,1 35,73,235,314,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_42.png 35,281,252,470,2 157,35,330,229,2 273,269,498,414,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_751.png 60,295,263,484,2 1,-1,195,201,1 328,93,451,425,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_84.png 341,17,490,287,0 35,143,233,376,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_414.png 156,304,348,502,2 219,133,444,278,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_109.png 60,176,258,347,1 89,379,434,500,0 273,111,454,377,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_401.png 3,222,380,350,0 5,24,195,219,2 176,379,463,485,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_273.png 172,73,407,218,0 8,179,152,441,0 315,223,504,408,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803694.png 101,148,507,385,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_206.png 268,10,442,272,1 61,289,261,497,2 14,17,257,221,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_905.png 207,35,427,183,0 200,352,448,499,1 3,14,201,185,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_455.png 83,153,368,262,0 184,321,491,465,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_361.png 220,93,371,309,1 187,347,469,464,0 18,161,177,387,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_478.png 278,58,413,389,0 13,121,275,279,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_912.png 8,51,156,325,0 107,393,497,510,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_828.png 54,336,280,496,2 37,4,197,255,1 264,80,495,271,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_111.png 50,275,289,469,2 0,46,260,213,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_640.png 15,341,297,505,1 129,104,415,270,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_393.png 317,101,497,283,2 25,369,310,478,0 113,58,287,320,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_189.png 79,180,264,360,1 332,221,476,466,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803921.png 94,41,375,251,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_252.png 272,199,507,344,0 155,25,381,185,2 34,282,246,500,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_75.png 77,51,338,207,1 98,309,341,486,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803129.png 55,18,417,250,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_769.png 23,217,288,402,2 164,37,439,198,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_291.png 179,145,371,317,0 129,337,470,454,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_900.png 122,255,373,411,1 3,18,193,253,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803859.png 192,17,409,304,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_928.png 129,208,486,336,0 135,0,353,196,2 21,367,306,476,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_734.png 211,26,493,190,1 232,266,415,417,2 6,245,232,405,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_754.png 176,159,347,400,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803330.png 75,179,444,399,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804133.png 96,0,398,272,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_221.png 135,191,353,388,2 119,13,372,169,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_844.png 87,193,417,314,0 20,73,318,190,0 196,315,376,509,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_795.png 330,140,492,407,1 0,113,324,237,0 55,240,236,498,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_384.png 157,37,409,226,2 298,247,442,509,0 74,261,274,502,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_932.png 53,237,318,422,2 213,9,478,194,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_260.png 253,134,466,292,1 21,96,181,347,1 209,342,490,509,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_105.png 22,123,173,339,1 208,291,382,487,2 287,53,461,249,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_8.png 0,41,324,154,0 114,177,249,433,0 297,243,511,404,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803549.png 52,188,398,404,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_19.png 242,121,422,315,2 97,343,382,452,0 31,125,220,327,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804220.png 138,25,361,257,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802834.png 35,129,415,278,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_92.png 88,99,295,317,0 27,346,384,474,0 320,90,480,341,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804013.png 128,10,320,211,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_375.png 304,28,470,231,2 20,296,203,447,2 32,49,182,265,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_297.png 135,292,344,502,2 123,1,408,110,0 89,111,409,260,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_568.png 80,188,291,368,1 320,62,498,264,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_938.png 260,244,471,415,2 102,1,345,205,2 30,365,177,507,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_501.png 120,22,414,122,0 38,353,474,402,0 46,138,325,305,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_839.png 155,344,437,508,1 0,19,184,213,2 324,95,468,340,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_770.png 182,297,421,434,1 10,80,177,302,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802822.png 74,149,454,289,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_251.png 80,125,231,341,1 87,353,349,511,1 230,4,509,126,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803198.png 72,106,388,234,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_434.png 250,317,501,467,1 43,30,225,265,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_6.png 69,274,310,428,1 335,230,509,426,2 51,29,225,222,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_429.png 34,125,157,457,0 253,71,478,216,2 306,219,506,460,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_518.png 36,232,234,403,1 276,166,470,368,1 40,40,251,220,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_507.png 98,291,397,396,0 77,61,237,286,1 329,77,481,254,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_149.png 235,189,488,345,1 23,145,223,386,2 272,359,507,504,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_628.png 125,22,485,153,0 295,288,485,483,2 0,224,148,498,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_587.png 65,33,218,342,0 301,1,510,211,2 223,317,449,470,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_520.png 172,241,375,466,0 83,90,440,218,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_951.png 41,237,222,503,1 96,24,420,148,0 230,168,481,324,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_453.png 71,302,240,509,2 177,53,438,233,0 253,255,495,411,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_760.png 110,23,269,248,1 168,377,336,506,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_44.png 37,245,323,411,1 324,102,499,328,1 20,-1,232,217,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_729.png 46,13,224,215,1 338,129,486,403,0 76,303,302,456,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_982.png 121,270,402,437,1 28,71,262,225,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_58.png 63,1,220,209,2 119,227,308,412,2 226,-1,433,217,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_348.png 206,220,465,406,1 168,43,315,185,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_71.png 23,53,207,297,0 297,115,485,360,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803371.png 46,34,404,377,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_34.png 150,94,273,426,0 278,187,437,412,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_325.png 95,79,455,209,0 69,231,410,348,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_923.png 117,58,398,225,1 221,275,378,483,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_240.png 202,105,380,307,1 8,125,182,387,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_757.png 46,51,388,177,0 2,204,149,346,2 296,235,471,432,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_637.png 148,33,328,227,2 332,152,467,483,0 11,274,264,430,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_516.png 178,351,474,460,0 29,31,386,159,0 178,178,485,322,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_106.png 102,277,306,438,1 246,4,457,175,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_158.png 256,350,482,510,2 135,94,388,250,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_633.png 167,114,325,342,1 204,351,455,501,1 329,37,473,299,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_294.png 268,268,458,503,0 40,76,212,307,2 227,12,484,171,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_458.png 87,157,340,313,1 138,320,397,506,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_413.png 243,90,400,298,2 80,182,227,405,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_846.png 344,233,504,438,1 163,67,388,212,2 141,269,339,502,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_211.png 60,50,311,206,1 218,218,486,389,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_950.png 276,293,436,498,1 142,28,302,279,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_498.png 139,270,321,505,2 0,98,135,354,0 183,15,357,224,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_611.png 90,266,333,456,1 354,70,489,401,0 38,40,297,194,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_732.png 236,12,371,268,0 117,392,438,500,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_885.png 227,62,397,264,0 66,337,317,501,1 9,62,218,293,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_975.png 143,80,388,247,1 9,349,213,510,1 223,327,508,436,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_328.png 138,216,397,402,1 32,10,263,201,0 319,4,509,199,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_310.png 169,16,331,243,2 29,328,286,487,1 41,0,143,282,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_890.png 12,155,311,260,0 302,351,470,480,2 344,47,503,273,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_607.png 144,77,396,266,2 200,369,482,486,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_64.png 200,32,378,234,1 125,307,346,456,2 37,74,199,301,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_551.png 320,278,494,474,2 118,83,425,227,0 34,319,254,467,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_941.png 207,74,392,254,1 14,11,174,236,1 124,264,307,415,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_368.png 37,249,397,379,0 32,50,300,221,1 147,399,432,508,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_248.png 60,199,211,415,1 174,39,504,168,0 248,289,483,434,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_157.png 329,257,509,451,2 72,274,315,464,1 6,119,348,245,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_209.png 78,24,285,198,2 139,309,333,511,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_198.png 166,271,496,400,0 93,3,289,176,2 291,50,455,266,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_37.png 42,85,318,249,0 19,263,287,424,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_471.png 233,142,335,424,0 78,32,229,248,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_400.png 389,159,491,441,0 89,198,289,406,2 64,12,315,176,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_259.png 243,33,461,230,2 47,273,300,429,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_225.png 47,291,367,440,0 126,31,310,275,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_625.png 248,125,452,286,1 37,123,195,351,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803632.png 64,141,410,368,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_592.png 150,286,300,502,1 144,48,468,172,0 326,214,500,476,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_544.png 153,51,510,179,0 92,255,254,476,2 254,264,437,415,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_129.png 4,33,247,210,0 296,66,486,301,0 134,231,293,456,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_293.png 131,89,345,290,0 36,409,330,509,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_104.png 195,137,404,347,2 24,214,182,442,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_852.png 75,131,300,276,2 61,365,418,493,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_193.png 271,28,456,208,1 30,222,228,393,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804331.png 164,68,345,314,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_292.png 199,74,301,356,0 306,77,504,310,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_0.png 21,105,247,258,1 254,218,437,369,2 53,267,227,476,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_421.png 14,240,149,496,0 292,3,492,244,2 172,256,336,472,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_691.png 21,220,378,348,0 144,374,486,500,0 148,31,468,160,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_115.png 186,205,462,369,0 195,23,411,201,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_791.png 42,211,216,404,0 223,315,449,475,2 252,63,459,281,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_405.png 130,232,409,399,1 177,55,454,227,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803191.png 85,19,421,263,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_736.png 110,220,257,362,2 192,53,467,214,1 81,390,365,505,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_339.png 20,189,272,375,1 97,57,427,178,0 289,226,470,492,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_727.png 71,393,412,510,0 101,132,358,291,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802737.png 40,134,460,277,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_172.png 164,137,439,298,1 19,303,179,508,1 181,299,501,448,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803307.png 55,144,403,401,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_284.png 58,227,229,468,2 158,39,362,200,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_781.png 26,335,356,464,0 262,19,478,197,0 31,26,232,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_342.png 253,259,453,435,1 168,82,475,226,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_601.png 133,103,303,305,0 129,313,303,509,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_410.png 122,121,357,266,0 181,268,331,484,1 20,292,171,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803844.png 138,12,371,297,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_597.png 5,151,158,460,0 199,68,480,235,1 229,291,445,469,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_847.png 58,338,400,464,0 6,158,290,273,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804028.png 146,18,336,208,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_12.png 183,130,349,333,2 3,231,152,501,0 160,356,502,491,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_341.png 58,41,270,259,2 280,268,452,499,2 270,41,421,257,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_963.png 14,51,198,295,0 251,13,425,206,0 241,219,445,380,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_356.png 42,326,402,456,0 31,10,193,277,1 198,65,474,229,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_510.png 238,153,436,386,2 36,5,335,110,0 44,122,214,324,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804320.png 183,75,370,322,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_563.png 219,43,379,268,1 38,170,185,393,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803743.png 137,82,340,344,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802729.png 80,114,491,277,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_212.png 52,28,235,179,2 51,253,376,366,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803555.png 108,61,378,452,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804083.png 140,0,363,268,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_365.png 140,98,302,325,2 59,349,327,510,0 348,136,495,359,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_786.png 57,117,261,278,1 93,287,355,455,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_270.png 7,295,443,344,0 217,17,391,233,1 259,364,492,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_116.png 47,58,209,325,1 221,252,478,411,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_816.png 11,184,211,392,2 3,20,360,148,0 270,244,417,467,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_191.png 159,139,401,295,1 270,308,486,486,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803062.png 74,33,413,326,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804232.png 147,49,321,258,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_278.png 116,33,287,274,2 270,281,484,442,0 302,11,490,256,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_679.png 121,118,498,246,0 82,276,300,483,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_403.png 243,86,425,321,2 119,346,360,500,1 55,18,240,212,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_14.png 238,113,361,445,0 73,64,235,291,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_872.png 177,30,375,201,1 190,229,441,393,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_927.png 9,5,354,126,0 118,267,394,431,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_755.png 145,194,487,329,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_692.png 50,145,392,271,0 90,295,333,472,0 348,274,499,490,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_210.png 25,86,241,264,0 277,32,437,283,1 229,331,443,492,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803221.png 85,83,359,466,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_794.png 149,121,490,238,0 225,313,486,493,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_829.png 20,132,288,303,1 301,2,458,210,2 21,383,306,492,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_144.png 80,94,274,296,1 299,249,503,410,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_569.png 219,299,496,471,1 29,13,350,121,0 2,221,209,439,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_879.png 1,108,358,236,0 166,325,358,497,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_731.png 204,4,387,155,2 207,252,397,447,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_719.png 72,115,246,311,2 268,180,507,374,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_803.png 55,219,276,368,2 29,18,297,189,1 284,320,467,471,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804272.png 159,92,311,269,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_761.png 174,98,364,293,2 27,309,216,511,1 246,326,429,477,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_443.png 60,12,291,203,0 40,247,319,369,0 295,60,480,240,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_466.png 295,219,469,428,2 40,311,254,472,0 24,47,168,309,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_600.png 49,292,330,459,1 81,69,297,247,0 313,72,493,254,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_370.png 287,197,488,407,2 77,21,305,193,0 38,303,273,448,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_858.png 285,164,387,446,0 122,7,245,339,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_386.png 135,126,376,280,1 16,283,163,425,2 296,291,446,507,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_96.png 136,93,347,273,1 13,376,297,491,0 358,130,493,386,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_217.png 45,209,287,365,1 264,27,507,204,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_472.png 209,383,491,500,0 0,205,135,493,0 90,0,389,104,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_451.png 154,61,322,190,2 109,227,258,497,0 261,197,414,506,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_489.png 66,73,214,347,0 35,385,376,502,0 284,21,510,174,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803973.png 103,133,355,311,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803002.png 82,97,376,197,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_726.png 87,229,299,447,2 58,7,244,188,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_894.png 104,82,379,249,1 84,263,228,508,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_984.png 1,198,190,400,1 299,48,507,252,2 198,304,376,506,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_784.png 173,226,335,450,1 251,1,421,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_244.png 293,318,503,508,2 133,31,295,255,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_373.png 4,125,243,262,1 307,293,487,487,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_892.png 215,234,476,401,0 1,49,278,221,1 280,13,494,214,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_148.png 208,3,423,217,2 41,283,282,437,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_462.png 46,351,297,507,1 255,89,425,283,0 88,92,250,319,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_949.png 162,50,345,201,2 129,235,354,380,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_835.png 108,212,359,376,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_883.png 33,327,294,507,0 280,86,427,309,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803107.png 85,0,370,300,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_853.png 191,39,408,228,2 107,321,375,482,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_756.png 57,185,257,393,2 299,4,508,235,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_194.png 182,126,457,293,1 228,298,456,470,0 12,27,180,156,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_875.png 144,104,431,210,0 136,382,460,506,0 51,236,393,371,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_485.png 171,175,339,304,2 16,333,267,489,1 340,37,475,325,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_943.png 58,97,254,270,2 241,297,441,505,2 261,68,489,240,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_442.png 154,12,441,118,0 76,300,259,451,2 195,128,467,278,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_581.png 86,123,260,316,0 277,121,463,302,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_364.png 307,283,469,507,1 106,70,385,237,1 56,253,216,478,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802858.png 57,178,417,427,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_658.png 141,44,243,326,0 252,29,495,206,0 273,218,442,425,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_4.png 160,39,403,229,1 5,284,286,451,1 316,257,483,479,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_100.png 171,18,432,198,0 184,253,435,417,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_623.png 116,3,320,164,1 6,328,213,502,2 290,294,460,488,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_416.png 7,186,279,336,0 316,97,487,338,2 45,340,306,496,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_840.png 125,325,358,469,1 85,193,426,310,0 0,11,268,172,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_922.png 189,267,349,472,1 185,1,359,217,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_981.png 145,242,371,402,2 63,112,440,240,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_164.png 113,148,303,343,2 341,152,490,422,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_136.png 156,96,318,363,1 113,379,409,488,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_216.png 180,217,355,443,1 148,40,423,207,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_45.png 9,38,171,262,1 166,271,441,407,0 260,1,452,199,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803542.png 133,2,432,388,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_947.png 108,257,347,451,2 103,38,293,233,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_648.png 53,131,251,364,2 343,0,509,203,2 306,228,480,424,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_316.png 100,31,304,192,1 317,31,470,340,0 56,342,350,442,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_809.png 193,135,393,343,2 1,89,186,269,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_634.png 159,85,376,274,2 324,306,502,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_483.png 64,166,247,317,2 286,15,501,229,2 119,325,443,449,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_529.png 152,32,287,363,0 311,179,473,400,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_242.png 19,124,192,318,2 121,340,403,504,1 339,137,507,266,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803258.png 67,28,365,395,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_703.png 173,306,434,473,0 193,19,361,148,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_985.png 128,22,263,278,0 60,333,450,450,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_422.png 78,225,306,397,0 214,16,500,182,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802906.png 41,74,416,281,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802786.png 40,0,482,149,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_849.png 61,367,382,475,0 188,95,427,289,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_326.png 203,13,411,217,2 284,253,478,455,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_24.png 310,232,470,483,1 60,120,230,314,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_473.png 137,12,319,247,2 49,287,317,448,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_677.png 166,88,441,224,0 15,234,189,496,1 302,285,505,510,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_715.png 55,155,412,283,0 3,9,324,117,0 98,338,373,505,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_344.png 28,183,303,344,1 167,1,408,155,1 330,175,504,371,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_155.png 19,198,376,326,0 24,344,207,495,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804041.png 118,0,337,193,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_604.png -1,311,225,464,1 276,84,486,274,2 20,5,206,186,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_924.png 144,34,344,210,1 84,276,371,382,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_231.png 140,186,288,460,0 100,14,375,181,1 294,339,508,500,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803674.png 148,56,387,418,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_163.png 287,170,485,341,0 15,163,268,319,1 195,2,443,149,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_977.png 76,160,296,308,0 330,273,505,470,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_468.png 43,89,384,206,0 326,226,498,457,2 112,231,310,464,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_32.png 30,248,297,408,1 188,5,508,134,0 345,226,507,493,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_686.png 294,52,456,319,1 126,376,486,507,0 69,130,270,340,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_213.png 9,326,207,497,1 295,97,469,293,2 70,0,217,223,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_511.png 180,230,395,444,2 18,203,177,428,1 191,26,472,193,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_983.png 55,69,491,118,0 293,256,450,464,2 46,271,249,496,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_999.png 184,237,398,398,0 87,86,447,216,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802750.png 81,150,447,294,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_546.png 96,179,416,328,0 79,2,347,173,1 61,363,403,489,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_11.png 120,347,414,447,0 139,21,421,185,1 148,186,331,337,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_30.png 188,99,508,248,0 13,300,193,494,2 295,262,493,433,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804260.png 163,30,356,246,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_796.png 167,168,327,419,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_788.png 190,157,469,322,1 16,209,151,497,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_113.png 218,198,497,365,1 153,0,414,167,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804296.png 133,39,365,266,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_18.png 132,298,492,429,0 121,21,481,151,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_427.png 240,73,443,262,2 75,335,416,452,0 22,-1,145,331,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_302.png 190,111,325,367,0 79,210,181,492,0 46,45,482,94,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802804.png 83,172,382,277,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_367.png 140,285,399,439,1 166,29,317,245,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_952.png 163,133,348,313,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_617.png 269,4,487,211,0 91,299,436,420,0 69,29,243,222,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803611.png 68,110,430,326,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804121.png 82,0,339,250,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803569.png 91,92,476,320,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_241.png 210,287,418,491,2 86,25,428,151,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_559.png 201,324,446,491,1 114,49,357,253,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_366.png 65,81,218,390,0 245,255,471,415,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_863.png 270,5,480,195,2 131,255,427,364,0 41,26,239,197,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803710.png 51,78,439,306,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_884.png 104,281,332,453,0 205,75,385,269,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_824.png 33,99,214,365,1 286,266,493,484,0 234,37,448,238,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_236.png 135,260,495,390,0 25,122,382,250,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_547.png 86,181,245,406,1 118,39,393,175,0 291,248,501,438,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803177.png 84,51,402,315,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_636.png 223,29,397,222,0 29,384,371,510,0 188,243,486,360,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_463.png 40,133,234,335,1 263,343,488,488,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_396.png 8,127,290,291,1 296,66,458,293,2 270,307,440,501,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_541.png 147,83,331,327,0 200,333,479,498,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802798.png 44,55,481,223,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_334.png 179,214,364,408,2 292,7,472,189,2 2,56,166,272,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_836.png 100,194,384,309,0 252,318,459,492,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_772.png 171,109,329,337,1 84,366,426,492,0 2,0,164,227,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_893.png 19,140,313,240,0 11,263,287,427,0 368,166,503,422,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_446.png 166,169,409,346,0 52,377,372,506,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_238.png 211,63,463,252,2 94,271,346,460,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_243.png 21,326,282,506,0 203,3,437,157,1 306,180,466,431,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_856.png 207,303,493,469,1 11,103,199,348,2 250,78,493,268,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_205.png 83,174,301,381,0 160,23,395,168,0 331,260,511,442,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802942.png 64,30,392,325,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802978.png 86,8,387,293,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_450.png 12,306,280,477,1 297,79,482,273,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_532.png 15,201,236,350,2 250,96,509,250,1 137,357,362,502,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_584.png 335,49,488,358,0 138,359,436,476,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_870.png 221,19,430,229,2 81,281,333,470,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_345.png 23,105,223,281,1 265,151,446,409,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_312.png 22,34,382,164,0 311,195,455,457,0 0,205,279,370,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_978.png 247,193,500,349,1 2,249,237,394,0 141,33,482,150,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_449.png 226,-1,416,193,2 135,202,320,382,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_197.png 42,105,210,234,2 212,214,460,361,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802882.png 59,79,439,307,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_53.png 252,163,495,340,0 133,15,429,124,0 49,193,238,378,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_524.png 165,189,406,343,1 6,141,165,367,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_750.png 222,91,384,312,2 140,323,402,481,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_391.png 12,85,196,329,0 249,8,497,155,1 313,176,485,407,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_555.png 105,72,303,243,1 314,187,416,469,0 59,313,285,466,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_25.png 144,177,344,353,1 345,228,505,479,1 100,24,379,146,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_797.png 100,75,247,217,2 -1,281,241,485,2 260,220,407,443,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803056.png 125,24,388,349,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_349.png 180,86,459,253,1 225,308,473,455,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_126.png 76,160,283,378,0 160,0,419,154,1 292,264,490,435,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_57.png 186,363,468,480,0 330,132,510,314,2 143,75,317,268,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802966.png 93,0,388,277,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_289.png 281,304,479,475,0 7,148,268,328,0 146,38,433,144,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_959.png 191,301,476,410,0 28,65,172,310,0 279,40,505,200,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_542.png 356,230,507,446,1 119,153,287,282,2 170,5,409,142,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_86.png 134,262,296,489,2 314,94,458,356,0 16,35,259,212,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_743.png 240,37,426,218,2 287,333,483,506,2 10,277,285,413,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804309.png 123,0,393,227,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804284.png 104,0,399,206,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_815.png 71,225,333,383,1 40,69,382,195,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_445.png 34,310,293,464,1 103,81,433,202,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_864.png 136,206,411,342,0 243,36,504,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_201.png 82,229,334,418,2 44,87,364,216,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_935.png 10,174,172,401,2 291,107,451,332,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_877.png 142,177,393,327,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_654.png 126,160,286,411,1 290,57,470,239,2 315,280,509,482,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_818.png 29,35,189,240,1 44,367,404,497,0 218,110,378,361,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_808.png 146,302,316,504,0 221,78,502,245,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_399.png 197,80,371,342,1 3,97,165,318,2 164,367,439,503,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_903.png 17,238,191,500,1 193,244,435,400,1 212,1,387,227,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_940.png 164,157,322,385,1 324,22,498,238,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_980.png 93,248,414,356,0 317,66,502,246,1 75,55,261,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_711.png 294,-1,438,261,0 12,283,271,469,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802900.png 166,0,321,339,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_437.png 128,60,311,211,2 38,291,213,488,0 354,54,456,336,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_871.png 28,217,163,473,0 107,18,368,185,0 230,304,509,426,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_577.png 149,-1,506,127,0 135,187,356,336,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_993.png 178,89,346,218,2 108,234,326,441,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_114.png 27,151,279,340,2 292,116,427,447,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_331.png 71,143,448,271,0 125,296,334,506,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_266.png 56,291,307,455,1 37,11,235,244,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802918.png 50,113,416,248,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_674.png 152,233,355,458,0 103,3,423,132,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_232.png 68,104,410,230,0 6,265,209,454,2 241,297,458,486,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_276.png 154,142,289,473,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_572.png 156,88,415,242,1 105,272,366,452,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_631.png 109,270,309,446,1 185,11,383,244,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_267.png 223,12,495,162,0 88,181,339,345,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_669.png 90,257,333,434,0 73,20,354,187,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_494.png 168,162,411,366,2 224,6,407,157,2 2,208,149,350,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802744.png 119,219,389,322,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_899.png 27,229,195,358,2 38,385,428,502,0 97,117,391,217,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_318.png 41,139,259,336,2 88,381,370,498,0 333,45,493,250,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_689.png 113,289,365,478,2 96,45,266,247,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_925.png 71,35,304,179,1 135,329,476,446,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_332.png 91,138,448,266,0 99,270,309,460,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802972.png 46,55,415,217,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_131.png 244,26,418,242,1 5,241,186,507,1 206,336,481,503,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_91.png 278,91,437,316,1 34,183,222,428,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_553.png 213,65,387,258,0 135,282,477,417,0 20,71,194,280,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_660.png 107,296,368,463,0 13,113,199,294,2 307,43,475,172,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803583.png 139,100,362,467,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803014.png 66,157,414,297,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_192.png 234,294,384,510,1 188,65,508,194,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803210.png 58,62,333,413,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_117.png 122,131,266,376,0 177,377,462,486,0 275,207,496,356,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_67.png 329,41,482,350,0 117,177,267,393,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803660.png 54,125,432,346,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_874.png 194,22,392,193,1 197,208,478,375,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_28.png 290,99,464,361,1 83,128,284,338,2 30,363,305,499,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_134.png 128,136,300,367,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_641.png 226,204,401,430,1 222,4,433,175,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_500.png 219,95,501,259,1 16,275,230,476,0 283,278,492,488,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_52.png 69,33,269,274,2 10,306,285,473,1 313,157,499,338,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_130.png 283,271,443,496,1 205,50,374,257,2 92,290,275,441,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_891.png 29,288,239,478,2 321,36,490,243,2 29,117,255,270,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_867.png 335,290,501,493,2 46,50,297,200,1 50,284,268,491,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_488.png 33,233,358,346,0 63,8,347,123,0 165,371,489,495,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_762.png 154,38,332,240,1 219,249,400,507,1 -1,300,215,478,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_534.png 88,43,331,220,0 146,270,338,442,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_934.png 134,116,345,287,2 258,300,432,496,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804096.png 140,0,374,257,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_833.png 114,280,329,494,2 123,53,283,278,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_499.png 272,117,492,265,0 140,178,263,510,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_714.png 260,320,458,491,1 196,6,376,200,2 3,154,188,348,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_224.png 137,210,346,441,2 236,12,504,183,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_63.png 157,43,378,192,2 276,212,443,434,2 0,214,268,385,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_954.png 183,283,445,451,0 165,83,417,272,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_613.png 265,175,491,335,2 4,39,247,216,0 44,219,219,445,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_513.png 10,54,222,272,2 300,77,459,302,1 16,286,180,502,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803806.png 98,42,373,362,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_902.png 44,232,206,499,1 234,207,382,481,0 124,20,403,187,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_536.png 144,258,395,422,1 300,75,507,249,2 11,13,171,218,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_447.png 44,273,364,402,0 183,52,368,246,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_249.png 122,128,245,460,0 313,169,486,363,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_944.png 134,227,348,388,0 292,22,492,198,1 34,20,285,176,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804145.png 103,0,369,216,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_124.png 124,290,386,448,1 162,41,348,222,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_886.png 45,118,302,277,1 226,322,505,489,1 370,30,505,318,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_2.png 174,237,426,426,2 291,18,501,208,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_287.png 19,209,121,491,0 306,156,480,372,1 74,47,294,195,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803718.png 21,71,432,336,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_214.png 151,248,412,415,0 123,69,357,223,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803794.png 80,106,372,369,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_694.png 276,138,411,426,0 103,252,253,468,1 63,51,252,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_827.png 60,79,183,411,0 187,17,507,146,0 257,201,401,463,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_306.png 236,203,487,367,1 1,71,222,220,2 -1,273,199,481,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_961.png 220,240,431,411,2 143,73,503,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802954.png 143,0,349,374,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_156.png 6,41,209,230,2 7,318,268,498,0 328,95,480,272,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_578.png 158,126,338,320,2 136,359,443,503,0 217,8,501,123,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803044.png 75,50,365,332,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803770.png 170,0,413,211,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_730.png 129,136,321,308,0 325,61,474,331,0 122,310,314,508,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_745.png 292,315,495,504,2 141,174,483,309,0 9,347,251,503,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802936.png 107,91,467,263,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_596.png 150,29,346,202,2 31,229,175,491,0 197,229,414,418,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_523.png 218,72,466,219,1 231,273,496,458,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_272.png 30,145,240,335,2 270,85,405,373,0 1,335,197,508,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_779.png 2,31,169,253,2 178,201,446,362,0 301,3,490,188,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_452.png 24,53,311,159,0 196,237,439,427,1 35,200,179,462,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_635.png 298,47,456,275,1 109,251,271,472,2 273,302,491,509,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_659.png 255,116,436,382,1 80,70,238,298,1 34,302,232,473,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803038.png 71,124,385,254,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_271.png 50,255,248,488,2 249,319,470,468,2 150,71,389,208,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_801.png 265,171,445,353,2 8,193,212,354,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_662.png 77,112,246,319,2 280,201,483,390,2 302,-1,482,181,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_203.png 214,329,465,493,1 180,12,391,183,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_153.png 308,259,478,461,0 128,75,371,252,0 109,284,289,466,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_966.png 147,216,305,444,1 150,22,432,186,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_314.png 249,101,438,286,2 29,289,262,433,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_647.png 146,125,356,315,2 28,317,198,511,0 236,323,475,460,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802894.png 94,0,463,222,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_684.png 218,113,421,302,2 84,340,391,484,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_752.png 189,240,422,384,1 65,39,317,225,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_151.png 286,176,409,508,0 67,108,211,370,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803498.png 73,61,457,292,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_180.png 144,101,322,303,1 137,381,422,490,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_286.png 51,104,313,262,1 235,276,497,444,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803562.png 70,99,471,365,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_606.png 224,186,431,404,0 4,149,207,374,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804071.png 118,86,344,296,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803576.png 62,13,425,320,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_526.png 14,103,257,280,0 260,161,503,338,0 45,293,231,474,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_619.png 260,307,434,500,0 46,150,220,366,1 258,79,428,281,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_598.png 226,55,400,271,1 9,278,291,442,1 19,40,177,268,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_228.png 161,1,353,173,0 50,180,332,344,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_168.png 230,168,492,326,1 4,174,204,382,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803732.png 104,40,378,467,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_505.png 246,262,429,413,2 37,95,199,319,1 297,32,466,239,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_549.png 121,45,274,354,0 328,61,487,287,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_722.png 248,211,458,401,2 77,55,298,204,2 5,244,203,415,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804171.png 90,16,329,254,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_93.png 382,40,505,372,0 2,301,245,505,2 9,81,307,198,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804000.png 169,61,357,246,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803026.png 84,136,414,258,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802870.png 66,127,427,357,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_917.png 135,184,387,370,1 43,1,247,162,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_330.png 68,91,398,212,0 29,272,249,420,0 331,255,504,449,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803948.png 104,28,389,269,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_43.png 228,338,439,509,2 218,151,497,316,1 4,218,106,500,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803427.png 93,149,447,368,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_127.png 198,83,360,304,2 39,197,192,506,0 236,306,504,477,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_512.png 314,67,474,272,1 40,316,288,463,1 317,299,503,480,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_275.png 286,177,486,418,2 87,16,249,243,2 41,290,214,484,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802864.png 183,76,315,448,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_195.png 38,221,212,417,2 146,18,432,184,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_573.png 234,55,432,288,2 262,303,476,504,0 36,226,219,377,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804244.png 134,86,317,237,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803467.png 23,96,501,382,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802876.png 67,103,409,364,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_80.png 74,5,248,198,0 3,235,393,352,0 257,23,475,220,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_237.png 284,149,459,375,1 196,391,478,508,0 31,168,205,364,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_638.png 82,69,357,230,1 241,338,467,498,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_700.png 196,264,407,435,2 170,41,381,221,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_372.png 107,293,359,482,2 180,99,400,247,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_646.png 79,15,409,136,0 261,142,443,377,2 9,383,334,496,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_593.png 172,133,415,310,0 168,312,358,507,2 0,54,168,261,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_706.png 17,381,347,510,0 125,185,455,306,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_562.png 244,237,458,398,0 20,22,238,229,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_250.png 87,338,355,509,1 171,11,329,239,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_738.png 155,277,369,438,0 348,28,507,254,1 54,27,297,231,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_461.png 189,330,409,478,0 115,37,472,165,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_15.png 175,172,420,339,1 247,350,489,506,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804183.png 214,30,450,274,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803184.png 185,8,322,378,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_435.png 133,77,345,295,2 134,373,454,502,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_851.png 108,139,359,295,1 361,187,505,432,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_976.png 350,38,485,369,0 38,41,238,249,2 152,250,319,472,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803618.png 114,109,371,478,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803590.png 68,84,417,359,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_40.png 260,229,422,450,2 13,48,194,314,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_696.png 30,20,174,282,0 233,67,382,337,0 140,338,422,502,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802756.png 35,0,471,49,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_36.png 13,298,198,492,2 26,46,350,170,0 354,123,477,455,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_724.png 116,75,391,236,1 101,267,354,423,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_7.png 11,328,353,454,0 195,16,377,251,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803156.png 29,100,430,245,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802810.png 37,66,477,245,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_994.png 96,232,380,347,0 208,8,487,175,1 88,352,448,483,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_988.png 24,377,323,482,0 102,86,353,242,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_264.png 126,274,324,445,1 57,80,414,208,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803234.png 63,199,426,418,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_930.png 102,179,261,405,1 276,208,504,380,0 165,17,507,143,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_671.png 60,244,420,374,0 183,19,372,221,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_363.png 84,50,219,338,0 240,195,499,381,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_936.png 281,48,490,279,2 1,325,331,446,0 91,18,253,242,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_970.png 7,259,207,500,2 252,160,450,331,0 66,60,249,211,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_519.png 290,66,452,290,1 129,334,390,501,0 53,0,241,244,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803050.png 216,87,318,369,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_352.png 43,114,228,294,1 274,120,489,334,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_171.png 56,141,274,338,2 280,213,494,414,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_88.png 153,291,430,463,1 25,112,270,279,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_845.png 374,96,497,428,0 58,62,297,256,2 122,290,353,481,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_621.png 41,178,203,405,2 105,9,450,130,0 277,149,457,331,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_395.png 67,199,224,407,2 283,163,504,312,2 19,30,280,197,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_415.png 191,143,405,344,0 30,187,189,412,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_588.png 264,342,506,498,1 40,267,215,464,0 104,110,391,216,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803086.png 158,0,329,344,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_385.png 214,120,358,382,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_665.png 93,33,326,177,1 280,183,454,399,1 39,361,264,506,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804158.png 20,0,325,206,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_876.png 123,67,291,196,2 63,320,420,448,0 294,65,501,283,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_23.png 297,7,511,208,0 80,168,215,424,0 309,273,469,478,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_920.png 120,127,280,332,1 156,355,428,505,0 291,49,453,273,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_811.png 175,107,436,263,1 12,332,354,458,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_154.png 291,144,472,410,1 16,148,236,296,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_268.png 18,105,286,266,0 146,278,344,449,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_697.png 22,173,352,294,0 215,353,428,511,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_357.png 213,228,494,395,1 9,142,190,400,1 127,0,409,116,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_381.png 147,93,399,279,1 71,298,428,426,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_702.png 95,199,419,323,0 221,9,438,198,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_667.png 73,104,263,299,2 291,275,459,404,2 265,29,449,273,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_504.png 2,232,261,386,1 319,295,499,489,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_487.png 118,255,332,456,0 137,37,350,195,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_439.png 18,143,454,192,0 196,250,458,408,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803757.png 98,0,307,274,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_208.png 212,4,412,180,1 248,188,487,382,2 62,274,245,425,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_436.png 182,125,356,334,2 5,173,154,443,0 274,336,457,487,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_953.png 120,291,440,440,0 256,20,414,248,1 32,9,191,235,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_580.png 46,257,221,483,1 85,7,346,163,1 266,310,486,458,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_441.png 208,137,382,330,0 13,393,298,502,0 98,6,458,137,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_383.png 128,178,288,429,1 290,278,506,456,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_968.png 100,73,343,250,0 154,260,352,431,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_142.png 51,261,237,442,2 251,267,425,460,0 254,24,444,219,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_496.png 145,172,429,287,0 26,311,333,455,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_813.png 224,114,435,294,1 32,233,212,427,2 40,7,215,204,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_319.png 83,277,460,405,0 220,97,454,251,1 5,7,191,188,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_693.png 47,9,343,118,0 62,145,498,194,0 101,226,310,436,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_103.png 109,351,466,479,0 230,99,442,317,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_676.png 191,160,369,362,1 8,69,182,265,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803961.png 121,63,345,297,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_554.png 274,129,449,355,1 98,72,233,403,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_323.png 304,241,475,482,2 70,42,430,172,0 15,294,235,442,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_531.png 264,5,458,207,1 117,235,474,363,0 50,31,230,213,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_162.png 140,140,300,391,1 364,56,487,388,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_182.png 4,279,247,456,0 240,1,483,191,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_741.png 39,175,396,303,0 55,37,375,166,0 58,309,233,506,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804392.png 148,113,328,294,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_550.png 228,67,471,244,0 18,64,166,338,0 214,258,414,434,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_419.png 266,22,466,198,1 79,68,237,296,1 91,353,324,497,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_506.png 25,117,367,243,0 178,258,376,429,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_444.png 100,277,310,467,2 137,17,422,126,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_456.png 12,329,291,494,1 303,54,495,226,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_277.png 23,331,284,487,1 20,5,263,182,0 328,117,488,342,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803884.png 211,165,462,327,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_234.png 35,189,188,498,0 284,75,498,276,0 296,290,462,493,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_937.png 93,105,279,286,2 79,339,341,497,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_411.png 245,331,397,508,2 296,4,466,206,0 94,8,266,239,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_125.png 66,305,396,434,0 13,19,187,235,1 218,20,486,191,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_862.png 82,265,334,451,1 55,7,213,235,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_996.png 45,128,422,256,0 158,337,454,446,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_650.png 193,121,491,238,0 73,279,274,489,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_787.png 250,51,421,292,2 166,337,441,473,0 9,119,205,292,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_60.png 279,301,447,430,2 104,137,263,362,1 186,7,484,124,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_108.png 102,246,249,469,1 290,238,464,500,1 267,32,437,234,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_992.png 249,51,483,205,1 19,331,280,511,0 122,222,409,328,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_632.png 51,121,396,242,0 192,377,471,499,0 123,244,480,372,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_378.png 44,271,287,448,0 142,96,417,263,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_464.png 261,334,489,506,0 170,81,373,306,0 0,113,162,334,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802828.png 105,206,391,313,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_574.png 221,165,407,346,2 76,363,315,500,1 -1,29,151,206,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_274.png 2,67,309,211,0 242,249,440,482,2 312,75,459,217,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802888.png 157,0,447,330,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_181.png 54,90,322,261,1 375,144,477,426,0 98,285,306,489,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_642.png 216,334,416,510,1 148,57,383,202,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_50.png 79,283,297,480,2 218,104,493,240,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_288.png 143,53,376,197,1 23,229,264,383,1 15,397,300,506,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_137.png 59,206,248,408,1 122,14,401,181,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_22.png 2,125,176,334,2 307,127,496,329,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_545.png 213,316,470,475,1 71,70,428,198,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803910.png 115,2,378,270,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_65.png 197,244,406,475,2 23,8,383,139,0 26,289,176,505,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_586.png 228,240,507,362,0 182,59,417,204,0 -1,251,163,467,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_812.png 312,93,447,349,0 5,271,273,432,0 86,58,297,238,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_146.png 122,4,401,171,1 9,180,218,411,2 267,323,488,472,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_377.png 27,292,288,459,0 295,130,473,332,1 -1,102,267,273,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_470.png 74,71,313,208,1 281,290,466,470,1 44,280,255,451,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_336.png 42,101,202,326,1 210,252,489,419,1 299,73,499,249,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_866.png 23,175,347,299,0 113,326,375,494,0 108,29,343,174,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_802.png 299,131,473,340,2 24,17,259,162,0 79,210,249,412,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803535.png 83,90,355,474,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_247.png 372,221,507,477,0 147,27,504,155,0 147,221,347,462,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_402.png 37,171,237,412,2 314,40,497,191,2 253,292,486,436,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_517.png 235,34,463,206,0 36,231,311,392,1 313,280,498,474,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_282.png 109,201,257,475,0 317,103,501,347,0 105,4,290,198,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_335.png 67,163,284,352,2 353,149,497,394,0 123,10,500,138,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803420.png 39,59,480,376,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_165.png 310,19,433,351,0 47,357,424,485,0 67,9,253,190,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_430.png 136,161,379,338,0 114,8,297,159,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_54.png 168,323,368,499,1 87,83,355,244,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_939.png 117,39,334,228,2 79,345,332,501,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804208.png 173,0,320,142,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_160.png 189,144,374,324,1 399,90,501,372,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_590.png 182,55,353,296,2 50,79,152,361,0 362,121,510,395,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_474.png 88,257,239,473,1 286,110,444,338,1 -1,60,271,210,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_159.png 230,31,401,272,2 84,133,219,389,0 258,320,458,496,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_207.png 162,251,376,412,0 202,80,481,247,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_424.png 83,188,268,368,1 326,259,500,468,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_305.png 187,74,356,281,2 108,318,319,489,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_972.png 202,99,361,324,1 161,327,423,495,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_819.png 85,167,234,437,0 282,248,429,471,1 161,11,446,120,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_317.png 290,88,449,314,1 13,48,202,250,1 229,315,497,476,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_1.png 204,319,463,505,1 102,178,386,293,0 7,306,196,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_699.png 25,245,185,470,1 228,76,375,218,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_666.png 78,204,306,376,0 213,7,365,184,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_783.png 294,172,468,368,2 21,10,378,138,0 73,191,285,409,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_174.png 50,86,309,240,1 311,105,509,338,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_712.png 94,331,337,508,0 350,159,501,375,1 160,49,331,290,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_765.png 60,221,210,437,1 378,53,480,335,0 91,8,352,175,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_561.png 104,98,302,269,0 192,279,451,433,1 344,23,503,248,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_5.png 42,88,253,259,2 138,291,458,440,0 274,44,472,215,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995804109.png 121,0,362,270,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_303.png 208,69,476,230,0 9,231,183,427,2 206,258,396,493,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_906.png 201,63,499,180,0 278,235,429,451,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803434.png 109,191,421,402,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803454.png 54,134,423,370,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802762.png 47,0,460,140,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_720.png 92,164,367,300,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_668.png 211,172,472,328,1 17,361,362,482,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_82.png 78,235,276,468,2 78,19,337,173,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_118.png 196,71,363,293,2 78,308,309,499,0 6,69,186,251,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_655.png 105,282,382,454,1 262,35,505,239,2 64,6,222,234,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_55.png 267,70,449,305,2 170,311,409,448,1 25,118,251,278,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_717.png 87,5,272,199,2 297,205,477,387,2 91,323,277,504,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_152.png 4,92,194,287,2 204,150,404,358,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_482.png 72,132,359,238,0 91,322,307,500,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_138.png 332,89,506,351,1 47,24,323,188,0 10,204,190,386,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_17.png 181,237,414,381,1 69,63,346,235,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_748.png 120,175,314,377,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_263.png 27,27,171,272,0 191,201,432,355,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_782.png 23,35,291,196,0 41,221,302,401,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_739.png 58,4,333,171,1 351,277,509,505,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_995.png 267,252,436,459,2 40,139,250,329,2 254,22,429,248,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_112.png 167,30,424,189,1 48,272,408,403,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_589.png 278,25,437,250,1 1,175,214,333,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_945.png 20,94,248,266,0 166,291,401,436,0 267,77,481,238,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_651.png 13,311,239,471,2 226,40,465,234,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_710.png 335,21,483,295,0 59,177,300,331,1 13,337,234,486,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_295.png 201,9,363,230,2 0,178,159,404,1 258,293,461,482,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_826.png 90,148,300,338,2 86,341,306,489,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_804.png 124,155,375,311,1 196,330,471,497,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_481.png 16,104,196,298,2 298,131,496,364,2 15,303,175,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_101.png 148,292,427,459,1 109,116,351,272,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_73.png 164,53,266,335,0 47,361,388,478,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_230.png 116,295,423,439,0 6,14,258,200,1 289,27,463,289,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_204.png 198,78,368,280,0 162,291,429,451,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_166.png 215,102,416,312,2 2,60,164,287,2 199,315,403,476,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803871.png 116,116,351,307,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_678.png 124,308,466,434,0 170,32,381,212,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_497.png 210,226,357,449,1 204,21,479,157,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_560.png 205,263,355,479,1 170,43,421,207,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_187.png 139,45,328,230,2 28,252,307,374,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_76.png 195,164,457,332,0 26,351,333,495,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_914.png 56,77,352,186,0 202,219,361,444,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_776.png 348,29,450,311,0 104,208,347,398,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802792.png 28,0,474,172,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802774.png 28,62,468,268,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_733.png 165,78,442,250,1 98,296,346,443,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_467.png 62,8,197,296,0 182,303,461,468,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_556.png 181,157,334,466,0 26,2,246,150,0 341,239,485,484,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_41.png 178,76,462,191,0 60,298,311,448,1 320,266,482,493,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_737.png 125,13,387,181,0 295,195,484,380,2 127,393,452,506,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_354.png 272,290,483,470,1 18,2,180,269,1 243,27,457,228,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803688.png 23,140,455,407,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_595.png 71,213,392,321,0 302,0,510,204,2 196,322,448,508,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_834.png 110,43,310,284,2 44,292,306,450,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803068.png 61,98,433,252,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_868.png 100,104,375,240,0 45,331,249,492,1 287,285,501,486,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802924.png 130,10,329,372,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_145.png 58,289,365,433,0 179,83,368,268,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_958.png 189,37,475,203,1 179,307,352,501,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_186.png 320,22,480,273,1 11,179,192,437,1 239,278,411,509,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_46.png 7,238,181,500,1 187,259,483,368,0 93,20,291,191,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_773.png 43,102,324,269,1 250,280,501,436,1 46,287,208,508,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_258.png 83,202,245,429,2 273,258,493,406,0 206,19,481,180,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_150.png 64,300,247,451,2 130,49,429,154,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_475.png 206,272,396,467,2 261,69,481,217,0 5,20,167,247,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803407.png 90,184,422,399,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_120.png 32,191,311,356,1 315,123,477,347,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_235.png 193,131,361,260,2 141,287,333,485,2 20,21,191,262,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_825.png 236,6,403,228,2 117,334,362,501,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_644.png 106,308,448,443,0 85,24,247,251,2 267,26,476,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_533.png 4,249,154,465,1 200,213,426,366,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_202.png 88,193,255,415,2 47,3,312,188,2 356,27,500,289,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_785.png 38,319,368,440,0 346,80,505,306,1 27,126,260,270,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_888.png 113,149,339,309,2 241,310,489,457,1 36,313,240,474,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803319.png 81,31,385,376,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_102.png 80,0,255,196,0 149,295,417,456,0 329,0,491,227,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802960.png 182,0,332,322,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_382.png 95,50,267,281,2 304,153,479,350,0 12,289,291,454,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_493.png 87,391,372,500,0 169,167,383,368,0 12,2,288,166,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_81.png 221,25,507,191,1 87,313,364,485,1 18,106,196,308,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_918.png 146,204,281,492,0 318,277,493,503,1 89,0,354,184,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_389.png 159,99,373,300,0 6,66,129,398,0 142,375,484,501,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_971.png 235,70,496,226,1 48,239,210,463,1 227,262,417,497,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_502.png 205,319,422,508,2 76,213,375,318,0 23,55,343,184,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_77.png 114,22,393,189,1 1,262,210,493,2 219,190,501,354,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_62.png 55,245,217,466,2 299,187,511,405,2 51,35,345,135,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_672.png 199,342,493,442,0 129,32,337,236,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_397.png 321,146,506,340,2 16,268,264,415,1 57,35,278,184,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_583.png 138,64,425,170,0 134,193,320,374,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803515.png 92,101,473,338,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803114.png 178,96,327,464,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_141.png 226,236,460,390,1 8,0,290,164,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_540.png 156,241,330,450,2 171,36,439,207,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803528.png 114,13,392,395,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_239.png 84,283,258,476,0 287,81,468,339,1 22,2,229,220,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_61.png 291,66,501,256,2 8,50,290,214,1 70,260,281,440,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_758.png 90,177,249,402,1 309,308,499,503,2 288,45,492,206,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_56.png 140,193,419,315,0 248,-1,499,163,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_887.png 78,164,213,495,0 240,227,426,408,2 81,12,438,140,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_744.png 297,191,471,384,0 69,267,283,468,0 23,47,231,251,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_16.png 224,151,386,372,2 21,50,211,285,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_3.png 17,187,407,304,0 228,307,444,485,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_311.png 190,198,352,425,2 61,49,346,158,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_629.png 176,38,311,294,0 48,363,287,500,1 322,120,469,343,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_119.png 6,229,181,426,0 199,96,456,255,1 183,290,507,414,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_704.png 229,304,490,460,1 180,15,282,297,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_986.png 141,12,483,147,0 206,225,420,426,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_764.png 126,2,284,230,1 98,235,268,429,0 294,150,501,368,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_837.png 214,275,361,417,2 29,0,245,178,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803246.png 76,197,445,421,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_822.png 174,147,449,308,1 0,232,158,460,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803282.png 81,200,300,511,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_38.png 189,240,338,510,0 273,8,485,226,2 7,74,169,298,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_956.png 41,307,294,463,1 207,87,381,283,2 46,28,204,256,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_457.png 227,257,407,439,2 0,115,294,215,0 4,231,188,475,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_989.png 227,87,411,331,0 42,215,186,460,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_653.png 292,5,463,246,2 45,286,405,417,0 16,97,291,258,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803342.png 55,138,379,482,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_800.png 122,234,329,452,0 319,35,493,231,2 12,26,223,197,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803121.png 172,0,322,342,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_175.png 93,207,361,368,0 90,12,321,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_477.png 6,60,285,227,1 202,267,481,432,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_643.png 5,154,382,282,0 117,339,389,489,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_179.png 124,44,484,175,0 51,302,411,433,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_99.png 168,199,411,376,0 160,2,371,182,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_882.png 232,154,507,321,1 73,370,450,498,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803989.png 162,6,385,320,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_484.png 171,163,321,379,1 378,87,501,419,0 3,21,344,138,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_300.png 111,18,353,174,1 31,305,245,506,0 328,247,502,440,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_68.png 8,256,267,410,1 269,271,458,456,2 51,13,251,254,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_753.png 38,166,250,384,2 60,23,390,152,0 296,188,471,414,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_398.png 62,107,290,279,0 132,292,394,460,0 304,12,488,256,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802990.png 0,114,279,236,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_283.png 259,170,416,378,2 82,42,217,373,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_13.png 181,161,446,346,2 29,8,389,139,0 123,390,417,490,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803818.png 120,0,368,268,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_253.png 172,267,398,420,1 196,77,431,222,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_582.png 9,244,189,438,2 225,-1,387,223,1 264,265,452,510,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_167.png 16,181,268,367,1 277,130,437,381,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_740.png 170,11,409,205,2 179,267,379,508,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_107.png 158,30,293,286,0 109,295,301,493,2 295,80,485,275,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803597.png 68,79,435,417,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_579.png 254,101,389,389,0 31,69,248,258,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_964.png 123,168,391,339,1 227,340,488,507,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_880.png 217,244,415,415,0 214,45,421,219,2 11,208,192,474,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_254.png 181,102,373,300,2 188,348,371,499,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_85.png 270,210,460,405,2 33,152,206,346,2 66,25,365,130,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_832.png 92,274,343,424,1 167,70,365,241,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_774.png 49,8,373,132,0 202,272,453,422,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_610.png 187,77,368,343,1 15,375,335,504,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_31.png 137,33,322,213,1 97,229,241,474,0 270,275,509,469,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803934.png 149,32,339,300,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802780.png 78,15,456,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_948.png 52,265,211,490,1 235,210,392,418,2 26,25,305,190,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_412.png 14,363,338,487,0 69,123,321,312,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_425.png 152,117,395,321,2 10,350,352,485,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_20.png 190,173,341,389,1 1,234,179,436,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_810.png 47,37,343,146,0 201,323,390,508,2 17,253,191,462,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803653.png 114,86,448,349,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_570.png 45,168,293,315,1 46,325,325,490,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_898.png 24,134,159,465,0 45,1,390,122,0 245,245,506,401,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_624.png 105,284,366,451,0 213,51,454,205,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803356.png 105,93,356,458,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_861.png 104,230,383,397,1 304,8,504,216,2 57,8,223,211,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803447.png 108,154,446,385,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_979.png 141,123,294,432,0 353,218,511,446,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_245.png 105,117,294,319,1 135,345,476,462,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_390.png 2,303,438,352,0 77,16,251,212,2 303,73,473,275,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_121.png 91,307,385,407,0 80,44,355,211,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_565.png 80,267,294,468,0 126,94,394,265,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_603.png 14,100,293,267,1 126,363,425,468,0 302,76,464,303,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_873.png 311,206,493,441,2 48,20,220,251,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_778.png 37,112,227,347,0 103,377,401,494,0 252,5,411,231,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_955.png 42,345,277,490,0 103,66,480,194,0 282,279,456,488,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_991.png 42,290,384,425,0 102,8,353,164,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_911.png 141,237,303,461,1 236,71,462,224,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_362.png 76,128,310,282,1 321,91,495,353,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_374.png 58,265,301,442,0 128,89,414,255,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_69.png 214,49,493,214,1 139,274,384,441,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_896.png 16,102,267,258,1 350,112,497,335,1 78,263,313,408,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_26.png 133,48,325,220,0 173,283,365,481,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_199.png 226,66,469,256,1 128,284,395,444,1 13,6,173,257,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803020.png 84,78,426,238,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_133.png 23,9,353,138,0 156,323,391,468,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_698.png 255,24,497,180,1 46,39,190,284,0 188,300,475,406,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_514.png 138,153,413,314,1 228,317,490,475,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_438.png 59,291,495,340,0 200,78,390,273,2 256,342,507,492,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_492.png 155,136,337,371,2 364,176,499,507,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_910.png 204,104,339,435,0 35,161,179,423,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_656.png 126,109,285,334,1 334,211,493,437,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_476.png 149,247,370,396,2 167,71,428,227,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_33.png 65,112,322,271,1 217,297,479,465,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_95.png 89,363,419,484,0 240,102,499,288,1 17,128,218,338,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_854.png 91,134,289,305,0 319,96,481,320,1 26,316,285,502,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_417.png 131,377,425,477,0 102,61,345,265,2 374,3,509,291,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_622.png 161,357,443,474,0 151,60,369,267,0 12,175,147,431,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_618.png 14,277,253,471,2 165,38,406,192,1 327,290,496,497,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_713.png 224,90,359,421,0 22,28,169,170,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_552.png 62,27,213,243,1 180,283,358,485,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_10.png 30,88,190,339,1 211,160,412,370,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_298.png 183,317,416,461,1 229,68,418,270,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_842.png 65,374,425,504,0 236,27,487,177,1 171,194,369,365,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_608.png 34,123,313,288,1 98,327,377,492,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_878.png 233,32,442,242,2 19,247,176,455,2 215,263,379,479,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_347.png 81,290,342,446,1 136,71,387,227,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_535.png 102,167,320,364,2 329,140,501,371,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_521.png 113,88,374,255,0 82,383,412,504,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_639.png 96,245,256,470,1 24,35,240,213,0 256,121,495,315,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_907.png 68,29,311,219,1 342,41,477,297,0 23,371,459,420,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_575.png 79,327,456,455,0 147,135,363,313,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_313.png 160,209,330,411,0 199,0,413,200,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802984.png 49,78,411,203,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_527.png 356,88,507,304,1 127,225,284,433,2 85,28,346,184,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_503.png 187,179,360,373,2 169,13,494,126,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_407.png 107,98,428,206,0 85,313,367,430,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_820.png 41,172,327,338,1 101,354,349,501,1 111,1,379,162,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_128.png 111,296,305,498,1 339,135,501,356,2 0,161,324,274,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_670.png 119,231,476,359,0 187,361,469,478,0 146,19,389,223,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_997.png 25,207,205,401,2 27,3,404,131,0 222,319,432,509,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_962.png 82,163,472,280,0 69,358,317,505,1 359,311,511,488,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_701.png 105,8,381,172,0 32,237,307,398,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_480.png 262,7,421,232,1 50,16,240,211,2 7,335,275,496,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_369.png 234,273,509,434,1 58,118,193,374,0 256,52,474,259,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_848.png 125,248,317,420,0 32,8,179,231,1 193,30,474,197,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_909.png 70,122,332,290,0 73,335,418,456,0 342,4,477,292,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803270.png 69,55,407,349,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_223.png 155,318,389,472,1 256,106,487,297,0 28,73,187,298,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_904.png 193,363,478,472,0 69,49,426,177,0 0,270,184,450,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802840.png 39,52,415,306,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_340.png 188,328,408,476,0 210,97,445,242,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_931.png 223,225,439,403,0 34,240,209,466,1 172,53,479,197,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_687.png 159,165,373,366,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_614.png 20,100,248,272,0 267,232,459,430,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802930.png 106,54,303,392,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_66.png 5,134,287,298,1 94,361,241,503,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_746.png 170,65,358,310,2 139,365,460,473,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_652.png 259,202,440,468,1 142,34,484,160,0 6,173,249,350,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803441.png 108,164,428,362,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_929.png 261,168,495,322,1 4,170,247,360,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_333.png 265,179,449,423,0 93,2,354,169,0 49,261,238,463,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_359.png 294,63,438,325,0 89,309,263,505,2 50,42,257,216,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_261.png 266,12,368,294,0 17,319,337,468,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_965.png 122,119,332,309,2 207,332,440,476,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_616.png 160,275,412,464,2 0,125,135,413,0 146,126,293,268,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_759.png 225,55,490,240,2 13,116,222,347,2 285,259,429,504,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_615.png 61,317,381,466,0 16,73,191,299,1 199,143,403,304,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_285.png 212,133,390,335,1 9,84,194,278,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_388.png 128,169,407,334,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_322.png 27,37,269,193,1 97,315,442,436,0 292,96,472,278,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_515.png 201,205,466,390,2 8,193,152,438,0 158,1,361,190,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_780.png 101,61,446,182,0 94,285,373,450,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_987.png 265,327,481,505,0 111,168,453,303,0 9,317,237,489,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803725.png 40,12,431,394,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_9.png 136,5,398,173,0 107,337,392,446,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_807.png 171,15,432,195,0 168,232,462,332,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_337.png 4,113,243,250,1 100,254,259,480,1 313,180,511,351,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995802912.png 172,46,376,423,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803646.png 142,68,400,436,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_933.png 20,120,380,251,0 6,285,293,391,0 299,261,469,463,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_161.png 102,169,305,358,2 332,116,507,342,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_735.png 176,71,443,231,1 38,17,161,349,0 277,237,489,455,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_255.png 56,68,323,228,1 100,289,375,425,0 332,97,500,226,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803032.png 130,38,371,305,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_72.png 320,151,480,356,1 109,183,262,492,0 71,20,431,150,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_777.png 100,44,362,202,1 83,227,304,376,2 315,222,504,424,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_627.png 7,234,169,501,1 293,139,446,448,0 40,16,206,219,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_946.png 147,6,307,257,1 328,15,463,303,0 98,340,377,507,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_543.png 57,196,257,404,2 274,305,449,502,0 110,35,349,172,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_657.png 198,41,413,255,2 344,281,503,506,1 42,310,324,474,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/1637995803667.png 29,155,393,426,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_296.png 5,57,193,302,2 168,330,455,436,0 217,136,485,307,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_59.png 243,69,432,254,2 9,103,162,412,0 206,262,372,465,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_680.png 117,0,298,258,1 12,261,311,366,0 344,34,506,301,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_897.png 98,106,324,266,2 200,323,467,483,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_585.png 106,175,348,331,1 280,1,508,173,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_460.png 66,19,236,221,0 49,335,326,507,1 238,84,453,298,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_479.png 62,8,224,232,1 242,165,493,315,1 130,333,405,494,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_321.png 253,84,434,350,1 7,157,235,329,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_539.png 183,74,352,281,2 210,287,449,481,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_256.png 321,57,502,323,1 55,5,229,201,2 200,364,347,506,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_921.png 9,73,162,382,0 182,42,464,206,1 176,317,496,466,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_351.png 51,273,392,390,0 54,63,352,180,0
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_200.png 231,313,441,503,2 265,77,435,271,0 3,243,165,464,2
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_376.png 34,10,309,177,1 204,284,351,507,1
+E:\ubuntushare\data\warehousetools/VOCFinal/JPEGImages/background_all_406.png 268,265,471,490,0 11,115,189,317,1 233,39,450,228,2

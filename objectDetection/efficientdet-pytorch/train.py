@@ -14,6 +14,10 @@ from utils.dataloader import EfficientdetDataset, efficientdet_dataset_collate
 from utils.utils import get_classes, image_sizes
 from utils.utils_fit import fit_one_epoch
 
+import platform
+
+#run from pycharm
+#https://stackoverflow.com/questions/67073193/pycharm-modulenotfounderror-no-module-named-python-import-from-child-directo
 '''
 训练自己的目标检测模型一定需要注意以下几点：
 1、训练前仔细检查自己的格式是否满足要求，该库要求数据集格式为VOC格式，需要准备好的内容有输入图片和标签
@@ -44,7 +48,7 @@ if __name__ == "__main__":
     #--------------------------------------------------------#
     #   训练前一定要修改classes_path，使其对应自己的数据集
     #--------------------------------------------------------#
-    classes_path    = 'model_data/voc_classes.txt'
+    classes_path    = 'model_data/voc_tools.txt'
     #---------------------------------------------------------------------#
     #   用于选择所使用的模型的版本，0-7
     #---------------------------------------------------------------------#
@@ -74,7 +78,11 @@ if __name__ == "__main__":
     #   网络一般不从0开始训练，至少会使用主干部分的权值，有些论文提到可以不用预训练，主要原因是他们 数据集较大 且 调参能力优秀。
     #   如果一定要训练网络的主干部分，可以了解imagenet数据集，首先训练分类模型，分类模型的 主干部分 和该模型通用，基于此进行训练。
     #----------------------------------------------------------------------------------------------------------------------------#
-    model_path      = 'E:/ubuntushare/data\models/efficientdet-d0.pth'
+    #model_path      = 'E:/ubuntushare/data/models/efficientdet-d0.pth'
+    if platform.system().lower() == 'windows':
+        model_path = 'E:/ubuntushare/data/models/efficientdet-d0.pth'
+    else:
+        model_path = '/root/models/efficientdet-d0.pth'
     #------------------------------------------------------#
     #   输入的shape大小
     #------------------------------------------------------#
@@ -115,8 +123,8 @@ if __name__ == "__main__":
     #----------------------------------------------------#
     #   获得图片路径和标签
     #----------------------------------------------------#
-    train_annotation_path   = './2012_train.txt'
-    val_annotation_path     = './2012_val.txt'
+    train_annotation_path   = './Final_train.txt'
+    val_annotation_path     = './Final_val.txt'
     #----------------------------------------------------#
     #   获取classes和anchor
     #----------------------------------------------------#

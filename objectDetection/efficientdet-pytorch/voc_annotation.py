@@ -18,7 +18,7 @@ annotation_mode     = 2
 #   那么就是因为classes没有设定正确
 #   仅在annotation_mode为0和2的时候有效
 #-------------------------------------------------------------------#
-classes_path        = 'model_data/voc_classes.txt'
+classes_path        = 'model_data/voc_tools.txt'
 #--------------------------------------------------------------------------------------------------------------------------------#
 #   trainval_percent用于指定(训练集+验证集)与测试集的比例，默认情况下 (训练集+验证集):测试集 = 9:1
 #   train_percent用于指定(训练集+验证集)中训练集与验证集的比例，默认情况下 训练集:验证集 = 9:1
@@ -30,9 +30,13 @@ train_percent       = 0.9
 #   指向VOC数据集所在的文件夹
 #   默认指向根目录下的VOC数据集
 #-------------------------------------------------------#
-VOCdevkit_path  = 'E:/ubuntushare/data/VOCdevkit'
+#VOCdevkit_path  = 'E:/ubuntushare/data/VOCdevkit'
+#VOCdevkit_path  = '/root/VOCdevkit'
+VOCdevkit_path  = 'E:/ubuntushare/data/warehousetools/'
 
-VOCdevkit_sets  = [('2012', 'train'), ('2012', 'val')]
+VOCdevkit_sets  = [('Final', 'train'), ('Final', 'val')]
+flag = 'Final'
+format = 'png'
 classes, _      = get_classes(classes_path)
 
 def convert_annotation(year, image_id, list_file):
@@ -56,8 +60,8 @@ if __name__ == "__main__":
     random.seed(0)
     if annotation_mode == 0 or annotation_mode == 1:
         print("Generate txt in ImageSets.")
-        xmlfilepath     = os.path.join(VOCdevkit_path, 'VOC2012/Annotations')
-        saveBasePath    = os.path.join(VOCdevkit_path, 'VOC2012/ImageSets/Main')
+        xmlfilepath     = os.path.join(VOCdevkit_path, 'VOC' + flag + '/Annotations')
+        saveBasePath    = os.path.join(VOCdevkit_path, 'VOC' + flag + '/ImageSets/Main')
         temp_xml        = os.listdir(xmlfilepath)
         total_xml       = []
         for xml in temp_xml:
@@ -96,14 +100,15 @@ if __name__ == "__main__":
         print("Generate txt in ImageSets done.")
 
     if annotation_mode == 0 or annotation_mode == 2:
-        print("Generate 2007_train.txt and 2007_val.txt for train.")
+        print("Generate train.txt and val.txt for train.")
         for year, image_set in VOCdevkit_sets:
             image_ids = open(os.path.join(VOCdevkit_path, 'VOC%s/ImageSets/Main/%s.txt'%(year, image_set)), encoding='utf-8').read().strip().split()
             list_file = open('%s_%s.txt'%(year, image_set), 'w', encoding='utf-8')
+            print("list file ", list_file)
             for image_id in image_ids:
-                list_file.write('%s/VOC%s/JPEGImages/%s.jpg'%(os.path.abspath(VOCdevkit_path), year, image_id))
+                list_file.write('%s/VOC%s/JPEGImages/%s.%s'%(os.path.abspath(VOCdevkit_path), year, image_id, format))
 
                 convert_annotation(year, image_id, list_file)
                 list_file.write('\n')
             list_file.close()
-        print("Generate 2007_train.txt and 2007_val.txt for train done.")
+        print("Generate train.txt and val.txt for train done.")
