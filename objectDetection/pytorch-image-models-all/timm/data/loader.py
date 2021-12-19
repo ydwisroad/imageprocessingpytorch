@@ -18,7 +18,7 @@ from .distributed_sampler import OrderedDistributedSampler, RepeatAugSampler
 from .random_erasing import RandomErasing
 from .mixup import FastCollateMixup
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def fast_collate(batch):
     """ A fast collation function optimized for uint8 images (np array or torch) and int64 targets (labels)"""
@@ -80,26 +80,35 @@ class PrefetchLoader:
             self.random_erasing = None
 
     def __iter__(self):
-        stream = torch.Stream()  #torch.to(device)
+        if device == torch.device('cuda'):
+            stream = torch.cuda.Stream()
         first = True
 
         for next_input, next_target in self.loader:
-            #with stream(stream):  #.to(device)
-            next_input = next_input.to(device) #(non_blocking=True)
-            next_target = next_target.to(device)  #(non_blocking=True)
-            if self.fp16:
-                next_input = next_input.half().sub_(self.mean).div_(self.std)
+            if device == torch.device('cuda'):
+                with torch.cuda.stream(stream):
+                    next_input = next_input.cuda(non_blocking=True)
+                    next_target = next_target.cuda(non_blocking=True)
+                    if self.fp16:
+                        next_input = next_input.half().sub_(self.mean).div_(self.std)
+                    else:
+                        next_input = next_input.float().sub_(self.mean).div_(self.std)
+                    if self.random_erasing is not None:
+                        next_input = self.random_erasing(next_input)
             else:
-                next_input = next_input.float().sub_(self.mean).div_(self.std)
-            if self.random_erasing is not None:
-                next_input = self.random_erasing(next_input)
+                if self.fp16:
+                    next_input = next_input.half().sub_(self.mean).div_(self.std)
+                else:
+                    next_input = next_input.float().sub_(self.mean).div_(self.std)
+                if self.random_erasing is not None:
+                    next_input = self.random_erasing(next_input)
 
             if not first:
                 yield input, target
             else:
                 first = False
-
-            #torch.to(device).current_stream().wait_stream(stream)
+            if device == torch.device('cuda'):
+                torch.cuda.current_stream().wait_stream(stream)
             input = next_input
             target = next_target
 

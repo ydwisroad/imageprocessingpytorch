@@ -87,7 +87,7 @@ parser.add_argument('--class-map', default='', type=str, metavar='FILENAME',
                     help='path to class to idx mapping file (default: "")')
 
 # Model parameters
-parser.add_argument('--model', default='', type=str, metavar='MODEL',
+parser.add_argument('--model', default='hrnet_w18_small', type=str, metavar='MODEL',
                     help='Name of model to train (default: "resnet50"')
 parser.add_argument('--pretrained', action='store_true', default=False,
                     help='Start with pretrained version of specified network (if avail)')
@@ -335,7 +335,7 @@ def main():
     args.distributed = False
     if 'WORLD_SIZE' in os.environ:
         args.distributed = int(os.environ['WORLD_SIZE']) > 1
-    args.device = 'cuda:0'
+    args.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     args.world_size = 1
     args.rank = 0  # global rank
     if args.distributed:
