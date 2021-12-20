@@ -352,13 +352,13 @@ class VOC(object):
         self._Copy(xml_files, annodir, imgdir, save_xml_path, save_img_path)
 
 
-v = VOC('/Users/i052090/Downloads/roadproject/marks/centercrop/Annotations/',
-        '/Users/i052090/Downloads/roadproject/marks/centercrop/JPEGImages/')
+v = VOC('E:/ubuntushare/data/warehousetools/centercrop/Annotations/',
+        'E:/ubuntushare/data/warehousetools/centercrop/JPEGImages/')
 # print(v._ParseAnnos())
 # v._Crop('F:/数据集/JPEGImages/', 'F:/数据集/crops/')
 # v._DelAnnotations(['123', '234'])
 # v._DisplayDirectObjec()
-size = (640, 640)
+size = (512, 512)
 v._Resize(size)
 # v._Mergeannotation('C:/Users/91279/Desktop/xml/', 'F:/xml/')
 # v._DelAnnotations(['123'])

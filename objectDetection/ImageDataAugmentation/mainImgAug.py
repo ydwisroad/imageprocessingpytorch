@@ -12,10 +12,14 @@ if __name__ == "__main__":
     #                        "/Users/i052090/Downloads/segmentation/data/TSRDMini/letterboxed/images",
     #                        "/Users/i052090/Downloads/segmentation/data/TSRDMini/letterboxed/labels",
     #                        [512,512],[0,0,0])
+    rootDir = "E:/ubuntushare/data/warehousetools/"
 
-    #cropObjectsFromImagePath("/Users/i052090/Downloads/roadproject/marks/yolo/train/images",
-    #                         "/Users/i052090/Downloads/roadproject/marks/yolo/train/labels",
-    #                         "/Users/i052090/Downloads/roadproject/marks/yolo/objects")
+    if not os.path.exists(rootDir + "/cropedobjects"):
+        os.mkdir(rootDir + "/cropedobjects")
+
+    cropObjectsFromImagePath(rootDir + "yolo/train/images",
+                             rootDir + "yolo/train/labels",
+                             rootDir + "/cropedobjects")
 
     #copySmallObjectsToOneBlankImage("/Users/i052090/Downloads/roadproject/marks/yolo/blankRoad.png",
     #                                "/Users/i052090/Downloads/roadproject/marks/yolo/objects",
@@ -24,11 +28,13 @@ if __name__ == "__main__":
 
     #generateAugmentedObjects("/Users/i052090/Downloads/segmentation/data/TSRD/objects",
     #                         "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/smallObjects")
+    if not os.path.exists(rootDir + "/augmented"):
+        os.mkdir(rootDir + "/augmented")
 
-    #copySmallObjectsToOneBlankImage("/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/blankbridge.png",
-    #                                "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/objects",
-    #                                "/Users/i052090/Downloads/segmentation/data/markedhkbridge/coco/augmented",
-    #                                5, 5000)
+    copySmallObjectsToOneBlankImage(rootDir + "background.png",
+                                    rootDir + "/cropedobjects",
+                                    rootDir + "/augmented",
+                                   3, 1000)
 
     #addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")

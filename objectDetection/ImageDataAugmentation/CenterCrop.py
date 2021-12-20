@@ -7,17 +7,28 @@ import cv2
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from tqdm import tqdm
+import shutil
 
 
+rootDir = "E:/ubuntushare/data/warehousetools/"
+src_images_dir = rootDir + 'VOC2007/JPEGImages' # 原始图片文件夹
+src_xml_dir =  rootDir + 'VOC2007/Annotations' # 原始xml文件夹
 
-src_images_dir = '/Users/i052090/Downloads/roadproject/marks/output/JPEGImages' # 原始图片文件夹
-src_xml_dir = '/Users/i052090/Downloads/roadproject/marks/output/Annotations' # 原始xml文件夹
-dest_images_dir = '/Users/i052090/Downloads/roadproject/marks/centercrop/JPEGImages' # 保存图片文件夹
-dest_xml_dir = '/Users/i052090/Downloads/roadproject/marks/centercrop/Annotations' # 保存xml文件夹
-os.makedirs(dest_images_dir, exist_ok=True)
-os.makedirs(dest_xml_dir, exist_ok=True)
+dest_images_dir =  rootDir + 'centercrop/JPEGImages' # 保存图片文件夹
+dest_xml_dir =  rootDir + 'centercrop/Annotations' # 保存xml文件夹
+if not os.path.exists(dest_images_dir):
+    os.makedirs(dest_images_dir, exist_ok=True)
+if not os.path.exists(dest_xml_dir):
+    os.makedirs(dest_xml_dir, exist_ok=True)
 
+sourceImageSets = rootDir + 'VOC2007/ImageSets'
+destImageSets = rootDir + 'centercrop/ImageSets'
 
+def copyFolder(source_path, target_path):
+    if os.path.exists(target_path):
+        # 如果目标路径存在原文件夹的话就先删除
+        shutil.rmtree(target_path)
+    shutil.copytree(source_path, target_path)
 # In[20]:
 
 
@@ -39,10 +50,10 @@ def parse_xml(xml_path):
     bboxes = []
     for obj in root.iter('object'):
         xml_box = obj.find('bndbox')
-        xmin = (int(xml_box.find('xmin').text))
-        ymin = (int(xml_box.find('ymin').text))
-        xmax = (int(xml_box.find('xmax').text))
-        ymax = (int(xml_box.find('ymax').text))
+        xmin = (float(xml_box.find('xmin').text))
+        ymin = (float(xml_box.find('ymin').text))
+        xmax = (float(xml_box.find('xmax').text))
+        ymax = (float(xml_box.find('ymax').text))
 
         name = obj.find('name').text
         bboxes.append([xmin, ymin, xmax, ymax, name])
@@ -117,39 +128,44 @@ def save_xml(save_path, im_name, im_shape,  bboxes):
 
 # In[22]:
 
+def main():
+    images = os.listdir(src_images_dir)
 
-images = os.listdir(src_images_dir)
+    for img_name in tqdm(images):
+        xml_name = img_name.replace('.jpg', '.xml')
+        dest_img_name = img_name.replace('.jpg', '.png')
+        img_path = os.path.join(src_images_dir, img_name)
+        xml_path = os.path.join(src_xml_dir, xml_name)
+        print("image path ", img_path, " xml_path ", xml_path)
+        dest_img_path = os.path.join(dest_images_dir, dest_img_name)
+        dest_xml_path = os.path.join(dest_xml_dir, xml_name)
+        if os.path.exists(img_path) and os.path.exists(xml_path):
+            print("process img ", img_path, " xml ", xml_path)
+            image = read_img(img_path)
+            bboxes = parse_xml(xml_path)
 
-for img_name in tqdm(images):
-    xml_name = img_name.replace('.jpg', '.xml')
-    dest_img_name = img_name.replace('.jpg', '.png')
-    img_path = os.path.join(src_images_dir, img_name)
-    xml_path = os.path.join(src_xml_dir, xml_name)
-    print("image path ", img_path, " xml_path ", xml_path)
-    dest_img_path = os.path.join(dest_images_dir, dest_img_name)
-    dest_xml_path = os.path.join(dest_xml_dir, xml_name)
-    if os.path.exists(img_path) and os.path.exists(xml_path):
-        print("process img ", img_path, " xml ", xml_path)
-        image = read_img(img_path)
-        bboxes = parse_xml(xml_path)
+            flag = True
+            for eachBb in bboxes:
+                if (int)(eachBb[0]) > (int)(eachBb[2]):
+                    flag = False
+                if (int)(eachBb[1]) > (int)(eachBb[3]):
+                    flag = False
+            if (flag == False):
+                print("find abnornal bbox ", bboxes)
+                continue
+            h, w, c = image.shape
+            h = w if h > w else h  # 判断宽高，按短边算
+            print("bboxes ", bboxes)
+            print("w, h ", h)
+            t_image, t_bboxes = crop_img(image, bboxes, width=h, height=h)
+            # print(t_image.shape, t_bboxes)
+            save_img(img_path=dest_img_path, image=t_image)
+            save_xml(save_path=dest_xml_path, im_name=img_name, im_shape=(h, h, c),  bboxes=t_bboxes)
 
-        flag = True
-        for eachBb in bboxes:
-            if (int)(eachBb[0]) > (int)(eachBb[2]):
-                flag = False
-            if (int)(eachBb[1]) > (int)(eachBb[3]):
-                flag = False
-        if (flag == False):
-            print("find abnornal bbox ", bboxes)
-            continue
-        h, w, c = image.shape
-        h = w if h > w else h  # 判断宽高，按短边算
-        print("bboxes ", bboxes)
-        print("w, h ", h)
-        t_image, t_bboxes = crop_img(image, bboxes, width=h, height=h)
-        # print(t_image.shape, t_bboxes)
-        save_img(img_path=dest_img_path, image=t_image)
-        save_xml(save_path=dest_xml_path, im_name=img_name, im_shape=(h, h, c),  bboxes=t_bboxes)
+if __name__ == "__main__":
+    copyFolder(sourceImageSets, destImageSets)
+    main()
+
 
 
 

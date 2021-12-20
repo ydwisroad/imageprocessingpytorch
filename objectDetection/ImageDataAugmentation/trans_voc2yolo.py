@@ -9,18 +9,19 @@ import shutil
 
 
 # voc??????????
-voc_root = "/Users/i052090/Downloads/roadproject/marks/centercrop"
+rootDir = "E:/ubuntushare/data/warehousetools/"
+voc_root = rootDir + "/centercrop"
 voc_version = "./"
 
 train_txt = "train.txt"
 val_txt = "val.txt"
 
 # ??????????
-save_file_root = "/Users/i052090/Downloads/roadproject/marks/yolo"
+save_file_root = rootDir +"/yolo"
 
 imageSurfix = ".png"
 # label????json??
-label_json_path = '/Users/i052090/Downloads/roadproject/marks/centercrop/voc_classes.json'
+label_json_path = rootDir +'/voc_classes.json'
 
 # ???voc?images???xml???txt??
 voc_images_path = os.path.join(voc_root, voc_version, "JPEGImages")
