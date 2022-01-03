@@ -222,7 +222,7 @@ def generateAugmentedObjects(smallObjectsFolder, outputFolder):
         smallObjName = os.path.basename(eachSmallImageFile)
         objName = smallObjName.split(".")[0]
 
-        remain = iCount % 5
+        remain = iCount % 3
         outPath = outputFolder + "/" + objName + str(remain) + ".png"
         imgOut = None
         if (remain==0):
@@ -230,18 +230,16 @@ def generateAugmentedObjects(smallObjectsFolder, outputFolder):
         elif (remain==1):
             imgOut = randomHSV(img)
         elif (remain ==2):
-            imgOut = gauss_noise(img)
-        elif (remain == 3):
-            imgOut = sp_noise(img)
-        elif (remain == 4):
-            imgOut = sharpenImage(img)
+            imgOut = img
+        #    imgOut = gauss_noise(img)
+        #elif (remain == 3):
+        #    imgOut = sp_noise(img)
+        #elif (remain == 4):
+        #    imgOut = sharpenImage(img)
 
         cv2.imwrite(outPath,imgOut)
 
         iCount = iCount + 1
-
-
-
 
 ###############################
 ##############################

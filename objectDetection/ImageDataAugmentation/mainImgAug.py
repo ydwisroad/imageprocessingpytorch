@@ -26,15 +26,18 @@ if __name__ == "__main__":
     #                                "/Users/i052090/Downloads/roadproject/marks/yolo/augmented/images",
     #                                3, 2000)
 
-    #generateAugmentedObjects("/Users/i052090/Downloads/segmentation/data/TSRD/objects",
-    #                         "/Users/i052090/Downloads/segmentation/data/TSRD/newOutput/smallObjects")
+    if not os.path.exists(rootDir + "/smallObjects"):
+        os.mkdir(rootDir + "/smallObjects")
+
+    generateAugmentedObjects(rootDir + "/cropedobjects",
+                             rootDir + "/smallObjects")
     if not os.path.exists(rootDir + "/augmented"):
         os.mkdir(rootDir + "/augmented")
 
     copySmallObjectsToOneBlankImage(rootDir + "background.png",
-                                    rootDir + "/cropedobjects",
+                                    rootDir + "/smallObjects",
                                     rootDir + "/augmented",
-                                   3, 1000)
+                                   4, 5000)
 
     #addObjRectToImages("/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/",
     #                   "/Users/i052090/Downloads/segmentation/data/TSRD/twenty/train/annonated")

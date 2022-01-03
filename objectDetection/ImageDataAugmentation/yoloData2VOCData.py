@@ -50,11 +50,11 @@ xml_obj = '''
 xml_end = '''
 </annotation>'''
 
-labels = ['1', '2', '3']  # label for datasets
+labels = ['0', '1', '2']  # label for datasets
 
-catMap = { "1": "bolt",
-        "2": "brush",
-        "3": "plugin"
+catMap = { "0": "bolt",
+        "1": "brush",
+        "2": "plugin"
 }
 
 def writeToVOCXML(image_path, yoloLabelPath, annotationOutputPath, outputListFilePath):
