@@ -1,0 +1,1 @@
+python train.py --cfg=models/yolov3-tools.yaml --weights='' --batch-size=8 --data=data/warehousetools.yaml --epochs=200 --device=0

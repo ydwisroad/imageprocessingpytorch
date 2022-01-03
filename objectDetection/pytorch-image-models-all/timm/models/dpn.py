@@ -21,7 +21,6 @@ from .registry import register_model
 
 __all__ = ['DPN']
 
-
 def _cfg(url='', **kwargs):
     return {
         'url': url, 'num_classes': 1000, 'input_size': (3, 224, 224), 'pool_size': (7, 7),
