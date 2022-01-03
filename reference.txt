@@ -21,4 +21,4 @@ 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
 
 Username for 'https://github.com': oauth2
 New token: 2022.1.3
-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
+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
