@@ -5,7 +5,7 @@ import os
 import tqdm
 
 
-def centerCropImages(src_images_dir, dest_images_dir, size=(640,640)):
+def centerCropImages(src_images_dir, dest_images_dir, size=(512,512)):
     images = os.listdir(src_images_dir)
 
     for img_name in images:
@@ -30,8 +30,8 @@ def centerCropImages(src_images_dir, dest_images_dir, size=(640,640)):
         image.save(dest_images_dir + "/" + img_name, format='PNG')
 
 if __name__ == "__main__":
-    src_images_dir = "E:/ubuntushare/data/bolt/original"
-    dest_images_dir = "E:/ubuntushare/data/bolt/centercrop"
+    src_images_dir = "E:/ubuntushare/data/warehousetools/topredict/original/"
+    dest_images_dir = "E:/ubuntushare/data/warehousetools/topredict/centercrop"
     if not os.path.exists(dest_images_dir):
         os.mkdir(dest_images_dir)
     centerCropImages(src_images_dir, dest_images_dir)

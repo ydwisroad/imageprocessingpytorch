@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import random
 import shutil
 import VOCOperationLibrary as vol
+import shutil
 
 imageSurfix = '.png'
 
@@ -351,15 +352,20 @@ class VOC(object):
         print(xml_files)
         self._Copy(xml_files, annodir, imgdir, save_xml_path, save_img_path)
 
+def vocResize(sourceVOC, destVOC ,size=(512, 512)):
+    if os.path.exists(destVOC):
+        os.rmdir(destVOC)
+    shutil.copytree(sourceVOC, destVOC)
 
-v = VOC('E:/ubuntushare/data/warehousetools/centercrop/Annotations/',
-        'E:/ubuntushare/data/warehousetools/centercrop/JPEGImages/')
-# print(v._ParseAnnos())
-# v._Crop('F:/数据集/JPEGImages/', 'F:/数据集/crops/')
-# v._DelAnnotations(['123', '234'])
-# v._DisplayDirectObjec()
-size = (512, 512)
-v._Resize(size)
+    v = VOC(destVOC + 'Annotations/',
+            destVOC + 'JPEGImages/')
+    # print(v._ParseAnnos())
+    # v._Crop('F:/数据集/JPEGImages/', 'F:/数据集/crops/')
+    # v._DelAnnotations(['123', '234'])
+    # v._DisplayDirectObjec()
+    size = size
+    v._Resize(size)
+
 # v._Mergeannotation('C:/Users/91279/Desktop/xml/', 'F:/xml/')
 # v._DelAnnotations(['123'])
 # cls = ['shockproof hammer deformation', 'shockproof hammer intersection', 'grading ring damage', 'shielded ring corrosion']

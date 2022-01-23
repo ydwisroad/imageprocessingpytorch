@@ -8,21 +8,14 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from tqdm import tqdm
 import shutil
+import torchvision.transforms
+import PIL.Image as Image
+import torchvision.transforms
+import os
+import tqdm
 
+#rootDir = "E:/ubuntushare/data/warehousetools/"
 
-rootDir = "E:/ubuntushare/data/warehousetools/"
-src_images_dir = rootDir + 'VOC2007/JPEGImages' # 原始图片文件夹
-src_xml_dir =  rootDir + 'VOC2007/Annotations' # 原始xml文件夹
-
-dest_images_dir =  rootDir + 'centercrop/JPEGImages' # 保存图片文件夹
-dest_xml_dir =  rootDir + 'centercrop/Annotations' # 保存xml文件夹
-if not os.path.exists(dest_images_dir):
-    os.makedirs(dest_images_dir, exist_ok=True)
-if not os.path.exists(dest_xml_dir):
-    os.makedirs(dest_xml_dir, exist_ok=True)
-
-sourceImageSets = rootDir + 'VOC2007/ImageSets'
-destImageSets = rootDir + 'centercrop/ImageSets'
 
 def copyFolder(source_path, target_path):
     if os.path.exists(target_path):
@@ -30,7 +23,6 @@ def copyFolder(source_path, target_path):
         shutil.rmtree(target_path)
     shutil.copytree(source_path, target_path)
 # In[20]:
-
 
 # 读图片
 def read_img(img_path):
@@ -128,10 +120,10 @@ def save_xml(save_path, im_name, im_shape,  bboxes):
 
 # In[22]:
 
-def main():
+def main(src_images_dir, src_xml_dir, dest_images_dir,dest_xml_dir ):
     images = os.listdir(src_images_dir)
 
-    for img_name in tqdm(images):
+    for img_name in images:
         xml_name = img_name.replace('.png', '.xml')
         dest_img_name = img_name.replace('.png', '.png')
         img_path = os.path.join(src_images_dir, img_name)
@@ -162,9 +154,54 @@ def main():
             save_img(img_path=dest_img_path, image=t_image)
             save_xml(save_path=dest_xml_path, im_name=img_name, im_shape=(h, h, c),  bboxes=t_bboxes)
 
-if __name__ == "__main__":
+
+def centerCropVOC(sourcePath, destPath):
+    src_images_dir = sourcePath + "JPEGImages"  # 原始图片文件夹
+    src_xml_dir = sourcePath + "Annotations"  # 原始xml文件夹
+
+    dest_images_dir = destPath + "JPEGImages"  # 保存图片文件夹
+    dest_xml_dir = destPath + "Annotations"  # 保存xml文件夹
+
+    if not os.path.exists(dest_images_dir):
+        os.makedirs(dest_images_dir, exist_ok=True)
+    if not os.path.exists(dest_xml_dir):
+        os.makedirs(dest_xml_dir, exist_ok=True)
+
+    sourceImageSets = sourcePath + "ImageSets"
+    destImageSets = destPath + "ImageSets"
+
     copyFolder(sourceImageSets, destImageSets)
-    main()
+    main(src_images_dir, src_xml_dir, dest_images_dir,dest_xml_dir)
+
+def centerCropImagesOnly(src_images_dir, dest_images_dir, size=(512,512)):
+    images = os.listdir(src_images_dir)
+    if not os.path.exists(dest_images_dir):
+        os.mkdir(dest_images_dir)
+
+    for img_name in images:
+        image =Image.open(src_images_dir + "/" + img_name)
+        print(image.size, image.format, image.mode)
+
+        width = image.size[0]
+        height = image.size[1]
+        eqSize = 512
+        if (width > height):
+            eqSize = height
+        else:
+            eqSize = width
+        # 生成一个CenterCrop类的对象,用来将图片从中心裁剪成 size
+        crop_obj = torchvision.transforms.CenterCrop((eqSize, eqSize))
+        image = crop_obj(image)
+
+        resize_obj = torchvision.transforms.Resize(size)
+        image = resize_obj(image)
+
+        # 将裁剪之后的图片保存下来
+        image.save(dest_images_dir + "/" + img_name, format='PNG')
+
+if __name__ == "__main__":
+    print("This is the start of center crop ")
+
 
 
 

@@ -6,6 +6,10 @@ from sklearn.model_selection import train_test_split
 
 rootDir = "E:/ubuntushare/data/warehousetools/"
 
+def transform2yolo(oldyolo, newyolo):
+    print("transform to new yolo format")
+
+
 def copyFilesFromFolder(source, dest, suffix):
     for file in glob.glob(source + '/**/*.' + suffix, recursive=True):
         file = file.replace("\\","/")

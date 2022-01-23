@@ -28,11 +28,11 @@ files = [i.replace("\\","/").split("/")[-1].split(".json")[0] for i in files]
 for json_file_ in files:
     json_filename = labelme_path + json_file_ + ".json"
     json_file = json.load(open(json_filename, "r", encoding="utf-8"))
-    height, width, channels = cv2.imread(labelme_path + json_file_ + ".jpg").shape
+    height, width, channels = cv2.imread(labelme_path + json_file_ + ".png").shape
     with codecs.open(saved_path + "Annotations/" + json_file_ + ".xml", "w", "utf-8") as xml:
         xml.write('<annotation>\n')
         xml.write('\t<folder>' + 'UAV_data' + '</folder>\n')
-        xml.write('\t<filename>' + json_file_ + ".jpg" + '</filename>\n')
+        xml.write('\t<filename>' + json_file_ + ".png" + '</filename>\n')
         xml.write('\t<source>\n')
         xml.write('\t\t<database>The UAV autolanding</database>\n')
         xml.write('\t\t<annotation>UAV AutoLanding</annotation>\n')
@@ -77,7 +77,7 @@ for json_file_ in files:
         xml.write('</annotation>')
 
 # 5.复制图片到 VOC2007/JPEGImages/下
-image_files = glob(labelme_path + "*.jpg")
+image_files = glob(labelme_path + "*.png")
 print("copy image files to VOC007/JPEGImages/")
 for image in image_files:
     shutil.copy(image, saved_path + "JPEGImages/")
