@@ -1,0 +1,1 @@
+python scripts/main.py --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml --root E:\ubuntushare\data\Market1501 model.load_weights E:/ubuntushare/gputrain/REID/result/Jan30/log/osnet_x1_0_market1501_softmax_cosinelr/model/model.pth.tar-250 test.evaluate True
