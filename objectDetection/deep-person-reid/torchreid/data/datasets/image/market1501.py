@@ -63,6 +63,8 @@ class Market1501(ImageDataset):
 
     def process_dir(self, dir_path, relabel=False):
         img_paths = glob.glob(osp.join(dir_path, '*.jpg'))
+        if len(img_paths)==0:
+            img_paths = glob.glob(osp.join(dir_path, '*.png'))
         pattern = re.compile(r'([-\d]+)_c(\d)')
 
         pid_container = set()

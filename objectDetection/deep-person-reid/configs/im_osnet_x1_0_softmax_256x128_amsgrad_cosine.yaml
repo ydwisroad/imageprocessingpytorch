@@ -1,13 +1,13 @@
 model:
-  name: 'osnet_x1_0'
-  pretrained: False
+  name: 'resnet50'
+  pretrained: True
 
 data:
   type: 'image'
   sources: ['market1501']
   targets: ['market1501']
-  height: 128
-  width: 64
+  height: 512
+  width: 512
   combineall: False
   transforms: ['random_flip']
   save_dir: 'log/osnet_x1_0_market1501_softmax_cosinelr'
@@ -21,13 +21,13 @@ train:
   optim: 'amsgrad'
   lr: 0.0015
   max_epoch: 250
-  batch_size: 64
+  batch_size: 4
   fixbase_epoch: 10
   open_layers: ['classifier']
   lr_scheduler: 'cosine'
 
 test:
-  batch_size: 300
+  batch_size: 4
   dist_metric: 'euclidean'
   normalize_feature: False
   evaluate: False
