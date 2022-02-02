@@ -8,6 +8,7 @@ from trans_voc2yolo import voc2yolo
 from trans_voc2yolo import transform2yolo
 from mainImgAug import augmentImages
 from combineAugmented import combineAugmentedAndYolo
+from original2indexednames import original2indexednamesfolder
 
 import configparser
 
@@ -59,9 +60,11 @@ def handleEachOperation(operationName, inputFolder, outputFolder, rootFolder, in
         augmentImages(inputFolder, outputFolder, rootFolder)
     if operationName == "combineyoloaugment":
         combineAugmentedAndYolo(inputFolder, inputFolderB, outputFolder)
-
     if operationName == "centercropimagesonly":
         centerCropImagesOnly(inputFolder, outputFolder)
+
+    if operationName == "original2indexednames":
+        original2indexednamesfolder(inputFolder, outputFolder)
 
     return outputFolder
 
