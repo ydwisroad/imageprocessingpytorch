@@ -1,0 +1,3 @@
+python labelme2voc.py  E:\roadprojects\docs\invention\crack\datasample E:\roadprojects\docs\invention\crack\vocout --labels ./labels.txt
+
+in conda python38

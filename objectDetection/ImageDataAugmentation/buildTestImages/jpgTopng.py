@@ -13,7 +13,11 @@ def convertJPGtoPNG(sourceJPG, destPNG):
     img = cv2.imread(sourceJPG)
     cv2.imwrite(destPNG,img)
 
-def folderJPGtoPNG(sourcePath, destPath):
+def convertJPGtoPNGGrey(sourceJPG, destPNG):
+    img = cv2.imread(sourceJPG, cv2.IMREAD_GRAYSCALE)
+    cv2.imwrite(destPNG, img)
+
+def folderJPGtoPNG(sourcePath, destPath, grey=False):
     if not os.path.exists(destPath):
         os.makedirs(destPath)
 
@@ -23,11 +27,15 @@ def folderJPGtoPNG(sourcePath, destPath):
     for jpg_file_ in files:
         jpg_filename = sourcePath + jpg_file_ + ".jpg"
         png_filename = destPath + jpg_file_ + ".png"
-        convertJPGtoPNG(jpg_filename,png_filename )
+        if not grey:
+            convertJPGtoPNG(jpg_filename,png_filename )
+        else:
+            convertJPGtoPNGGrey(jpg_filename, png_filename)
 
 if __name__ == "__main__":
     print("start of the program")
 
-    sourcePath = "E:/ubuntushare/data/warehousetools/topredict/original_/"
-    destPath = "E:/ubuntushare/data/warehousetools/topredict/original/"
+    sourcePath = "E:/ubuntushare/data/warehousetools01/original/"
+    destPath = "E:/ubuntushare/data/warehousetools01/originalgrey/"
+    folderJPGtoPNG(sourcePath, destPath, True)
 
