@@ -32,6 +32,21 @@ def folderJPGtoPNG(sourcePath, destPath, grey=False):
         else:
             convertJPGtoPNGGrey(jpg_filename, png_filename)
 
+def jpgtopngfullfolder(sourcePath, destPath):
+    print("This is the start of jpgtopngfull folder")
+    if os.path.exists(destPath):
+        os.rmdir(destPath)
+    shutil.copytree(sourcePath, destPath)
+
+    files = glob(destPath + "/**/*.jpg", recursive=True)
+    files = [i.replace("\\", "/") for i in files]
+
+    for file_ in files:
+        print("each file ", file_)
+        destFileName = file_[0:file_.rfind(".")]+".png"
+        convertJPGtoPNG(file_, destFileName)
+        os.remove(file_)
+
 if __name__ == "__main__":
     print("start of the program")
 

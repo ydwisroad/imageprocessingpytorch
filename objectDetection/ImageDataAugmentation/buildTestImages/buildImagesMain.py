@@ -1,4 +1,5 @@
 from jpgTopng import folderJPGtoPNG
+from jpgTopng import jpgtopngfullfolder
 from commonUtil import copyFilesWithSurfix
 from labelme2voc import labelme2vocFormat
 from CenterCrop import centerCropVOC
@@ -9,6 +10,7 @@ from trans_voc2yolo import transform2yolo
 from mainImgAug import augmentImages
 from combineAugmented import combineAugmentedAndYolo
 from original2indexednames import original2indexednamesfolder
+from trans_coco2voc import coco2voc
 
 import configparser
 
@@ -36,14 +38,26 @@ def processRequests():
                 outputFolderName = values[2]
                 handleEachOperation(eachOption, rootFolder + inputFolderAName + "/",
                                     rootFolder + outputFolderName + "/", rootFolder,
-                                    rootFolder + inputFolderBName + "/",)
+                                    rootFolder + inputFolderBName + "/")
+            elif len(values) == 4:
+                inputFolderAName = values[0]
+                inputFolderBName = values[1]
+                outputFolderName = values[2]
+                imgFormat = values[3]
+                handleEachOperation(eachOption, rootFolder + inputFolderAName + "/",
+                                    rootFolder + outputFolderName + "/",
+                                    rootFolder,
+                                    rootFolder + inputFolderBName + "/",
+                                    imgFormat)
             else:
                 continue
 
-def handleEachOperation(operationName, inputFolder, outputFolder, rootFolder, inputFolderB=None):
+def handleEachOperation(operationName, inputFolder, outputFolder, rootFolder, inputFolderB=None, imgformat="png"):
     print("handle operation ", operationName + " inputFolder ", inputFolder, " ", outputFolder)
     if operationName == "jpgtopng":
         folderJPGtoPNG(inputFolder, outputFolder)
+    if operationName == "jpgtopngfullfolder":
+        jpgtopngfullfolder(inputFolder, outputFolder)
     if operationName == "copyjson":
         copyFilesWithSurfix(inputFolder, outputFolder, "json")
     if operationName == "labelme2voc":
@@ -53,7 +67,7 @@ def handleEachOperation(operationName, inputFolder, outputFolder, rootFolder, in
     if operationName == "vocresize":
         vocResize(inputFolder, outputFolder)
     if operationName == "voc2yolo":
-        voc2yolo(inputFolder, outputFolder, rootFolder + "voc_classes.json")
+        voc2yolo(inputFolder, outputFolder, rootFolder + "voc_classes.json", imgformat)
     if operationName == "transform2yolo":
         transform2yolo(inputFolder, outputFolder)
     if operationName == "imageaugment":
@@ -65,6 +79,9 @@ def handleEachOperation(operationName, inputFolder, outputFolder, rootFolder, in
 
     if operationName == "original2indexednames":
         original2indexednamesfolder(inputFolder, outputFolder)
+
+    if operationName == "coco2voc":
+        coco2voc(inputFolder, outputFolder)
 
     return outputFolder
 

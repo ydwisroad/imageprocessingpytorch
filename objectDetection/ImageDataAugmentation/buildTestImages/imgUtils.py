@@ -142,9 +142,10 @@ def cropObjectsFromImage(imgFile, labelFile, saveImagePath, countParent):
                                                   float(eachLabelSplit[1]), float(eachLabelSplit[2]),
                                                   float(eachLabelSplit[3]), float(eachLabelSplit[4]))
         region = image[int(y1):int(y2), int(x1):int(x2)]
-
-        object_im = cv2.imwrite(saveImagePath + "/" + str(eachLabelSplit[0]) + "_" + str(countParent) + "_"
-        + str(count) + ".png", region)
+        print("region shape ", region.shape)
+        if (region.shape[0] <1 or region.shape[1] < 1):
+            continue
+        cv2.imwrite(saveImagePath + "/" + str(eachLabelSplit[0]) + "_" + str(countParent) + "_" + str(count) + ".png", region)
         count = count + 1
 
 #crop objects which are annotated in image, save as an independent image.

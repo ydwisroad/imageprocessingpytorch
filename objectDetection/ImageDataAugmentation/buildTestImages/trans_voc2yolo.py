@@ -33,7 +33,7 @@ def parse_xml_to_dict(xml):
     return {xml.tag: result}
 
 
-def translate_info(file_names, save_root, class_dict, voc_images_path, voc_xml_path, train_val='train'):
+def translate_info(file_names, save_root, class_dict, voc_images_path, voc_xml_path, imgformat="png", train_val='train'):
     """
     :param file_names:
     :param save_root:
@@ -49,13 +49,14 @@ def translate_info(file_names, save_root, class_dict, voc_images_path, voc_xml_p
         os.makedirs(save_images_path)
 
     for file in tqdm(file_names, desc="translate {} file...".format(train_val)):
-        # ???????????
-        img_path = os.path.join(voc_images_path, file + ".png")
-        assert os.path.exists(img_path), "file:{} not exist...".format(img_path)
+        print("handling file ", file)
+        img_path = os.path.join(voc_images_path, file + "." + imgformat)
+        if not os.path.exists(img_path):
+            continue
 
-        # ??xml??????
         xml_path = os.path.join(voc_xml_path, file + ".xml")
-        assert os.path.exists(xml_path), "file:{} not exist...".format(xml_path)
+        if not os.path.exists(xml_path):
+            continue
 
         # read xml
         with open(xml_path) as fid:
@@ -66,6 +67,8 @@ def translate_info(file_names, save_root, class_dict, voc_images_path, voc_xml_p
         img_height = int(data["size"]["height"])
         img_width = int(data["size"]["width"])
 
+        if not "object" in data:   #If there is nothing in the object, continue next one.
+            continue
         # write object info into txt
         with open(os.path.join(save_txt_path, file + ".txt"), "w") as f:
             for index, obj in enumerate(data["object"]):
@@ -109,7 +112,7 @@ def create_class_names(class_dict, classesFile):
             else:
                 w.write(k + "\n")
 
-def voc2yolo(sourceVOCPath, destYoloPath, labelJson):
+def voc2yolo(sourceVOCPath, destYoloPath, labelJson, imgformat = "png"):
     # voc??????????
     voc_root = sourceVOCPath
     voc_version = "./"
@@ -146,13 +149,12 @@ def voc2yolo(sourceVOCPath, destYoloPath, labelJson):
     with open(train_txt_path, "r") as r:
         train_file_names = [i for i in r.read().splitlines() if len(i.strip()) > 0]
     # voc???yolo???????????????
-    translate_info(train_file_names, save_file_root, class_dict, voc_images_path, voc_xml_path, "train")
-
+    translate_info(train_file_names, save_file_root, class_dict, voc_images_path, voc_xml_path,imgformat, "train")
     # ??val.txt????????????
     with open(val_txt_path, "r") as r:
         val_file_names = [i for i in r.read().splitlines() if len(i.strip()) > 0]
     # voc???yolo???????????????
-    translate_info(val_file_names, save_file_root, class_dict,  voc_images_path, voc_xml_path, "val")
+    translate_info(val_file_names, save_file_root, class_dict,  voc_images_path, voc_xml_path, imgformat, "val")
 
     #
     classesFile = "../data/datalabel.names"
@@ -163,7 +165,7 @@ def copyFilesFromFolder(source, dest, suffix):
         file = file.replace("\\","/")
         shutil.copyfile(file, dest + file[(file.rfind("/")+1):])
 
-def transform2yolo(inputFolder, outputFolder):
+def transform2yolo(inputFolder, outputFolder, imgformat ="png"):
     if not os.path.exists(outputFolder):
         os.mkdir(outputFolder)
     if not os.path.exists(outputFolder + "/images"):
@@ -179,11 +181,12 @@ def transform2yolo(inputFolder, outputFolder):
     if not os.path.exists(outputFolder + "/labels/val"):
         os.mkdir(outputFolder + "/labels/val")
 
-    copyFilesFromFolder(inputFolder + "/train", outputFolder + "/images/train/", "png")
+    copyFilesFromFolder(inputFolder + "/train", outputFolder + "/images/train/", imgformat)
     copyFilesFromFolder(inputFolder + "/train", outputFolder + "/labels/train/", "txt")
 
-    copyFilesFromFolder(inputFolder + "/val", outputFolder + "/images/val/", "png")
+    copyFilesFromFolder(inputFolder + "/val", outputFolder + "/images/val/", imgformat)
     copyFilesFromFolder(inputFolder + "/val", outputFolder + "/labels/val/", "txt")
 
 if __name__ == "__main__":
+    print("This is the start of voc 2 yolo")
     voc2yolo()
