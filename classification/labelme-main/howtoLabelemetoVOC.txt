@@ -1,0 +1,7 @@
+1.cd E:\ubuntushare\github\imageprocessingpytorch\classification\labelme-main\examples\semantic_segmentation
+2. python labelme2voc.py --labels E:\roadprojects\docs\invention\crack\class_names.txt E:\roadprojects\docs\invention\crack\datasample E:\roadprojects\docs\invention\crack\vocout
+
+
+
+Modify color:
+https://blog.csdn.net/s534435877/article/details/104353804
